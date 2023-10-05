@@ -15,8 +15,8 @@
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowVXGIPanel>0</ShowVXGIPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>-226.71,52.4904,134.967</DefaultCameraPosition>
-		<DefaultCameraRotation>-0.033292,-0.882248,-0.0631192,0.465345</DefaultCameraRotation>
+		<DefaultCameraPosition>-299.81,52.5626,157.147</DefaultCameraPosition>
+		<DefaultCameraRotation>-0.000219088,0.990713,0.00159312,0.135962</DefaultCameraRotation>
 		<SmartPosition>0</SmartPosition>
 	</Editor>
 	<Materials>
@@ -3029,7 +3029,7 @@
 						<Param>
 							<Name>SimEngine_Tools</Name>
 							<Type>std_unordered_map_std_string_std_string_fixed_Select</Type>
-							<Value>ISI Tip-up Fenestrated Grasper_Right;ISI Tip-up Fenestrated Grasper_MT_Right;,ToolInserted;CEntityEnabler::Enable;,SMB Fenestrated Bipolar Forceps_0;SMB Fenestrated Bipolar Forceps_MT_Root;,SMB Permanent Cautery Hook_0;;,ISI Tip-up Fenestrated Grasper_0;ISI Tip-up Fenestrated Grasper_MT_Root;,Camera_0;;,ISI Tip-up Fenestrated Grasper_Left;ISI Tip-up Fenestrated Grasper_MT_Link0;,ISI Tip-up Fenestrated Grasper_Link0;ISI Tip-up Fenestrated Grasper_MT_Link0;</Value>
+							<Value>ToolInserted;CEntityEnabler::Enable;,SMB Fenestrated Bipolar Forceps_Link;SMB Fenestrated Bipolar Forceps_MT_Link;,SMB Fenestrated Bipolar Forceps_0;SMB Fenestrated Bipolar Forceps_MT_Root;,SMB Fenestrated Bipolar Forceps_Left;SMB Fenestrated Bipolar Forceps_MT_Left;,SMB Permanent Cautery Hook_0;;,SMB Fenestrated Bipolar Forceps_Right;SMB Fenestrated Bipolar Forceps_MT_Right;,Camera_0;;,ISI Tip-up Fenestrated Grasper_0;ISI Tip-up Fenestrated Grasper_MT_Root;,ISI Tip-up Fenestrated Grasper_Left;ISI Tip-up Fenestrated Grasper_MT_Left;,ISI Tip-up Fenestrated Grasper_Link0;ISI Tip-up Fenestrated Grasper_MT_Link0;,ISI Tip-up Fenestrated Grasper_Right;ISI Tip-up Fenestrated Grasper_MT_Right;</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -4096,7 +4096,7 @@
 				<Visible>1</Visible>
 				<Position>-7.1778e-06,-0.0196838,-1.90735e-06</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0,0,-0,1</Rotation>
+				<Rotation>0,0,-0.361535,0.932359</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4132,7 +4132,7 @@
 				<Visible>1</Visible>
 				<Position>0.000400221,7.51189,1.70015e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0,0,-0,1</Rotation>
+				<Rotation>-0.0692507,0,0,0.997599</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4186,7 +4186,7 @@
 				<Visible>1</Visible>
 				<Position>0.000400221,7.51189,1.70015e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0,0,-0,1</Rotation>
+				<Rotation>-0.0692507,0,0,0.997599</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4275,7 +4275,7 @@
 			<Type>Light</Type>
 			<Name>Tool-Light</Name>
 			<Parent>Tools</Parent>
-			<Visible>1</Visible>
+			<Visible>0</Visible>
 			<Group>0</Group>
 			<Position>0,11.1194,0</Position>
 			<Scale>100,100,100</Scale>
@@ -4322,7 +4322,7 @@
 			<Type>Model</Type>
 			<Name>SMB Permanent Cautery Hook</Name>
 			<Parent>Tools</Parent>
-			<Visible>0</Visible>
+			<Visible>1</Visible>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
 			<Scale>1,1,1</Scale>
