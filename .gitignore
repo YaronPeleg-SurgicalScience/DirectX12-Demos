@@ -430,3 +430,4 @@ FodyWeavers.xsd
 /RendertSystemTester/EngineMain.exe
 #temporary files
 /Data/SerializeData/
+**/LastLoadedSceneCache.txt
