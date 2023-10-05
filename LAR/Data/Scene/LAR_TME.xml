@@ -15,8 +15,8 @@
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowVXGIPanel>0</ShowVXGIPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>-48.5422,14.3491,-0.688556</DefaultCameraPosition>
-		<DefaultCameraRotation>0.110666,0.718522,-0.117539,0.676509</DefaultCameraRotation>
+		<DefaultCameraPosition>-226.71,52.4904,134.967</DefaultCameraPosition>
+		<DefaultCameraRotation>-0.033292,-0.882248,-0.0631192,0.465345</DefaultCameraRotation>
 		<SmartPosition>0</SmartPosition>
 	</Editor>
 	<Materials>
@@ -2574,12 +2574,12 @@
 		</Material>
 		<Material>
 			<Name>SMB_Common_Moti</Name>
-			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
-			<NormalFile>./Textures/flat_normal.dds</NormalFile>
+			<AlbedoFile>./Textures/Tools/Common/SMB/SMB_Robotix_Moti_BaseColor.dds</AlbedoFile>
+			<NormalFile>./Textures/Tools/Common/SMB/SMB_Robotix_Moti_Normal.DDS</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
-			<RoughnessFile>./Textures/white4x4.dds</RoughnessFile>
-			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
-			<AOFile>./Textures/white4x4.dds</AOFile>
+			<RoughnessFile>./Textures/Tools/Common/SMB/SMB_Robotix_Moti_Arm.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/Tools/Common/SMB/SMB_Robotix_Moti_Arm.dds</MetallicnessFile>
+			<AOFile>./Textures/Tools/Common/SMB/SMB_Robotix_Moti_Arm.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
@@ -2613,8 +2613,8 @@
 			<Transparent>0</Transparent>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
-			<Roughness>0.200000</Roughness>
-			<Metallicness>0.000000</Metallicness>
+			<Roughness>1.000000</Roughness>
+			<Metallicness>1.000000</Metallicness>
 			<Bumpiness>1.000000</Bumpiness>
 			<AO>1.000000</AO>
 			<AlphaRef>0.000000</AlphaRef>
@@ -2623,21 +2623,21 @@
 			<DiffuseColor>1,1,1,1</DiffuseColor>
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
-			<Tiling>1,1,1,1</Tiling>
+			<Tiling>1,1,1.1,1</Tiling>
 			<AOChannel>0</AOChannel>
-			<RoughnessChannel>0</RoughnessChannel>
-			<MetallicnessChannel>0</MetallicnessChannel>
-			<NormalMapCompression>0</NormalMapCompression>
-			<DetailNormalMapCompression>0</DetailNormalMapCompression>
+			<RoughnessChannel>1</RoughnessChannel>
+			<MetallicnessChannel>2</MetallicnessChannel>
+			<NormalMapCompression>1</NormalMapCompression>
+			<DetailNormalMapCompression>1</DetailNormalMapCompression>
 		</Material>
 		<Material>
 			<Name>SMB_Common_MotiTip</Name>
-			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
-			<NormalFile>./Textures/flat_normal.dds</NormalFile>
+			<AlbedoFile>./Textures/Tools/Common/SMB/SMB_Robotix_Moti_Tip_BaseColor.dds</AlbedoFile>
+			<NormalFile>./Textures/Tools/Common/SMB/SMB_Robotix_Moti_Tip_Normal.DDS</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
-			<RoughnessFile>./Textures/white4x4.dds</RoughnessFile>
-			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
-			<AOFile>./Textures/white4x4.dds</AOFile>
+			<RoughnessFile>./Textures/Tools/Common/SMB/SMB_Robotix_Moti_Tip_Arm.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/Tools/Common/SMB/SMB_Robotix_Moti_Tip_Arm.dds</MetallicnessFile>
+			<AOFile>./Textures/Tools/Common/SMB/SMB_Robotix_Moti_Tip_Arm.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
@@ -2671,8 +2671,8 @@
 			<Transparent>0</Transparent>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
-			<Roughness>0.200000</Roughness>
-			<Metallicness>0.000000</Metallicness>
+			<Roughness>1.000000</Roughness>
+			<Metallicness>1.000000</Metallicness>
 			<Bumpiness>1.000000</Bumpiness>
 			<AO>1.000000</AO>
 			<AlphaRef>0.000000</AlphaRef>
@@ -2683,19 +2683,19 @@
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
 			<AOChannel>0</AOChannel>
-			<RoughnessChannel>0</RoughnessChannel>
-			<MetallicnessChannel>0</MetallicnessChannel>
-			<NormalMapCompression>0</NormalMapCompression>
+			<RoughnessChannel>1</RoughnessChannel>
+			<MetallicnessChannel>2</MetallicnessChannel>
+			<NormalMapCompression>1</NormalMapCompression>
 			<DetailNormalMapCompression>0</DetailNormalMapCompression>
 		</Material>
 		<Material>
 			<Name>SMB_Forceps_Link</Name>
-			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
-			<NormalFile>./Textures/flat_normal.dds</NormalFile>
+			<AlbedoFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Link_BaseColor.dds</AlbedoFile>
+			<NormalFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Link_Normal.DDS</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
-			<RoughnessFile>./Textures/white4x4.dds</RoughnessFile>
-			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
-			<AOFile>./Textures/white4x4.dds</AOFile>
+			<RoughnessFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Link_Arm.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Link_Arm.dds</MetallicnessFile>
+			<AOFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Link_Arm.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
@@ -2729,8 +2729,8 @@
 			<Transparent>0</Transparent>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
-			<Roughness>0.200000</Roughness>
-			<Metallicness>0.000000</Metallicness>
+			<Roughness>1.000000</Roughness>
+			<Metallicness>1.000000</Metallicness>
 			<Bumpiness>1.000000</Bumpiness>
 			<AO>1.000000</AO>
 			<AlphaRef>0.000000</AlphaRef>
@@ -2741,19 +2741,19 @@
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
 			<AOChannel>0</AOChannel>
-			<RoughnessChannel>0</RoughnessChannel>
+			<RoughnessChannel>1</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
-			<NormalMapCompression>0</NormalMapCompression>
+			<NormalMapCompression>1</NormalMapCompression>
 			<DetailNormalMapCompression>0</DetailNormalMapCompression>
 		</Material>
 		<Material>
 			<Name>SMB_Forceps_Jaws</Name>
-			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
-			<NormalFile>./Textures/flat_normal.dds</NormalFile>
+			<AlbedoFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Jaws_BaseColor.dds</AlbedoFile>
+			<NormalFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Jaws_Normal.DDS</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
-			<RoughnessFile>./Textures/white4x4.dds</RoughnessFile>
-			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
-			<AOFile>./Textures/white4x4.dds</AOFile>
+			<RoughnessFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Jaws_Arm.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Jaws_Arm.dds</MetallicnessFile>
+			<AOFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Jaws_Arm.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
@@ -2787,8 +2787,8 @@
 			<Transparent>0</Transparent>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
-			<Roughness>0.200000</Roughness>
-			<Metallicness>0.000000</Metallicness>
+			<Roughness>1.000000</Roughness>
+			<Metallicness>1.000000</Metallicness>
 			<Bumpiness>1.000000</Bumpiness>
 			<AO>1.000000</AO>
 			<AlphaRef>0.000000</AlphaRef>
@@ -2799,19 +2799,19 @@
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
 			<AOChannel>0</AOChannel>
-			<RoughnessChannel>0</RoughnessChannel>
-			<MetallicnessChannel>0</MetallicnessChannel>
-			<NormalMapCompression>0</NormalMapCompression>
+			<RoughnessChannel>1</RoughnessChannel>
+			<MetallicnessChannel>2</MetallicnessChannel>
+			<NormalMapCompression>1</NormalMapCompression>
 			<DetailNormalMapCompression>0</DetailNormalMapCompression>
 		</Material>
 		<Material>
 			<Name>SMB_Forceps_Jaws_Cover</Name>
-			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
-			<NormalFile>./Textures/flat_normal.dds</NormalFile>
+			<AlbedoFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Jaws_Cover_BaseColor.dds</AlbedoFile>
+			<NormalFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Jaws_Cover_Normal.DDS</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
-			<RoughnessFile>./Textures/white4x4.dds</RoughnessFile>
-			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
-			<AOFile>./Textures/white4x4.dds</AOFile>
+			<RoughnessFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Jaws_Cover_Arm.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Jaws_Cover_Arm.dds</MetallicnessFile>
+			<AOFile>./Textures/Tools/FenestratedBipolarForceps/SMB_Fenestrated_Bipolar_Forceps_Jaws_Cover_Arm.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
@@ -2845,8 +2845,8 @@
 			<Transparent>0</Transparent>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
-			<Roughness>0.200000</Roughness>
-			<Metallicness>0.000000</Metallicness>
+			<Roughness>1.000000</Roughness>
+			<Metallicness>1.000000</Metallicness>
 			<Bumpiness>1.000000</Bumpiness>
 			<AO>1.000000</AO>
 			<AlphaRef>0.000000</AlphaRef>
@@ -2857,9 +2857,9 @@
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
 			<AOChannel>0</AOChannel>
-			<RoughnessChannel>0</RoughnessChannel>
-			<MetallicnessChannel>0</MetallicnessChannel>
-			<NormalMapCompression>0</NormalMapCompression>
+			<RoughnessChannel>1</RoughnessChannel>
+			<MetallicnessChannel>2</MetallicnessChannel>
+			<NormalMapCompression>1</NormalMapCompression>
 			<DetailNormalMapCompression>0</DetailNormalMapCompression>
 		</Material>
 	</Materials>
@@ -2898,7 +2898,7 @@
 						<Param>
 							<Name>Enabled</Name>
 							<Type>bool</Type>
-							<Value>0</Value>
+							<Value>1</Value>
 						</Param>
 						<Param>
 							<Name>Init</Name>
@@ -3019,7 +3019,7 @@
 						<Param>
 							<Name>Actions</Name>
 							<Type>std_vector_std_string_fixed</Type>
-							<Value>CEntityEnabler::Enable,ISI Tip-up Fenestrated Grasper_MT_Root,ISI Tip-up Fenestrated Grasper_MT_Link0,ISI Tip-up Fenestrated Grasper_MT_Left,ISI Tip-up Fenestrated Grasper_MT_Right</Value>
+							<Value>CEntityEnabler::Enable,ISI Tip-up Fenestrated Grasper_MT_Root,ISI Tip-up Fenestrated Grasper_MT_Link0,ISI Tip-up Fenestrated Grasper_MT_Left,ISI Tip-up Fenestrated Grasper_MT_Right,SMB Fenestrated Bipolar Forceps_MT_Root,SMB Fenestrated Bipolar Forceps_MT_Link,SMB Fenestrated Bipolar Forceps_MT_Left,SMB Fenestrated Bipolar Forceps_MT_Right</Value>
 						</Param>
 						<Param>
 							<Name>Parent</Name>
@@ -3029,7 +3029,7 @@
 						<Param>
 							<Name>SimEngine_Tools</Name>
 							<Type>std_unordered_map_std_string_std_string_fixed_Select</Type>
-							<Value>ISI Tip-up Fenestrated Grasper_Right;;,ToolInserted;CEntityEnabler::Enable;,SMB Fenestrated Bipolar Forceps_0;;,SMB Permanent Cautery Hook_0;;,ISI Tip-up Fenestrated Grasper_0;ISI Tip-up Fenestrated Grasper_MT_Root;,Camera_0;;,ISI Tip-up Fenestrated Grasper_Left;ISI Tip-up Fenestrated Grasper_MT_Link0;,ISI Tip-up Fenestrated Grasper_Link0;ISI Tip-up Fenestrated Grasper_MT_Link0;</Value>
+							<Value>ISI Tip-up Fenestrated Grasper_Right;ISI Tip-up Fenestrated Grasper_MT_Right;,ToolInserted;CEntityEnabler::Enable;,SMB Fenestrated Bipolar Forceps_0;SMB Fenestrated Bipolar Forceps_MT_Root;,SMB Permanent Cautery Hook_0;;,ISI Tip-up Fenestrated Grasper_0;ISI Tip-up Fenestrated Grasper_MT_Root;,Camera_0;;,ISI Tip-up Fenestrated Grasper_Left;ISI Tip-up Fenestrated Grasper_MT_Link0;,ISI Tip-up Fenestrated Grasper_Link0;ISI Tip-up Fenestrated Grasper_MT_Link0;</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -3805,7 +3805,7 @@
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0,0,-0,1</Rotation>
+				<Rotation>-0.0207324,0,0,0.999785</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -3886,7 +3886,7 @@
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0,0,-0,1</Rotation>
+				<Rotation>-0.0207324,0,0,0.999785</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -3995,13 +3995,44 @@
 			<Parent>Tools</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>0,0,0</Position>
+			<Position>-290.733,61.6751,103.51</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>0,0,0,1</Rotation>
+			<Rotation>-0.0832538,0.353071,0.874792,0.321169</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>ModelTransform</Name>
+					<Parameters>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Matrix Request Trigger</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Tools_RequestMatrix</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Sub Meshes</Name>
+							<Type>std_vector_std_string</Type>
+							<Value>Link,Left,Right</Value>
+						</Param>
+						<Param>
+							<Name>Transform Root</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>..\Data\Model\Tools\SMB_Fenestrated_Bipolar_Forceps.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -4021,7 +4052,7 @@
 				<Position>1.53482e-06,0,-10.09</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0.707107,0,-0,0.707107</Rotation>
-				<UIMeshGroup>1</UIMeshGroup>
+				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
 				<Name>Capsule_moti</Name>
