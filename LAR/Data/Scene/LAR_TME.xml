@@ -15,8 +15,8 @@
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowVXGIPanel>0</ShowVXGIPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>-299.81,52.5626,157.147</DefaultCameraPosition>
-		<DefaultCameraRotation>-0.000219088,0.990713,0.00159312,0.135962</DefaultCameraRotation>
+		<DefaultCameraPosition>-307.017,61.1895,162.511</DefaultCameraPosition>
+		<DefaultCameraRotation>0.00178321,0.998186,-0.0462274,0.0385373</DefaultCameraRotation>
 		<SmartPosition>0</SmartPosition>
 	</Editor>
 	<Materials>
@@ -2862,6 +2862,122 @@
 			<NormalMapCompression>1</NormalMapCompression>
 			<DetailNormalMapCompression>0</DetailNormalMapCompression>
 		</Material>
+		<Material>
+			<Name>SMB_Hook_Plastic</Name>
+			<AlbedoFile>./Textures/Tools/Permanent Cautery Hook/ISI_Permanent_Cautery_Hook_Plastic_BaseColor.dds</AlbedoFile>
+			<NormalFile>./Textures/Tools/Permanent Cautery Hook/ISI_Permanent_Cautery_Hook_Plastic_Normal.DDS</NormalFile>
+			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
+			<RoughnessFile>./Textures/Tools/Permanent Cautery Hook/ISI_Permanent_Cautery_Hook_Plastic_ARM.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/Tools/Permanent Cautery Hook/ISI_Permanent_Cautery_Hook_Plastic_ARM.dds</MetallicnessFile>
+			<AOFile>./Textures/Tools/Permanent Cautery Hook/ISI_Permanent_Cautery_Hook_Plastic_ARM.dds</AOFile>
+			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<AlbedoFilter>Linear</AlbedoFilter>
+			<NormalFilter>Linear</NormalFilter>
+			<DetailNormalFilter>Linear</DetailNormalFilter>
+			<RoughnessFilter>Linear</RoughnessFilter>
+			<MetallicnessFilter>Linear</MetallicnessFilter>
+			<AOFilter>Linear</AOFilter>
+			<SSSFilter>Linear</SSSFilter>
+			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
+			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
+			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
+			<NormalAddressModelU>Wrap</NormalAddressModelU>
+			<NormalAddressModelV>Wrap</NormalAddressModelV>
+			<NormalAddressModelW>Wrap</NormalAddressModelW>
+			<DetailNormalAddressModelU>Wrap</DetailNormalAddressModelU>
+			<DetailNormalAddressModelV>Wrap</DetailNormalAddressModelV>
+			<DetailNormalAddressModelW>Wrap</DetailNormalAddressModelW>
+			<RoughnessAddressModelU>Wrap</RoughnessAddressModelU>
+			<RoughnessAddressModelV>Wrap</RoughnessAddressModelV>
+			<RoughnessAddressModelW>Wrap</RoughnessAddressModelW>
+			<MetallicnessAddressModelU>Wrap</MetallicnessAddressModelU>
+			<MetallicnessAddressModelV>Wrap</MetallicnessAddressModelV>
+			<MetallicnessAddressModelW>Wrap</MetallicnessAddressModelW>
+			<AOAddressModelU>Wrap</AOAddressModelU>
+			<AOAddressModelV>Wrap</AOAddressModelV>
+			<AOAddressModelW>Wrap</AOAddressModelW>
+			<SSSAddressModelU>Wrap</SSSAddressModelU>
+			<SSSAddressModelV>Wrap</SSSAddressModelV>
+			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Transparent>0</Transparent>
+			<TwoSided>0</TwoSided>
+			<TwoSidedLighting>0</TwoSidedLighting>
+			<Roughness>1.000000</Roughness>
+			<Metallicness>1.000000</Metallicness>
+			<Bumpiness>1.000000</Bumpiness>
+			<AO>1.000000</AO>
+			<AlphaRef>0.000000</AlphaRef>
+			<GIStrength>1.000000</GIStrength>
+			<RefractionIndex>1.000000</RefractionIndex>
+			<DiffuseColor>1,1,1,1</DiffuseColor>
+			<SpecularColor>1,1,1,1</SpecularColor>
+			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
+			<Tiling>1,1,1,1</Tiling>
+			<AOChannel>0</AOChannel>
+			<RoughnessChannel>1</RoughnessChannel>
+			<MetallicnessChannel>2</MetallicnessChannel>
+			<NormalMapCompression>1</NormalMapCompression>
+			<DetailNormalMapCompression>0</DetailNormalMapCompression>
+		</Material>
+		<Material>
+			<Name>SMB_Hook_Metal</Name>
+			<AlbedoFile>./Textures/Tools/Permanent Cautery Hook/ISI_Permanent_Cautery_Hook_Metal_BaseColor.dds</AlbedoFile>
+			<NormalFile>./Textures/Tools/Permanent Cautery Hook/ISI_Permanent_Cautery_Hook_Metal_Normal.DDS</NormalFile>
+			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
+			<RoughnessFile>./Textures/Tools/Permanent Cautery Hook/ISI_Permanent_Cautery_Hook_Metal_ARM.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/Tools/Permanent Cautery Hook/ISI_Permanent_Cautery_Hook_Metal_ARM.dds</MetallicnessFile>
+			<AOFile>./Textures/Tools/Permanent Cautery Hook/ISI_Permanent_Cautery_Hook_Metal_ARM.dds</AOFile>
+			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<AlbedoFilter>Linear</AlbedoFilter>
+			<NormalFilter>Linear</NormalFilter>
+			<DetailNormalFilter>Linear</DetailNormalFilter>
+			<RoughnessFilter>Linear</RoughnessFilter>
+			<MetallicnessFilter>Linear</MetallicnessFilter>
+			<AOFilter>Linear</AOFilter>
+			<SSSFilter>Linear</SSSFilter>
+			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
+			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
+			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
+			<NormalAddressModelU>Wrap</NormalAddressModelU>
+			<NormalAddressModelV>Wrap</NormalAddressModelV>
+			<NormalAddressModelW>Wrap</NormalAddressModelW>
+			<DetailNormalAddressModelU>Wrap</DetailNormalAddressModelU>
+			<DetailNormalAddressModelV>Wrap</DetailNormalAddressModelV>
+			<DetailNormalAddressModelW>Wrap</DetailNormalAddressModelW>
+			<RoughnessAddressModelU>Wrap</RoughnessAddressModelU>
+			<RoughnessAddressModelV>Wrap</RoughnessAddressModelV>
+			<RoughnessAddressModelW>Wrap</RoughnessAddressModelW>
+			<MetallicnessAddressModelU>Wrap</MetallicnessAddressModelU>
+			<MetallicnessAddressModelV>Wrap</MetallicnessAddressModelV>
+			<MetallicnessAddressModelW>Wrap</MetallicnessAddressModelW>
+			<AOAddressModelU>Wrap</AOAddressModelU>
+			<AOAddressModelV>Wrap</AOAddressModelV>
+			<AOAddressModelW>Wrap</AOAddressModelW>
+			<SSSAddressModelU>Wrap</SSSAddressModelU>
+			<SSSAddressModelV>Wrap</SSSAddressModelV>
+			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Transparent>0</Transparent>
+			<TwoSided>0</TwoSided>
+			<TwoSidedLighting>0</TwoSidedLighting>
+			<Roughness>1.000000</Roughness>
+			<Metallicness>1.000000</Metallicness>
+			<Bumpiness>1.000000</Bumpiness>
+			<AO>1.000000</AO>
+			<AlphaRef>0.000000</AlphaRef>
+			<GIStrength>1.000000</GIStrength>
+			<RefractionIndex>1.000000</RefractionIndex>
+			<DiffuseColor>1,1,1,1</DiffuseColor>
+			<SpecularColor>1,1,1,1</SpecularColor>
+			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
+			<Tiling>1,1,1,1</Tiling>
+			<AOChannel>0</AOChannel>
+			<RoughnessChannel>1</RoughnessChannel>
+			<MetallicnessChannel>2</MetallicnessChannel>
+			<NormalMapCompression>1</NormalMapCompression>
+			<DetailNormalMapCompression>0</DetailNormalMapCompression>
+		</Material>
 	</Materials>
 	<Entities>
 		<Entity>
@@ -3019,7 +3135,7 @@
 						<Param>
 							<Name>Actions</Name>
 							<Type>std_vector_std_string_fixed</Type>
-							<Value>CEntityEnabler::Enable,ISI Tip-up Fenestrated Grasper_MT_Root,ISI Tip-up Fenestrated Grasper_MT_Link0,ISI Tip-up Fenestrated Grasper_MT_Left,ISI Tip-up Fenestrated Grasper_MT_Right,SMB Fenestrated Bipolar Forceps_MT_Root,SMB Fenestrated Bipolar Forceps_MT_Link,SMB Fenestrated Bipolar Forceps_MT_Left,SMB Fenestrated Bipolar Forceps_MT_Right</Value>
+							<Value>CEntityEnabler::Enable,ISI Tip-up Fenestrated Grasper_MT_Root,ISI Tip-up Fenestrated Grasper_MT_Link0,ISI Tip-up Fenestrated Grasper_MT_Left,ISI Tip-up Fenestrated Grasper_MT_Right,SMB Fenestrated Bipolar Forceps_MT_Root,SMB Fenestrated Bipolar Forceps_MT_Link,SMB Fenestrated Bipolar Forceps_MT_Left,SMB Fenestrated Bipolar Forceps_MT_Right,SMB Permanent Cautery Hook_MT_Root,SMB Permanent Cautery Hook_MT_Link,SMB Permanent Cautery Hook_MT_Left,SMB Permanent Cautery Hook_MT_Right</Value>
 						</Param>
 						<Param>
 							<Name>Parent</Name>
@@ -3029,7 +3145,7 @@
 						<Param>
 							<Name>SimEngine_Tools</Name>
 							<Type>std_unordered_map_std_string_std_string_fixed_Select</Type>
-							<Value>ToolInserted;CEntityEnabler::Enable;,SMB Fenestrated Bipolar Forceps_Link;SMB Fenestrated Bipolar Forceps_MT_Link;,SMB Fenestrated Bipolar Forceps_0;SMB Fenestrated Bipolar Forceps_MT_Root;,SMB Fenestrated Bipolar Forceps_Left;SMB Fenestrated Bipolar Forceps_MT_Left;,SMB Permanent Cautery Hook_0;;,SMB Fenestrated Bipolar Forceps_Right;SMB Fenestrated Bipolar Forceps_MT_Right;,Camera_0;;,ISI Tip-up Fenestrated Grasper_0;ISI Tip-up Fenestrated Grasper_MT_Root;,ISI Tip-up Fenestrated Grasper_Left;ISI Tip-up Fenestrated Grasper_MT_Left;,ISI Tip-up Fenestrated Grasper_Link0;ISI Tip-up Fenestrated Grasper_MT_Link0;,ISI Tip-up Fenestrated Grasper_Right;ISI Tip-up Fenestrated Grasper_MT_Right;</Value>
+							<Value>SMB Permanent Cautery Hook_Left;SMB Permanent Cautery Hook_MT_Left;,ToolInserted;CEntityEnabler::Enable;,SMB Fenestrated Bipolar Forceps_Link;SMB Fenestrated Bipolar Forceps_MT_Link;,SMB Fenestrated Bipolar Forceps_0;SMB Fenestrated Bipolar Forceps_MT_Root;,SMB Fenestrated Bipolar Forceps_Left;SMB Fenestrated Bipolar Forceps_MT_Left;,SMB Permanent Cautery Hook_0;SMB Permanent Cautery Hook_MT_Root;,SMB Fenestrated Bipolar Forceps_Right;SMB Fenestrated Bipolar Forceps_MT_Right;,SMB Permanent Cautery Hook_Link;SMB Permanent Cautery Hook_MT_Link;,SMB Permanent Cautery Hook_Right;SMB Permanent Cautery Hook_MT_Right;,ISI Tip-up Fenestrated Grasper_0;ISI Tip-up Fenestrated Grasper_MT_Root;,Camera_0;;,ISI Tip-up Fenestrated Grasper_Left;ISI Tip-up Fenestrated Grasper_MT_Left;,ISI Tip-up Fenestrated Grasper_Link0;ISI Tip-up Fenestrated Grasper_MT_Link0;,ISI Tip-up Fenestrated Grasper_Right;ISI Tip-up Fenestrated Grasper_MT_Right;</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -3686,9 +3802,9 @@
 			<Parent>Tools</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>-259.407,51.1023,84.0551</Position>
+			<Position>-284.158,70.1725,78.593</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.23594,0.366752,0.850199,0.294937</Rotation>
+			<Rotation>-0.301156,0.269134,0.69739,0.592047</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -3769,7 +3885,7 @@
 				<Visible>1</Visible>
 				<Position>6.04584e-05,8.65059,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0,0,-0.496813,0.867857</Rotation>
+				<Rotation>0,0,-0.376628,0.926365</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -3805,7 +3921,7 @@
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.0207324,0,0,0.999785</Rotation>
+				<Rotation>-0.0846196,0,0,0.996413</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -3886,7 +4002,7 @@
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.0207324,0,0,0.999785</Rotation>
+				<Rotation>0.424924,0,-0,0.905229</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -3995,9 +4111,9 @@
 			<Parent>Tools</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>-290.733,61.6751,103.51</Position>
+			<Position>-271.037,15.4511,63.3463</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.0832538,0.353071,0.874792,0.321169</Rotation>
+			<Rotation>-0.174669,0.326718,0.811569,0.451776</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -4096,7 +4212,7 @@
 				<Visible>1</Visible>
 				<Position>-7.1778e-06,-0.0196838,-1.90735e-06</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0,0,-0.361535,0.932359</Rotation>
+				<Rotation>0,0,-0.186478,0.982459</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4132,7 +4248,7 @@
 				<Visible>1</Visible>
 				<Position>0.000400221,7.51189,1.70015e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.0692507,0,0,0.997599</Rotation>
+				<Rotation>-0.315145,0,0,0.949044</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4186,7 +4302,7 @@
 				<Visible>1</Visible>
 				<Position>0.000400221,7.51189,1.70015e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.0692507,0,0,0.997599</Rotation>
+				<Rotation>0.0720276,0,-0,0.997403</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4324,13 +4440,44 @@
 			<Parent>Tools</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>0,0,0</Position>
+			<Position>-340.109,67.8309,118.635</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>0,0,0,1</Rotation>
+			<Rotation>0.581819,-0.407931,-0.568961,-0.41396</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>ModelTransform</Name>
+					<Parameters>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Matrix Request Trigger</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Tools_RequestMatrix</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Sub Meshes</Name>
+							<Type>std_vector_std_string</Type>
+							<Value>Link,Left,Right</Value>
+						</Param>
+						<Param>
+							<Name>Transform Root</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>..\Data\Model\Tools\SMB_RobotiX_Permanent_Cautery_Hook.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -4345,7 +4492,7 @@
 			<UIPaintingGroup>0</UIPaintingGroup>
 			<Mesh>
 				<Name>Moti</Name>
-				<Material>Moti</Material>
+				<Material>ISI_Common_Moti</Material>
 				<Visible>1</Visible>
 				<Position>-1.69128e-06,1.6911e-06,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4363,11 +4510,11 @@
 			</Mesh>
 			<Mesh>
 				<Name>Link</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>1.6911e-06,12.9814,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0,0,-0,1</Rotation>
+				<Rotation>0,0,-0.449003,0.89353</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4381,11 +4528,11 @@
 			</Mesh>
 			<Mesh>
 				<Name>Left</Name>
-				<Material>Metal</Material>
+				<Material>SMB_Hook_Metal</Material>
 				<Visible>1</Visible>
 				<Position>1.92998,9.57603,-1.6911e-06</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0,0,-0,1</Rotation>
+				<Rotation>-0.406274,0,0,0.913751</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4399,11 +4546,11 @@
 			</Mesh>
 			<Mesh>
 				<Name>Right</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>-1.6911e-06,9.2636,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0,0,-0,1</Rotation>
+				<Rotation>-0.406274,0,0,0.913751</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4480,16 +4627,16 @@
 			</Mesh>
 			<Mesh>
 				<Name>Right1</Name>
-				<Material>Metal</Material>
+				<Material>SMB_Hook_Metal</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
-				<UIMeshGroup>0</UIMeshGroup>
+				<UIMeshGroup>1</UIMeshGroup>
 			</Mesh>
 			<Mesh>
 				<Name>Right2</Name>
-				<Material>Metal</Material>
+				<Material>SMB_Hook_Metal</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4498,7 +4645,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Right3</Name>
-				<Material>Metal</Material>
+				<Material>SMB_Hook_Metal</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4507,7 +4654,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_Link04</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>0,0,9.32988e-17</Position>
 				<Scale>1,1,1</Scale>
@@ -4516,7 +4663,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_axle_link01</Name>
-				<Material>Metal</Material>
+				<Material>SMB_Hook_Metal</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4525,7 +4672,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_Link03</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>0,0,9.32988e-17</Position>
 				<Scale>1,1,1</Scale>
@@ -4534,7 +4681,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Bolt</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4552,7 +4699,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Moti_Tip</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>1.6911e-06,1.17549e-38,-1.6911e-06</Position>
 				<Scale>1,1,1</Scale>
@@ -4561,7 +4708,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_moti1</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>-1.69128e-06,-1.35763e-24,1.66893e-06</Position>
 				<Scale>1,1,1</Scale>
@@ -4570,7 +4717,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Moti_Tip_Pin</Name>
-				<Material>Metal</Material>
+				<Material>SMB_Hook_Metal</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4579,7 +4726,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_moti2</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>-1.69128e-06,-1.35763e-24,1.66893e-06</Position>
 				<Scale>1,1,1</Scale>
