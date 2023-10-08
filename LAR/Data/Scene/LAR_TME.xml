@@ -15,8 +15,8 @@
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowVXGIPanel>0</ShowVXGIPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>-307.017,61.1895,162.511</DefaultCameraPosition>
-		<DefaultCameraRotation>0.00178321,0.998186,-0.0462274,0.0385373</DefaultCameraRotation>
+		<DefaultCameraPosition>-325.191,149.524,165.398</DefaultCameraPosition>
+		<DefaultCameraRotation>0.0305693,0.907322,-0.413936,0.0670089</DefaultCameraRotation>
 		<SmartPosition>0</SmartPosition>
 	</Editor>
 	<Materials>
@@ -3085,7 +3085,7 @@
 			<Type>Light</Type>
 			<Name>Light_Point0</Name>
 			<Parent>Scene</Parent>
-			<Visible>1</Visible>
+			<Visible>0</Visible>
 			<Group>0</Group>
 			<Position>-300,28.7767,32.797</Position>
 			<Scale>100,100,100</Scale>
@@ -3135,7 +3135,7 @@
 						<Param>
 							<Name>Actions</Name>
 							<Type>std_vector_std_string_fixed</Type>
-							<Value>CEntityEnabler::Enable,ISI Tip-up Fenestrated Grasper_MT_Root,ISI Tip-up Fenestrated Grasper_MT_Link0,ISI Tip-up Fenestrated Grasper_MT_Left,ISI Tip-up Fenestrated Grasper_MT_Right,SMB Fenestrated Bipolar Forceps_MT_Root,SMB Fenestrated Bipolar Forceps_MT_Link,SMB Fenestrated Bipolar Forceps_MT_Left,SMB Fenestrated Bipolar Forceps_MT_Right,SMB Permanent Cautery Hook_MT_Root,SMB Permanent Cautery Hook_MT_Link,SMB Permanent Cautery Hook_MT_Left,SMB Permanent Cautery Hook_MT_Right</Value>
+							<Value>CEntityEnabler::Enable,Camera_MT_Root,ISI Tip-up Fenestrated Grasper_MT_Root,ISI Tip-up Fenestrated Grasper_MT_Link0,ISI Tip-up Fenestrated Grasper_MT_Left,ISI Tip-up Fenestrated Grasper_MT_Right,SMB Fenestrated Bipolar Forceps_MT_Root,SMB Fenestrated Bipolar Forceps_MT_Link,SMB Fenestrated Bipolar Forceps_MT_Left,SMB Fenestrated Bipolar Forceps_MT_Right,SMB Permanent Cautery Hook_MT_Root,SMB Permanent Cautery Hook_MT_Link,SMB Permanent Cautery Hook_MT_Left,SMB Permanent Cautery Hook_MT_Right</Value>
 						</Param>
 						<Param>
 							<Name>Parent</Name>
@@ -3145,7 +3145,7 @@
 						<Param>
 							<Name>SimEngine_Tools</Name>
 							<Type>std_unordered_map_std_string_std_string_fixed_Select</Type>
-							<Value>SMB Permanent Cautery Hook_Left;SMB Permanent Cautery Hook_MT_Left;,ToolInserted;CEntityEnabler::Enable;,SMB Fenestrated Bipolar Forceps_Link;SMB Fenestrated Bipolar Forceps_MT_Link;,SMB Fenestrated Bipolar Forceps_0;SMB Fenestrated Bipolar Forceps_MT_Root;,SMB Fenestrated Bipolar Forceps_Left;SMB Fenestrated Bipolar Forceps_MT_Left;,SMB Permanent Cautery Hook_0;SMB Permanent Cautery Hook_MT_Root;,SMB Fenestrated Bipolar Forceps_Right;SMB Fenestrated Bipolar Forceps_MT_Right;,SMB Permanent Cautery Hook_Link;SMB Permanent Cautery Hook_MT_Link;,SMB Permanent Cautery Hook_Right;SMB Permanent Cautery Hook_MT_Right;,ISI Tip-up Fenestrated Grasper_0;ISI Tip-up Fenestrated Grasper_MT_Root;,Camera_0;;,ISI Tip-up Fenestrated Grasper_Left;ISI Tip-up Fenestrated Grasper_MT_Left;,ISI Tip-up Fenestrated Grasper_Link0;ISI Tip-up Fenestrated Grasper_MT_Link0;,ISI Tip-up Fenestrated Grasper_Right;ISI Tip-up Fenestrated Grasper_MT_Right;</Value>
+							<Value>SMB Permanent Cautery Hook_Left;SMB Permanent Cautery Hook_MT_Left;,ToolInserted;CEntityEnabler::Enable;,SMB Fenestrated Bipolar Forceps_Link;SMB Fenestrated Bipolar Forceps_MT_Link;,SMB Fenestrated Bipolar Forceps_0;SMB Fenestrated Bipolar Forceps_MT_Root;,SMB Fenestrated Bipolar Forceps_Left;SMB Fenestrated Bipolar Forceps_MT_Left;,SMB Permanent Cautery Hook_0;SMB Permanent Cautery Hook_MT_Root;,SMB Fenestrated Bipolar Forceps_Right;SMB Fenestrated Bipolar Forceps_MT_Right;,SMB Permanent Cautery Hook_Link;SMB Permanent Cautery Hook_MT_Link;,SMB Permanent Cautery Hook_Right;SMB Permanent Cautery Hook_MT_Right;,ISI Tip-up Fenestrated Grasper_0;ISI Tip-up Fenestrated Grasper_MT_Root;,Camera_0;Camera_MT_Root;,ISI Tip-up Fenestrated Grasper_Left;ISI Tip-up Fenestrated Grasper_MT_Left;,ISI Tip-up Fenestrated Grasper_Link0;ISI Tip-up Fenestrated Grasper_MT_Link0;,ISI Tip-up Fenestrated Grasper_Right;ISI Tip-up Fenestrated Grasper_MT_Right;</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -3696,12 +3696,12 @@
 		<Entity>
 			<Type>Light</Type>
 			<Name>LightSpot_0</Name>
-			<Parent>Scene</Parent>
+			<Parent>CameraPose</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>-283.961,78.2654,139.309</Position>
+			<Position>0,0,0</Position>
 			<Scale>10,10,10</Scale>
-			<Rotation>0.769996,0.506855,-0.323723,0.213092</Rotation>
+			<Rotation>0,0,0,1</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -3715,7 +3715,7 @@
 			<Far>200.000000</Far>
 			<DiffuseColor>1,1,1,1</DiffuseColor>
 			<SpecularColor>1,1,1,1</SpecularColor>
-			<UILightGroup>1</UILightGroup>
+			<UILightGroup>0</UILightGroup>
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
@@ -3758,13 +3758,44 @@
 			<Parent>Tools</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>0,0,0</Position>
+			<Position>-327.599,109.491,102.635</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>0,0,0,1</Rotation>
+			<Rotation>-0.490725,-0.130847,-0.0858756,0.857143</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>ModelTransform</Name>
+					<Parameters>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Matrix Request Trigger</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Tools_RequestMatrix</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Sub Meshes</Name>
+							<Type>std_vector_std_string</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Transform Root</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>..\Data\Model\Tools\Camera.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -3802,9 +3833,9 @@
 			<Parent>Tools</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>-284.158,70.1725,78.593</Position>
+			<Position>-259.407,51.1023,84.0551</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.301156,0.269134,0.69739,0.592047</Rotation>
+			<Rotation>-0.23594,0.366752,0.850199,0.294937</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -3885,7 +3916,7 @@
 				<Visible>1</Visible>
 				<Position>6.04584e-05,8.65059,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0,0,-0.376628,0.926365</Rotation>
+				<Rotation>0,0,-0.496813,0.867857</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -3921,7 +3952,7 @@
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.0846196,0,0,0.996413</Rotation>
+				<Rotation>-0.0207324,0,0,0.999785</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4002,7 +4033,7 @@
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0.424924,0,-0,0.905229</Rotation>
+				<Rotation>-0.0207324,0,0,0.999785</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4111,9 +4142,9 @@
 			<Parent>Tools</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>-271.037,15.4511,63.3463</Position>
+			<Position>-301.048,49.4525,89.2381</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.174669,0.326718,0.811569,0.451776</Rotation>
+			<Rotation>-0.196934,0.30524,0.691386,0.624525</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -4212,7 +4243,7 @@
 				<Visible>1</Visible>
 				<Position>-7.1778e-06,-0.0196838,-1.90735e-06</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0,0,-0.186478,0.982459</Rotation>
+				<Rotation>0,0,-0.158132,0.987418</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4248,7 +4279,7 @@
 				<Visible>1</Visible>
 				<Position>0.000400221,7.51189,1.70015e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.315145,0,0,0.949044</Rotation>
+				<Rotation>-0.49511,0,0,0.86883</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4302,7 +4333,7 @@
 				<Visible>1</Visible>
 				<Position>0.000400221,7.51189,1.70015e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0.0720276,0,-0,0.997403</Rotation>
+				<Rotation>-0.124935,0,0,0.992165</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4440,9 +4471,9 @@
 			<Parent>Tools</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>-340.109,67.8309,118.635</Position>
+			<Position>-341.229,73.6476,81.55</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>0.581819,-0.407931,-0.568961,-0.41396</Rotation>
+			<Rotation>-0.614214,0.121525,0.394725,0.672432</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -4514,7 +4545,7 @@
 				<Visible>1</Visible>
 				<Position>1.6911e-06,12.9814,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0,0,-0.449003,0.89353</Rotation>
+				<Rotation>0,0,-0.406281,0.913748</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4532,7 +4563,7 @@
 				<Visible>1</Visible>
 				<Position>1.92998,9.57603,-1.6911e-06</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.406274,0,0,0.913751</Rotation>
+				<Rotation>-0.21238,0,0,0.977187</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4550,7 +4581,7 @@
 				<Visible>1</Visible>
 				<Position>-1.6911e-06,9.2636,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.406274,0,0,0.913751</Rotation>
+				<Rotation>-0.21238,0,0,0.977187</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4733,6 +4764,58 @@
 				<Rotation>-0,0,-0,1</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
+		</Entity>
+		<Entity>
+			<Type>Camera</Type>
+			<Name>Camera_tool</Name>
+			<Parent>CameraPose</Parent>
+			<Visible>1</Visible>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<CameraType>Perspective</CameraType>
+			<Current>1</Current>
+			<Active>1</Active>
+			<Preview>0</Preview>
+			<ViewportRect>0,0,1,1</ViewportRect>
+			<Near>1.000000</Near>
+			<Far>1000.000000</Far>
+			<Fov>60.000000</Fov>
+			<Aspect>1.000000</Aspect>
+			<MouseSensibility>0.250000</MouseSensibility>
+			<InvertMouse>0</InvertMouse>
+			<UICameraGroup>1</UICameraGroup>
+		</Entity>
+		<Entity>
+			<Type>Model</Type>
+			<Name>CameraPose</Name>
+			<Parent>Camera</Parent>
+			<Visible>1</Visible>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,1,0,-4.37114e-08</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<ModelFilename>./Models/</ModelFilename>
+			<UseCache>1</UseCache>
+			<Painting>0</Painting>
+			<PaintingFixSeams>0</PaintingFixSeams>
+			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
+			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
+			<ShowPaintingColor>0</ShowPaintingColor>
+			<ShowPaintingRMH>0</ShowPaintingRMH>
+			<PaintingHeight>1024.000000</PaintingHeight>
+			<PaintingWidth>1024.000000</PaintingWidth>
+			<UIRenderingGroup>1</UIRenderingGroup>
+			<UIPaintingGroup>0</UIPaintingGroup>
 		</Entity>
 	</Entities>
 </Scene>
