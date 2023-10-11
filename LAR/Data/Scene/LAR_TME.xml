@@ -10,13 +10,13 @@
 		<SpecularStrength>1.000000</SpecularStrength>
 	</VXGI>
 	<Editor>
-		<ShowGrid>1</ShowGrid>
+		<ShowGrid>0</ShowGrid>
 		<ShowEntitiesIcon>1</ShowEntitiesIcon>
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowVXGIPanel>0</ShowVXGIPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>-325.191,149.524,165.398</DefaultCameraPosition>
-		<DefaultCameraRotation>0.0305693,0.907322,-0.413936,0.0670089</DefaultCameraRotation>
+		<DefaultCameraPosition>-351.208,34.8431,77.9901</DefaultCameraPosition>
+		<DefaultCameraRotation>0.145766,0.847141,-0.296957,0.415837</DefaultCameraRotation>
 		<SmartPosition>0</SmartPosition>
 	</Editor>
 	<Materials>
@@ -2900,9 +2900,9 @@
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
-			<Transparent>0</Transparent>
-			<TwoSided>0</TwoSided>
-			<TwoSidedLighting>0</TwoSidedLighting>
+			<Transparent>1</Transparent>
+			<TwoSided>1</TwoSided>
+			<TwoSidedLighting>1</TwoSidedLighting>
 			<Roughness>1.000000</Roughness>
 			<Metallicness>1.000000</Metallicness>
 			<Bumpiness>1.000000</Bumpiness>
@@ -2910,7 +2910,7 @@
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
 			<RefractionIndex>1.000000</RefractionIndex>
-			<DiffuseColor>1,1,1,1</DiffuseColor>
+			<DiffuseColor>1,1,1,0.693685</DiffuseColor>
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
@@ -2976,6 +2976,64 @@
 			<RoughnessChannel>1</RoughnessChannel>
 			<MetallicnessChannel>2</MetallicnessChannel>
 			<NormalMapCompression>1</NormalMapCompression>
+			<DetailNormalMapCompression>0</DetailNormalMapCompression>
+		</Material>
+		<Material>
+			<Name>Areolar</Name>
+			<AlbedoFile>./Textures/Organs/Areolar/Noise_01.dds</AlbedoFile>
+			<NormalFile>./Textures/Organs/Areolar/Noise_01_normal.dds</NormalFile>
+			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
+			<RoughnessFile>./Textures/white4x4.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
+			<AOFile>./Textures/white4x4.dds</AOFile>
+			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<AlbedoFilter>Linear</AlbedoFilter>
+			<NormalFilter>Linear</NormalFilter>
+			<DetailNormalFilter>Linear</DetailNormalFilter>
+			<RoughnessFilter>Linear</RoughnessFilter>
+			<MetallicnessFilter>Linear</MetallicnessFilter>
+			<AOFilter>Linear</AOFilter>
+			<SSSFilter>Linear</SSSFilter>
+			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
+			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
+			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
+			<NormalAddressModelU>Wrap</NormalAddressModelU>
+			<NormalAddressModelV>Wrap</NormalAddressModelV>
+			<NormalAddressModelW>Wrap</NormalAddressModelW>
+			<DetailNormalAddressModelU>Wrap</DetailNormalAddressModelU>
+			<DetailNormalAddressModelV>Wrap</DetailNormalAddressModelV>
+			<DetailNormalAddressModelW>Wrap</DetailNormalAddressModelW>
+			<RoughnessAddressModelU>Wrap</RoughnessAddressModelU>
+			<RoughnessAddressModelV>Wrap</RoughnessAddressModelV>
+			<RoughnessAddressModelW>Wrap</RoughnessAddressModelW>
+			<MetallicnessAddressModelU>Wrap</MetallicnessAddressModelU>
+			<MetallicnessAddressModelV>Wrap</MetallicnessAddressModelV>
+			<MetallicnessAddressModelW>Wrap</MetallicnessAddressModelW>
+			<AOAddressModelU>Wrap</AOAddressModelU>
+			<AOAddressModelV>Wrap</AOAddressModelV>
+			<AOAddressModelW>Wrap</AOAddressModelW>
+			<SSSAddressModelU>Wrap</SSSAddressModelU>
+			<SSSAddressModelV>Wrap</SSSAddressModelV>
+			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<SubsurfaceScattering>1</SubsurfaceScattering>
+			<Transparent>1</Transparent>
+			<TwoSided>1</TwoSided>
+			<TwoSidedLighting>1</TwoSidedLighting>
+			<Roughness>0.200000</Roughness>
+			<Metallicness>0.000000</Metallicness>
+			<Bumpiness>1.000000</Bumpiness>
+			<AO>1.000000</AO>
+			<AlphaRef>0.000000</AlphaRef>
+			<GIStrength>1.000000</GIStrength>
+			<RefractionIndex>1.000000</RefractionIndex>
+			<DiffuseColor>1,1,1,0.640669</DiffuseColor>
+			<SpecularColor>1,1,1,1</SpecularColor>
+			<SubsurfaceColor>0.817389,0.335768,0,0.75</SubsurfaceColor>
+			<Tiling>30.1602,90.4807,1,1</Tiling>
+			<AOChannel>0</AOChannel>
+			<RoughnessChannel>0</RoughnessChannel>
+			<MetallicnessChannel>0</MetallicnessChannel>
+			<NormalMapCompression>0</NormalMapCompression>
 			<DetailNormalMapCompression>0</DetailNormalMapCompression>
 		</Material>
 	</Materials>
@@ -3441,7 +3499,7 @@
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
-			<Name>Areolar</Name>
+			<Name>Areolar_SubMeso</Name>
 			<Parent>Organs</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
@@ -3451,7 +3509,53 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>SimVolumeInfo</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>class Components::IEntity * __ptr64</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>VolumeName</Name>
+							<Type>std_string</Type>
+							<Value>Areolar_SubMeso</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>SimEngine_Positions</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>MeshSkinnerComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>MeshIndex</Name>
+							<Type>int</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>SourcePositionComponent</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Positions</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>./Model/Organs/Areolar_SubMeso.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -3466,7 +3570,7 @@
 			<UIPaintingGroup>0</UIPaintingGroup>
 			<Mesh>
 				<Name>Areolar_SubMeso</Name>
-				<Material>Material #27</Material>
+				<Material>Areolar</Material>
 				<Visible>1</Visible>
 				<Position>-303.784,-24.0416,-1.73811</Position>
 				<Scale>6.73968,6.73968,6.73968</Scale>
@@ -3495,7 +3599,53 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>SimVolumeInfo</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>class Components::IEntity * __ptr64</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>VolumeName</Name>
+							<Type>std_string</Type>
+							<Value>Peritoneum</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>SimEngine_Positions</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>MeshSkinnerComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>MeshIndex</Name>
+							<Type>int</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>SourcePositionComponent</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Positions</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>./Model/Organs/Peritoneum.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -3565,7 +3715,53 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>SimVolumeInfo</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>class Components::IEntity * __ptr64</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>VolumeName</Name>
+							<Type>std_string</Type>
+							<Value>Left_Ovary</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>SimEngine_Positions</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>MeshSkinnerComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>MeshIndex</Name>
+							<Type>int</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>SourcePositionComponent</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Positions</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>./Model/Organs/Left_Ov.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -3600,7 +3796,53 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>SimVolumeInfo</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>class Components::IEntity * __ptr64</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>VolumeName</Name>
+							<Type>std_string</Type>
+							<Value>Right_Ovary</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>SimEngine_Positions</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>MeshSkinnerComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>MeshIndex</Name>
+							<Type>int</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>SourcePositionComponent</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Positions</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>./Model/Organs/Right_Ov.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -3635,7 +3877,53 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>SimVolumeInfo</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>class Components::IEntity * __ptr64</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>VolumeName</Name>
+							<Type>std_string</Type>
+							<Value>ActiveDome</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>SimEngine_Positions</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>MeshSkinnerComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>MeshIndex</Name>
+							<Type>int</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>SourcePositionComponent</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Positions</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>./Model/Organs/ActiveDomeVenus.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -3670,7 +3958,53 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>SimVolumeInfo</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>class Components::IEntity * __ptr64</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>VolumeName</Name>
+							<Type>std_string</Type>
+							<Value>Colon</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>SimEngine_Positions</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>MeshSkinnerComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>MeshIndex</Name>
+							<Type>int</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>SourcePositionComponent</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Positions</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>./Model/Organs/Colon3ColorsNew.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -3699,7 +4033,7 @@
 			<Parent>CameraPose</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>0,0,0</Position>
+			<Position>0,5,0</Position>
 			<Scale>10,10,10</Scale>
 			<Rotation>0,0,0,1</Rotation>
 			<Pivot>0,0,0</Pivot>
@@ -3758,9 +4092,9 @@
 			<Parent>Tools</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>-327.599,109.491,102.635</Position>
+			<Position>-321.59,110,103.905</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.490725,-0.130847,-0.0858756,0.857143</Rotation>
+			<Rotation>-0.503093,-0.0912653,0.0176729,0.859218</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -4142,9 +4476,9 @@
 			<Parent>Tools</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>-301.048,49.4525,89.2381</Position>
+			<Position>-290.733,61.6751,103.51</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.196934,0.30524,0.691386,0.624525</Rotation>
+			<Rotation>-0.0832537,0.353071,0.874792,0.321169</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -4243,7 +4577,7 @@
 				<Visible>1</Visible>
 				<Position>-7.1778e-06,-0.0196838,-1.90735e-06</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0,0,-0.158132,0.987418</Rotation>
+				<Rotation>0,0,-0.361535,0.932359</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4279,7 +4613,7 @@
 				<Visible>1</Visible>
 				<Position>0.000400221,7.51189,1.70015e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.49511,0,0,0.86883</Rotation>
+				<Rotation>-0.0692507,0,0,0.997599</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4333,7 +4667,7 @@
 				<Visible>1</Visible>
 				<Position>0.000400221,7.51189,1.70015e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.124935,0,0,0.992165</Rotation>
+				<Rotation>-0.0692507,0,0,0.997599</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4471,9 +4805,9 @@
 			<Parent>Tools</Parent>
 			<Visible>1</Visible>
 			<Group>0</Group>
-			<Position>-341.229,73.6476,81.55</Position>
+			<Position>-345.664,75.8449,89.754</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.614214,0.121525,0.394725,0.672432</Rotation>
+			<Rotation>-0.630357,-0.130566,0.0833582,0.760693</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -4545,7 +4879,7 @@
 				<Visible>1</Visible>
 				<Position>1.6911e-06,12.9814,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0,0,-0.406281,0.913748</Rotation>
+				<Rotation>0,0,-0.560011,0.828485</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4563,7 +4897,7 @@
 				<Visible>1</Visible>
 				<Position>1.92998,9.57603,-1.6911e-06</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.21238,0,0,0.977187</Rotation>
+				<Rotation>0.267217,0,-0,0.963636</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4581,7 +4915,7 @@
 				<Visible>1</Visible>
 				<Position>-1.6911e-06,9.2636,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.21238,0,0,0.977187</Rotation>
+				<Rotation>0.267217,0,-0,0.963636</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4779,7 +5113,7 @@
 			<UITransformationGroup>1</UITransformationGroup>
 			<Components />
 			<CameraType>Perspective</CameraType>
-			<Current>1</Current>
+			<Current>0</Current>
 			<Active>1</Active>
 			<Preview>0</Preview>
 			<ViewportRect>0,0,1,1</ViewportRect>
@@ -4816,6 +5150,177 @@
 			<PaintingWidth>1024.000000</PaintingWidth>
 			<UIRenderingGroup>1</UIRenderingGroup>
 			<UIPaintingGroup>0</UIPaintingGroup>
+		</Entity>
+		<Entity>
+			<Type>Model</Type>
+			<Name>Areolar_back</Name>
+			<Parent>Organs</Parent>
+			<Visible>0</Visible>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components>
+				<Component>
+					<Name>SimVolumeInfo</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>class Components::IEntity * __ptr64</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>VolumeName</Name>
+							<Type>std_string</Type>
+							<Value>Areolar_back</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>SimEngine_Positions</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>MeshSkinnerComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>MeshIndex</Name>
+							<Type>int</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>SourcePositionComponent</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Positions</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
+			<ModelFilename>./Model/Organs/Areolar_back.fbx</ModelFilename>
+			<UseCache>1</UseCache>
+			<Painting>0</Painting>
+			<PaintingFixSeams>0</PaintingFixSeams>
+			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
+			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
+			<ShowPaintingColor>0</ShowPaintingColor>
+			<ShowPaintingRMH>0</ShowPaintingRMH>
+			<PaintingHeight>1024.000000</PaintingHeight>
+			<PaintingWidth>1024.000000</PaintingWidth>
+			<UIRenderingGroup>1</UIRenderingGroup>
+			<UIPaintingGroup>0</UIPaintingGroup>
+			<Mesh>
+				<Name>Areolar_back</Name>
+				<Material>Areolar</Material>
+				<Visible>1</Visible>
+				<Position>-303.237,5.47751,19.2627</Position>
+				<Scale>0.787566,1,1</Scale>
+				<Rotation>-0.707107,0,-0,0.707107</Rotation>
+				<UIMeshGroup>1</UIMeshGroup>
+			</Mesh>
+		</Entity>
+		<Entity>
+			<Type>Model</Type>
+			<Name>Areolar_peripheral</Name>
+			<Parent>Organs</Parent>
+			<Visible>0</Visible>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components>
+				<Component>
+					<Name>SimVolumeInfo</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>class Components::IEntity * __ptr64</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>VolumeName</Name>
+							<Type>std_string</Type>
+							<Value>Areolar_peripheral</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>SimEngine_Positions</Name>
+					<Parameters>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>MeshSkinnerComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>MeshIndex</Name>
+							<Type>int</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>SourcePositionComponent</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Positions</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
+			<ModelFilename>./Model/Organs/Areolar_peripheral.fbx</ModelFilename>
+			<UseCache>1</UseCache>
+			<Painting>0</Painting>
+			<PaintingFixSeams>0</PaintingFixSeams>
+			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
+			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
+			<ShowPaintingColor>0</ShowPaintingColor>
+			<ShowPaintingRMH>0</ShowPaintingRMH>
+			<PaintingHeight>1024.000000</PaintingHeight>
+			<PaintingWidth>1024.000000</PaintingWidth>
+			<UIRenderingGroup>1</UIRenderingGroup>
+			<UIPaintingGroup>0</UIPaintingGroup>
+			<Mesh>
+				<Name>Areolar_peripheral</Name>
+				<Material>Areolar</Material>
+				<Visible>1</Visible>
+				<Position>-303.237,5.47751,19.2627</Position>
+				<Scale>0.787566,1,1</Scale>
+				<Rotation>-0.707107,0,-0,0.707107</Rotation>
+				<UIMeshGroup>0</UIMeshGroup>
+			</Mesh>
+			<Mesh>
+				<Name>Areolar_peripheral_1</Name>
+				<Material>Areolar</Material>
+				<Visible>1</Visible>
+				<Position>-303.237,5.47751,19.2627</Position>
+				<Scale>0.787566,1,1</Scale>
+				<Rotation>-0.707107,0,-0,0.707107</Rotation>
+				<UIMeshGroup>1</UIMeshGroup>
+			</Mesh>
 		</Entity>
 	</Entities>
 </Scene>
