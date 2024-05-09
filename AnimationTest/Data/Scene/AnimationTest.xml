@@ -1310,7 +1310,7 @@
 				</Component>
 			</Components>
 			<ModelFilename>./Models/DR_Salsa Dancing.fbx</ModelFilename>
-			<UseCache>0</UseCache>
+			<UseCache>1</UseCache>
 			<Painting>0</Painting>
 			<PaintingFixSeams>0</PaintingFixSeams>
 			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
@@ -1711,7 +1711,7 @@
 				</Component>
 			</Components>
 			<ModelFilename>./Models/Samba_Dancing.fbx</ModelFilename>
-			<UseCache>0</UseCache>
+			<UseCache>1</UseCache>
 			<Painting>0</Painting>
 			<PaintingFixSeams>0</PaintingFixSeams>
 			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
