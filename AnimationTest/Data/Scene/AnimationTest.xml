@@ -938,7 +938,7 @@
 						</Param>
 						<Param>
 							<Name>Parent</Name>
-							<Type>IEntity</Type>
+							<Type>class Components::IEntity * __ptr64</Type>
 							<Value></Value>
 						</Param>
 					</Parameters>
@@ -999,7 +999,7 @@
 						</Param>
 						<Param>
 							<Name>Parent</Name>
-							<Type>IEntity</Type>
+							<Type>class Components::IEntity * __ptr64</Type>
 							<Value></Value>
 						</Param>
 					</Parameters>
@@ -1252,6 +1252,11 @@
 							<Value>1</Value>
 						</Param>
 						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
 							<Name>Parent</Name>
 							<Type>IEntity</Type>
 							<Value></Value>
@@ -1259,7 +1264,7 @@
 						<Param>
 							<Name>Play</Name>
 							<Type>bool</Type>
-							<Value>0</Value>
+							<Value>1</Value>
 						</Param>
 						<Param>
 							<Name>Skeleton</Name>
@@ -1678,6 +1683,11 @@
 							<Value>1</Value>
 						</Param>
 						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
 							<Name>Parent</Name>
 							<Type>IEntity</Type>
 							<Value></Value>
@@ -1685,7 +1695,7 @@
 						<Param>
 							<Name>Play</Name>
 							<Type>bool</Type>
-							<Value>0</Value>
+							<Value>1</Value>
 						</Param>
 						<Param>
 							<Name>Skeleton</Name>
