@@ -12,6 +12,7 @@
 			<SpecularOffset>6.000000</SpecularOffset>
 			<SpecularStrength>1.000000</SpecularStrength>
 			<SmoothingTimeMS>1000.000000</SmoothingTimeMS>
+			<SamplingFactor>0.500000</SamplingFactor>
 		</VXGI>
 		<SSSSS>
 			<Width>0.000050</Width>
@@ -582,6 +583,89 @@
 			<DiffuseColor>1,1,1,1</DiffuseColor>
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<UILightGroup>1</UILightGroup>
+		</Entity>
+		<Entity>
+			<Type>Model</Type>
+			<Name>Sim-Engine</Name>
+			<Parent></Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>-17.0053,22.038,47.7629</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components>
+				<Component>
+					<Name>SimEngineDLL</Name>
+					<Parameters>
+						<Param>
+							<Name>CaseDataFilePath</Name>
+							<Type>std_string</Type>
+							<Value>C:\Users\YaronPeleg\AppData\Local\Temp\CaseData.tmp</Value>
+						</Param>
+						<Param>
+							<Name>CaseFile</Name>
+							<Type>std_string</Type>
+							<Value>D:\SimProjects\DirectX12-Demos\FatVisceralTest\Data\Sim-Engine\Scripts\Cases\FatVisceral.xml</Value>
+						</Param>
+						<Param>
+							<Name>DataPath</Name>
+							<Type>std_string</Type>
+							<Value>D:\SimProjects\DirectX12-Demos\FatVisceralTest\Data\Sim-Engine\Data</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>80</Value>
+						</Param>
+						<Param>
+							<Name>Init</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>ModuleID</Name>
+							<Type>int</Type>
+							<Value>1337</Value>
+						</Param>
+						<Param>
+							<Name>ModuleName</Name>
+							<Type>std_string</Type>
+							<Value>FatVisceral</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>class Components::IEntity * __ptr64</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>SimTypeID</Name>
+							<Type>int</Type>
+							<Value>8</Value>
+						</Param>
+						<Param>
+							<Name>Version</Name>
+							<Type>std_string</Type>
+							<Value>1.0.0.2</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
+			<ModelFilename>./Models/</ModelFilename>
+			<UseCache>1</UseCache>
+			<Painting>0</Painting>
+			<PaintingFixSeams>0</PaintingFixSeams>
+			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
+			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
+			<ShowPaintingColor>0</ShowPaintingColor>
+			<ShowPaintingRMH>0</ShowPaintingRMH>
+			<PaintingHeight>1024.000000</PaintingHeight>
+			<PaintingWidth>1024.000000</PaintingWidth>
+			<UIRenderingGroup>1</UIRenderingGroup>
+			<UIPaintingGroup>0</UIPaintingGroup>
 		</Entity>
 	</Entities>
 </Scene>
