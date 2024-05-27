@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <?simbionix base( %SIM_PLATFORM%\PlatformSampleCase.xml::/* ) ?>
+  <GenericSim>
+    <Objects>
+      <Collection1>
+        <VolumeObj_vein>
+          <?simbionix asset( RobotiX\Objects\Vein\Object.xml::/*/VolumeObj_vein )?>
+          <Name>Vein</Name>
+          <SyncLabels>
+            <?simbionix stop?>
+            <Vein />
+          </SyncLabels>
+        </VolumeObj_vein>
+      </Collection1>
+      <Collection2>
+        <SimpleObj_Cube>
+          <?simbionix asset( RobotiX\Objects\Cube\Object.xml::/*/SimpleObj_Cube )?>
+          <Name>Cube</Name>
+          <Position>0.000,-100.0,0.00</Position>
+          <MeshScale>10</MeshScale>
+          <SyncLabels>
+            <?simbionix stop?>
+            <Cube></Cube>
+          </SyncLabels>
+        </SimpleObj_Cube>
+        <SimpleObj_Cube2>
+          <?simbionix asset( RobotiX\Objects\Cube\Object.xml::/*/SimpleObj_Cube )?>
+          <Name>Cube2</Name>
+          <Position>30.000,10.0,00.00</Position>
+          <Scale>10.0, 20.0, 30.0</Scale>
+          <_MeshScale>20</_MeshScale>
+          <SyncLabels>
+            <?simbionix stop?>
+            <Cube2></Cube2>
+          </SyncLabels>
+        </SimpleObj_Cube2>
+      </Collection2>
+      <Collection3>
+        <SimpleObj_HorizontalPlane>
+          <Position>-80,0.00,100.00</Position>
+          <File>Misc\SimplePlain.x</File>
+          <FbxSharedFile>1</FbxSharedFile>
+          <Visible>1</Visible>
+          <UseCollisionTree>0</UseCollisionTree>
+          <UseSphereTree>0</UseSphereTree>
+          <UseDynamicMeshQuery>0</UseDynamicMeshQuery>
+          <UseDirectedEdgesQuery>0</UseDirectedEdgesQuery>
+          <Name>HorizontalPlane</Name>
+          <RotationYPR>0,90,0</RotationYPR>
+          <MeshScale>30</MeshScale>
+          <Scale>20.0, 20.0, 20.0</Scale>
+          <SyncLabels>
+            <?simbionix stop?>
+            <HorizontalPlane />
+          </SyncLabels>
+        </SimpleObj_HorizontalPlane>
+        <SimpleObj_VericalPlane>
+          <Position>0,0.00,200.00</Position>
+          <File>Misc\SimplePlain.x</File>
+          <FbxSharedFile>1</FbxSharedFile>
+          <Visible>1</Visible>
+          <UseCollisionTree>0</UseCollisionTree>
+          <UseSphereTree>0</UseSphereTree>
+          <UseDynamicMeshQuery>0</UseDynamicMeshQuery>
+          <UseDirectedEdgesQuery>0</UseDirectedEdgesQuery>
+          <Name>VericalPlane</Name>
+          <RotationYPR>0,0,90</RotationYPR>
+          <MeshScale>30</MeshScale>
+          <Scale>20.0, 20.0, 20.0</Scale>
+          <SyncLabels>
+            <?simbionix stop?>
+            <VericalPlane />
+          </SyncLabels>
+        </SimpleObj_VericalPlane>
+      </Collection3>
+    </Objects>
+    <SyncManager>
+      <Shadow>
+        <Objects>
+          <Cube>
+            <Object>Cube2</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Cube>
+          <Cube>
+            <Object>Cube</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Cube>
+          <Plane>
+            <Object>HorizontalPlane</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Plane>
+          <Plane>
+            <Object>VericalPlane</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Plane>
+        </Objects>
+      </Shadow>
+      <Depth>
+        <Objects>
+          <Cube>
+            <Object>Cube2</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Cube>
+          <Cube>
+            <Object>Cube</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Cube>
+          <Plane>
+            <Object>HorizontalPlane</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Plane>
+          <Plane>
+            <Object>VericalPlane</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Plane>
+        </Objects>
+      </Depth>
+      <Scene>
+        <Objects>
+          <!---->
+          <Vein>
+            <Object>Vein</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>100</MaterialID>
+            <Technique>Base</Technique>
+          </Vein>
+          <Cube>
+            <Object>Cube</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>101</MaterialID>
+            <Technique>Base</Technique>
+          </Cube>
+          <Cube2>
+            <Object>Cube2</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>102</MaterialID>
+            <Technique>Base</Technique>
+          </Cube2>
+          <HorizontalPlane>
+            <Object>HorizontalPlane</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>106</MaterialID>
+            <Technique>Base</Technique>
+          </HorizontalPlane>
+          <VericalPlane>
+            <Object>VericalPlane</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>106</MaterialID>
+            <Technique>Base</Technique>
+          </VericalPlane>
+        </Objects>
+        <Materials>
+          <!---->
+          <Vein>
+            <Defines>
+              <USE_BASE_TEXTURE />
+              <USE_WRAPPED_DIFFUSE />
+            </Defines>
+            <ParamBlock>
+              <WrappedDiffuse type="float">0.5f</WrappedDiffuse>
+              <!--base texture is per platform-->
+            </ParamBlock>
+            <Name>BlinnPhong</Name>
+            <ID>100</ID>
+          </Vein>
+          <Cube>
+            <Defines>
+              <USE_BASE_MAP />
+            </Defines>
+            <ParamBlock>
+              <!--base texture is per platform material!-->
+              <make_chunk></make_chunk>
+            </ParamBlock>
+            <Name>PBR_NEW</Name>
+            <ID>101</ID>
+          </Cube>
+          <Cube2>
+            <Defines>
+              <USE_BASE_TEXTURE />
+              <USE_WRAPPED_DIFFUSE />
+              <USE_CAMERA_LIGHT />
+            </Defines>
+            <ParamBlock>
+              <WrappedDiffuse type="float">0.5f</WrappedDiffuse>
+              <baseTexture type="string">wood.png</baseTexture>
+            </ParamBlock>
+            <Name>BlinnPhong</Name>
+            <ID>102</ID>
+          </Cube2>
+          <HorizontalPlane>
+            <Defines>
+              <USE_BASE_TEXTURE />
+              <USE_WRAPPED_DIFFUSE />
+            </Defines>
+            <ParamBlock>
+              <WrappedDiffuse type="float">0.5f</WrappedDiffuse>
+              <baseTexture type="string">PlaneTexture.jpg</baseTexture>
+            </ParamBlock>
+            <Name>BlinnPhong</Name>
+            <ID>106</ID>
+          </HorizontalPlane>
+          <VericalPlane>
+            <Defines>
+              <USE_BASE_TEXTURE />
+              <USE_WRAPPED_DIFFUSE />
+              <USE_EMISSION_TEXTURE />
+            </Defines>
+            <ParamBlock>
+              <WrappedDiffuse type="float">0.5f</WrappedDiffuse>
+              <baseTexture type="string">PlaneTexture.jpg</baseTexture>
+            </ParamBlock>
+            <Name>BlinnPhong</Name>
+            <ID>106</ID>
+          </VericalPlane>
+        </Materials>
+      </Scene>
+    </SyncManager>
+    <SceneControllers>
+      <MaterialsParametersModificationsController>
+        <Env>
+          <ID>EnvironmentMap</ID>
+          <Value>ToolsEnvMaps\studio010_hdr_256.dds</Value>
+          <Type>Texture</Type>
+        </Env>
+        <ir>
+          <ID>IrradianceMap</ID>
+          <Value>ToolsEnvMaps\studio010_hdr_256.dds</Value>
+          <Type>Texture</Type>
+        </ir>
+        <specular>
+          <ID>EnvironmentSpecularMap</ID>
+          <Value>ToolsEnvMaps\studio010_hdr_256.dds</Value>
+          <Type>Texture</Type>
+        </specular>
+      </MaterialsParametersModificationsController>
+    </SceneControllers>
+  </GenericSim>
+</Root_Element>

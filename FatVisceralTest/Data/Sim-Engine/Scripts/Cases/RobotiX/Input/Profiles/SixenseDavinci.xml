@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <BaseTrocar>
+    <CLSID>{227b9a03-4ed9-4ae1-8000-e1d0b91ce09b}</CLSID>
+    <ExpScaleSupported>0</ExpScaleSupported>
+    <ExpScale>0</ExpScale>
+    <ExpLimitLen>0</ExpLimitLen>
+    <TrocarLenScale>1</TrocarLenScale>
+    <TrocarLenAdd>0</TrocarLenAdd>
+    <ToolInsideZThresh>-150</ToolInsideZThresh>
+    <!--Motion scale and offset-->
+    <ModelHWWorldMatrixX>0.28333, 0, 0</ModelHWWorldMatrixX>
+    <ModelHWWorldMatrixY>0, 0.28333, 0</ModelHWWorldMatrixY>
+    <ModelHWWorldMatrixZ>0, 0, 0.28333</ModelHWWorldMatrixZ>
+    <ModelHWWorldMatrixW>-50, -50, 50</ModelHWWorldMatrixW>
+    <RollOffset2>text</RollOffset2>
+    <ModelHWWorldMatrixWWWW>0.000000, 0.000000, 0.000000</ModelHWWorldMatrixWWWW>
+    <ProductKey>Ultrasound</ProductKey>
+    <!--Shaul's pinchers offset-->
+    <_SensorPositionFix>0, -14, 0</_SensorPositionFix>
+    <!--Igors pincher offset-->
+    <SensorPositionFix>0, 10, 40</SensorPositionFix>
+    <MovementThreshold>0.4</MovementThreshold>
+  </BaseTrocar>
+  <LeftTrocar>
+    <?simbionix base( /*/BaseTrocar ) ?>
+    <SixenseSensorPort>0</SixenseSensorPort>
+    <RollOffsetRadians>0</RollOffsetRadians>
+    <DeviceZOffsetFromTip>11.0</DeviceZOffsetFromTip>
+  </LeftTrocar>
+  <RightTrocar>
+    <?simbionix base( /*/BaseTrocar ) ?>
+    <SixenseSensorPort>1</SixenseSensorPort>
+    <RollOffsetRadians>0</RollOffsetRadians>
+    <DeviceZOffsetFromTip>11.0</DeviceZOffsetFromTip>
+  </RightTrocar>
+  <AssistingTrocar>
+    <?simbionix base( /*/BaseTrocar ) ?>
+    <SixenseSensorPort>2</SixenseSensorPort>
+    <RollOffsetRadians>0</RollOffsetRadians>
+    <DeviceZOffsetFromTip>11.0</DeviceZOffsetFromTip>
+  </AssistingTrocar>
+  <AscensionParameters>
+    <!--Ascension Configurable Params-->
+    <MaximumRange>72</MaximumRange>
+    <!--The port of sensor used for calibration-->
+    <CalibratingPort>1</CalibratingPort>
+    <!--Hemisphere typed mapped by HEMISPHERE_TYPE ENUM-->
+    <HemisphereType>0</HemisphereType>
+    <!--Enable AcWideFilter if you have ascension shakes that can't be resolved by moving the system to a magnetic interruption free area.-->
+    <AcWideFilter>0</AcWideFilter>
+    <!--USA PowerLineFrequency is 60 (Israel is 50)-->
+    <PowerLineFrequency>60</PowerLineFrequency>
+  </AscensionParameters>
+</Root>

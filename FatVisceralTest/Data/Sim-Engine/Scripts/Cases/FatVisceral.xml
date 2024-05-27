@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <?simbionix base( .\AbstractSampleCase.xml::/* ) ?>
+  <GenericSim>
+    <Objects>
+      <Collection1>
+        <VolumeObj_Fat>
+          <Name>Fat</Name>
+          <Mesh>Organs/Liver.fbx</Mesh>
+          <_Mesh>../../../Models/Fat_floor__for_vol_with_anim1.fbx</_Mesh>
+          <Visible>1</Visible>
+          <UseCollisionTree>0</UseCollisionTree>
+          <UseSphereTree>1</UseSphereTree>
+          <UseDynamicMeshQuery>1</UseDynamicMeshQuery>
+          <UseDirectedEdgesQuery>0</UseDirectedEdgesQuery>
+          <IgnorePinchGrabs>0</IgnorePinchGrabs>
+          <CapsuleRadCollisionAdd>1.0</CapsuleRadCollisionAdd>
+          <GrabReleaseLength>12</GrabReleaseLength>
+          <DontDisplaceUVSeamVerts>1</DontDisplaceUVSeamVerts>
+          <GrabReleaseLengthIsFromRelaxed>1</GrabReleaseLengthIsFromRelaxed>
+          <NormalizeBurnTimeToVolume>0</NormalizeBurnTimeToVolume>
+          <CuttingToolsFlags>toolClass_Scissors | toolClass_Electricity | toolClass_Stapler</CuttingToolsFlags>
+          <PhysicsEntity>
+            <GroupPhysicsEntity>VolumeGroup</GroupPhysicsEntity>
+            <Gravity>0,0,0</Gravity>
+            <GravityScale>1.0</GravityScale>
+            <_Volume>../../../Models/Fat_floor.vol</_Volume>
+            <Volume>Organs/Liver.VOL</Volume>
+            <MeshKs>10000</MeshKs>
+            <MeshKw>15000</MeshKw>
+            <MeshKd>100</MeshKd>
+            <CoreKs>0</CoreKs>
+            <UseCorePositions>0</UseCorePositions>
+            <UseCoreMesh>0</UseCoreMesh>
+            <ExplicitDamping>10</ExplicitDamping>
+            <SpringElementThresh>0</SpringElementThresh>
+            <FreezeThresh>0.1</FreezeThresh>
+            <Lambda>0</Lambda>
+            <Mu>0</Mu>
+            <WarpFemForces>0</WarpFemForces>
+            <CoreDirectionSprings>1</CoreDirectionSprings>
+            <ConnectToExisting>1</ConnectToExisting>
+            <PhysicsGroups>
+              <Group>
+                <Name>Complete</Name>
+              </Group>
+            </PhysicsGroups>
+          </PhysicsEntity>
+          <Components>
+            <VolMouseHandler>
+              <MouseGrabEnabled>1</MouseGrabEnabled>
+              <MouseCutEnabled>1</MouseCutEnabled>
+            </VolMouseHandler>
+            <_StreamSupportComponent>
+              <Streams>
+                <Depth>
+                  <StreamSize>1</StreamSize>
+                  <GpuSubDiv>1</GpuSubDiv>
+                  <Padding>1</Padding>
+                </Depth>
+                <CPU_BB>
+                  <StreamSize>4</StreamSize>
+                  <GpuSubDiv>1</GpuSubDiv>
+                </CPU_BB>
+                <Ischemic>
+                  <StreamSize>1</StreamSize>
+                  <GpuSubDiv>1</GpuSubDiv>
+                </Ischemic>
+              </Streams>
+            </_StreamSupportComponent>
+            <_StreamTexCoordsComponent>
+              <CPUStreamName>CPU_VolTex</CPUStreamName>
+              <StreamW>1</StreamW>
+              <UseTex2>1</UseTex2>
+              <StreamVolDepth>0</StreamVolDepth>
+            </_StreamTexCoordsComponent>
+          </Components>
+          <GroupsByVerticesColor>
+            <Complete>
+              <Name>Complete</Name>
+              <Color>255,255,255,255</Color>
+              <VertColorMask>255,255,255,255</VertColorMask>
+              <VisColor>255,255,255,555</VisColor>
+              <CanHaveRenderStaples>1</CanHaveRenderStaples>
+              <_FixedPart>
+                <Name>FixedPart</Name>
+                <Color>255,100,100,100</Color>
+                <VertColorMask>255,255,255,255</VertColorMask>
+                <VisColor>255,255,255,255</VisColor>
+                <!--Stapleable=0 means we do not place the render staples, the rest of the stapling functionality remains the same-->
+                <CanHaveRenderStaples>1</CanHaveRenderStaples>
+              </_FixedPart>
+            </Complete>
+          </GroupsByVerticesColor>
+          <CutQuery>
+            <CutOutline>1</CutOutline>
+          </CutQuery>
+          <SubMesh>
+            <RENDER />
+            <HIDE />
+          </SubMesh>
+          <GroupEffectsOverride>0</GroupEffectsOverride>
+          <CutTexturingTechnique>VolumeRemapping</CutTexturingTechnique>
+          <CreateTex2>1</CreateTex2>
+          <VolRemapper>
+            <OBBMesh>VolumeTextureSpace.FBX</OBBMesh>
+          </VolRemapper>
+          <SkipHiddenFaceNormals>0</SkipHiddenFaceNormals>
+          <__PointDiffTolerance___0.1>1.0</__PointDiffTolerance___0.1>
+          <AvoidInvisibleFaces>1</AvoidInvisibleFaces>
+          <TexturingTechnique>MapInner</TexturingTechnique>
+          <DistFromPlaneThresh>0.1</DistFromPlaneThresh>
+          <CutOnUpdate>0</CutOnUpdate>
+          <PerforationGrab>0</PerforationGrab>
+          <PerforationBleeding>1</PerforationBleeding>
+          <BurningSupported>1</BurningSupported>
+          <BurningToolsFlags>toolClass_Electricity | toolClass_Scissors</BurningToolsFlags>
+          <FullGrabCautery>1</FullGrabCautery>
+          <SquashToGrabRatio>0.4</SquashToGrabRatio>
+          <SubdivisionCPU>0</SubdivisionCPU>
+          <SubdivisionGPU>2</SubdivisionGPU>
+          <ToolInteractionType>ImmediatePlanes</ToolInteractionType>
+          <NonManifold>1</NonManifold>
+          <AddSeparateCollision>0</AddSeparateCollision>
+          <!--we may need a little more than this, but we try to stay low as possible.
+worst case we fallback to removal cut (VolumeObj)-->
+          <NumExtraVerts>4000</NumExtraVerts>
+          <GrabContactsType>Edges</GrabContactsType>
+          <UpdateMatWCut>1</UpdateMatWCut>
+          <SnapOldToPlane>0</SnapOldToPlane>
+          <NoSnapFront>1</NoSnapFront>
+          <fTetraValidThresh>0.05</fTetraValidThresh>
+          <ReleaseOnCut>1</ReleaseOnCut>
+          <InternalSphereTreeUpdate>0</InternalSphereTreeUpdate>
+          <ValidateTexCoordLen>0</ValidateTexCoordLen>
+          <ExtendCut2Neighbours>1</ExtendCut2Neighbours>
+          <AdjustGravityByTerrain>0</AdjustGravityByTerrain>
+          <TerrainBias>15.0</TerrainBias>
+          <TerrainKs>5500.0</TerrainKs>
+          <ZeroBadQuality>1</ZeroBadQuality>
+          <RemoveReversedTetras>1</RemoveReversedTetras>
+          <SmoothSurface>1</SmoothSurface>
+          <UseGrabEdgesForCut>1</UseGrabEdgesForCut>
+          <!--When this (WeldEdgeSqThresh) is large, the retesselated edges will be large (hence bigger cuts than the scisors).-->
+          <WeldEdgeSqThresh>0.5</WeldEdgeSqThresh>
+          <WeldToFaceThresh>-1</WeldToFaceThresh>
+          <!--sqr edge length (was 20.0, 0.7 in some other file (lobectomy?))-->
+          <EdgeTesselationLenThresh>16</EdgeTesselationLenThresh>
+          <UseMultiCutTri>1</UseMultiCutTri>
+          <MarkInnerVerts>1</MarkInnerVerts>
+          <ReUseEmptyElements>1</ReUseEmptyElements>
+          <JustRemoveWhenGrabbed>0</JustRemoveWhenGrabbed>
+          <MuRepairVal>0</MuRepairVal>
+          <LambdaRepairVal>0</LambdaRepairVal>
+          <KsRepairVal>5000</KsRepairVal>
+          <SquashEnable>1</SquashEnable>
+          <SquashMode>2</SquashMode>
+          <SquashPlaneRadius>10.0</SquashPlaneRadius>
+          <SquashSphereRadius>10.0</SquashSphereRadius>
+          <SquashScale>0.7</SquashScale>
+          <RelativeCutBaseSeperation>0.05</RelativeCutBaseSeperation>
+          <__NewParticleGravity>0,-1,0</__NewParticleGravity>
+          <CuttingSupported>1</CuttingSupported>
+          <CollideBothSides>1</CollideBothSides>
+          <CutOriginShift>5</CutOriginShift>
+          <__RemapFacesMinTexCoord>0.6337890625, 0.6337890625, 0.0</__RemapFacesMinTexCoord>
+          <__RemapFacesMaxTexCoord>1.0, 1.0, 0.0</__RemapFacesMaxTexCoord>
+          <RenderToDepthTexture>1</RenderToDepthTexture>
+          <SortNewPointsToGroups>1</SortNewPointsToGroups>
+          <VertexUpdaterEnabled>1</VertexUpdaterEnabled>
+          <ConnectivityUtil>1</ConnectivityUtil>
+          <GrabStiffCoef>0</GrabStiffCoef>
+          <EnforceManifold>0</EnforceManifold>
+          <!--MapTextureForSkin: 0 -> CRetObjMappingTool; 1 -> CSkinRetObjMappingTool-->
+          <MapTextureForSkin>0</MapTextureForSkin>
+          <RemapFacesMinTexCoord>0.9, 0.0, -1</RemapFacesMinTexCoord>
+          <RemapFacesMaxTexCoord>1.0, 0.1, -1</RemapFacesMaxTexCoord>
+          <UseDynamicSphereTree>1</UseDynamicSphereTree>
+          <UseSurroundGrab>1</UseSurroundGrab>
+          <AdjacentParticlesUpdateDepth>2</AdjacentParticlesUpdateDepth>
+          <RemoveFragmentGravity>0,-800,0</RemoveFragmentGravity>
+          <!--The PhysicsModifier (FEM) is only relevant if mu or lambda are greater than zero.-->
+          <SyncLabels>
+            <base />
+          </SyncLabels>
+        </VolumeObj_Fat>
+      </Collection1>
+    </Objects>
+    <SyncManager>
+      <Shadow>
+        <Objects>
+          <Cube>
+            <Object>Cube2</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Cube>
+          <Cube>
+            <Object>Cube</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Cube>
+          <Plane>
+            <Object>HorizontalPlane</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Plane>
+          <Plane>
+            <Object>VericalPlane</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Plane>
+        </Objects>
+      </Shadow>
+      <Depth>
+        <Objects>
+          <Cube>
+            <Object>Cube2</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Cube>
+          <Cube>
+            <Object>Cube</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Cube>
+          <Plane>
+            <Object>HorizontalPlane</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Plane>
+          <Plane>
+            <Object>VericalPlane</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>0</MaterialID>
+          </Plane>
+        </Objects>
+      </Depth>
+      <Scene>
+        <Objects>
+          <!---->
+          <Fat>
+            <Object>Fat</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>100</MaterialID>
+            <Technique>Base</Technique>
+          </Fat>
+          <Cube>
+            <Object>Cube</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>101</MaterialID>
+            <Technique>Base</Technique>
+          </Cube>
+          <Cube2>
+            <Object>Cube2</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>102</MaterialID>
+            <Technique>Base</Technique>
+          </Cube2>
+          <HorizontalPlane>
+            <Object>HorizontalPlane</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>106</MaterialID>
+            <Technique>Base</Technique>
+          </HorizontalPlane>
+          <VericalPlane>
+            <Object>VericalPlane</Object>
+            <RenderOrder>0</RenderOrder>
+            <SubMesh>-1</SubMesh>
+            <SubDiv>0</SubDiv>
+            <MaterialID>106</MaterialID>
+            <Technique>Base</Technique>
+          </VericalPlane>
+        </Objects>
+        <Materials>
+          <!---->
+          <Vein>
+            <Defines>
+              <USE_BASE_TEXTURE />
+              <USE_WRAPPED_DIFFUSE />
+            </Defines>
+            <ParamBlock>
+              <WrappedDiffuse type="float">0.5f</WrappedDiffuse>
+              <!--base texture is per platform-->
+            </ParamBlock>
+            <Name>BlinnPhong</Name>
+            <ID>100</ID>
+          </Vein>
+          <Cube>
+            <Defines>
+              <USE_BASE_MAP />
+            </Defines>
+            <ParamBlock>
+              <!--base texture is per platform material!-->
+              <make_chunk></make_chunk>
+            </ParamBlock>
+            <Name>PBR_NEW</Name>
+            <ID>101</ID>
+          </Cube>
+          <Cube2>
+            <Defines>
+              <USE_BASE_TEXTURE />
+              <USE_WRAPPED_DIFFUSE />
+              <USE_CAMERA_LIGHT />
+            </Defines>
+            <ParamBlock>
+              <WrappedDiffuse type="float">0.5f</WrappedDiffuse>
+              <baseTexture type="string">wood.png</baseTexture>
+            </ParamBlock>
+            <Name>BlinnPhong</Name>
+            <ID>102</ID>
+          </Cube2>
+          <HorizontalPlane>
+            <Defines>
+              <USE_BASE_TEXTURE />
+              <USE_WRAPPED_DIFFUSE />
+            </Defines>
+            <ParamBlock>
+              <WrappedDiffuse type="float">0.5f</WrappedDiffuse>
+              <baseTexture type="string">PlaneTexture.jpg</baseTexture>
+            </ParamBlock>
+            <Name>BlinnPhong</Name>
+            <ID>106</ID>
+          </HorizontalPlane>
+          <VericalPlane>
+            <Defines>
+              <USE_BASE_TEXTURE />
+              <USE_WRAPPED_DIFFUSE />
+              <USE_EMISSION_TEXTURE />
+            </Defines>
+            <ParamBlock>
+              <WrappedDiffuse type="float">0.5f</WrappedDiffuse>
+              <baseTexture type="string">PlaneTexture.jpg</baseTexture>
+            </ParamBlock>
+            <Name>BlinnPhong</Name>
+            <ID>106</ID>
+          </VericalPlane>
+        </Materials>
+      </Scene>
+    </SyncManager>
+    <SceneControllers>
+      <MaterialsParametersModificationsController>
+        <Env>
+          <ID>EnvironmentMap</ID>
+          <Value>ToolsEnvMaps\studio010_hdr_256.dds</Value>
+          <Type>Texture</Type>
+        </Env>
+        <ir>
+          <ID>IrradianceMap</ID>
+          <Value>ToolsEnvMaps\studio010_hdr_256.dds</Value>
+          <Type>Texture</Type>
+        </ir>
+        <specular>
+          <ID>EnvironmentSpecularMap</ID>
+          <Value>ToolsEnvMaps\studio010_hdr_256.dds</Value>
+          <Type>Texture</Type>
+        </specular>
+      </MaterialsParametersModificationsController>
+    </SceneControllers>
+  </GenericSim>
+</Root_Element>

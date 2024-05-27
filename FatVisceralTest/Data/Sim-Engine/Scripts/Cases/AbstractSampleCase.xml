@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <?simbionix base( %SIM_PLATFORM%\base.xml::/* ) ?>
+</Root_Element>

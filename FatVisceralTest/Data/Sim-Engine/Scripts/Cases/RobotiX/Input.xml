@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <?simbionix base( Input\Input_%RobotiXPlatformType%.xml::/* ) ?>
+  <LeftTrocar>
+    <InitialTipPose>-0.695556,0.560913,0.448975,0.000000, -0.521351,-0.824079,0.221553,0.000000, 0.494280,-0.079837,0.865629,0.000000, -12.81, 34.2837, -43.625,1.000000</InitialTipPose>
+    <TrocarPos>-10.9, 140.85, -263.96</TrocarPos>
+  </LeftTrocar>
+  <RightTrocar>
+    <InitialTipPose>-0.480758,-0.204731,-0.852618,0.000000, 0.073003,-0.978333,0.193738,0.000000, -0.873746,0.030887,0.485401,0.000000, 85.311, 40.28, -17.919,1.000000</InitialTipPose>
+    <TrocarPos>267.0, 141.38, -198.07</TrocarPos>
+  </RightTrocar>
+  <CameraTrocar>
+    <LookAt>73.957, 93.9231, -81.8632</LookAt>
+    <TrocarPos>122.749, 175.87, -181.3665</TrocarPos>
+    <Up>-0.2029, 0.7440, 0.6365</Up>
+    <_BoundBoxMin>-150, -10, -900</_BoundBoxMin>
+    <_BoundBoxMax>150, 300, 35</_BoundBoxMax>
+  </CameraTrocar>
+  <AssistingTrocar>
+    <Name>AssistingTrocar</Name>
+    <InitialTipPose>-0.244774,-0.154189,-0.957242,0.000000, -0.027098,-0.985793,0.165764,0.000000, -0.969180,0.066533,0.237199,0.000000, 74.24, 41.404,24.9929,1.000000</InitialTipPose>
+    <TrocarPos>229,90,-49</TrocarPos>
+  </AssistingTrocar>
+</Root_Element>

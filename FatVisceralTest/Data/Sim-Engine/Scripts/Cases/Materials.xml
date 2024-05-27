@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <?simbionix asset( RobotiX\Materials\MaterialsNew.xml::/*/MaterialsMustHave )?>
+  <Materials>
+    <!--Base-->
+    <ShadowCast>
+      <?simbionix asset( RobotiX\Materials\MaterialsNew.xml::/Root/Materials/ShadowCast )?>
+    </ShadowCast>
+    <DepthMaterial>
+      <?simbionix asset( RobotiX\Materials\MaterialsNew.xml::/Root/Materials/DepthMaterial )?>
+    </DepthMaterial>
+    <PBR_NEW>
+      <?simbionix asset( RobotiX\Materials\MaterialsNew.xml::/Root/Materials/PBR_NEW )?>
+    </PBR_NEW>
+    <BlinnPhong>
+      <?simbionix asset( RobotiX\Materials\MaterialsNew.xml::/Root/Materials/BlinnPhong )?>
+    </BlinnPhong>
+    <ToolGhost>
+      <?simbionix asset( RobotiX\Materials\MaterialsNew.xml::/Root/Materials/ToolGhost )?>
+    </ToolGhost>
+  </Materials>
+</Root>
