@@ -6,8 +6,8 @@
       <Collection1>
         <VolumeObj_Fat>
           <Name>Fat</Name>
-          <Mesh>Organs/Liver.fbx</Mesh>
-          <_Mesh>../../../Models/Fat_floor__for_vol_with_anim1.fbx</_Mesh>
+          <_Mesh>Organs/Liver.fbx</_Mesh>
+          <Mesh>Organs/Fat_floor_for_vol.fbx</Mesh>
           <Visible>1</Visible>
           <UseCollisionTree>0</UseCollisionTree>
           <UseSphereTree>1</UseSphereTree>
@@ -24,8 +24,8 @@
             <GroupPhysicsEntity>VolumeGroup</GroupPhysicsEntity>
             <Gravity>0,0,0</Gravity>
             <GravityScale>1.0</GravityScale>
-            <_Volume>../../../Models/Fat_floor.vol</_Volume>
-            <Volume>Organs/Liver.VOL</Volume>
+            <Volume>Organs/Fat_floor_for_vol 1.vol</Volume>
+            <_Volume>Organs/Liver.VOL</_Volume>
             <MeshKs>10000</MeshKs>
             <MeshKw>15000</MeshKw>
             <MeshKd>100</MeshKd>
