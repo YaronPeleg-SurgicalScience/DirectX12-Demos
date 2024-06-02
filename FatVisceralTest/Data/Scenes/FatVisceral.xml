@@ -15,8 +15,8 @@
 			<SamplingFactor>0.500000</SamplingFactor>
 		</VXGI>
 		<SSSSS>
-			<Width>0.000050</Width>
-			<MaxDepthDiffScale>10000000.000000</MaxDepthDiffScale>
+			<Width>1.000000</Width>
+			<MaxDepthDiffScale>2.000000</MaxDepthDiffScale>
 		</SSSSS>
 	</Settings>
 	<Editor>
@@ -25,8 +25,8 @@
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowSettingsPanel>0</ShowSettingsPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>-0.28756,10.0489,31.0036</DefaultCameraPosition>
-		<DefaultCameraRotation>0.00108474,-0.982627,0.185498,0.0057346</DefaultCameraRotation>
+		<DefaultCameraPosition>5.57917,1.88504,20.0753</DefaultCameraPosition>
+		<DefaultCameraRotation>0.019447,-0.980551,0.136721,0.139455</DefaultCameraRotation>
 		<ApplySceneGraphPosition >1</ApplySceneGraphPosition >
 	</Editor>
 	<Materials>
@@ -89,6 +89,82 @@
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
 			<NormalMapCompression>0</NormalMapCompression>
+			<DetailNormalMapCompression>0</DetailNormalMapCompression>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UIProperties>1</UIProperties>
+			<UITilingProperties>0</UITilingProperties>
+			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
+			<UIAlbedoProperties>1</UIAlbedoProperties>
+			<UINormalProperties>1</UINormalProperties>
+			<UIDetailNormalProperties>1</UIDetailNormalProperties>
+			<UIRoughnessProperties>1</UIRoughnessProperties>
+			<UIMetallicnessProperties>1</UIMetallicnessProperties>
+			<UIAOProperties>1</UIAOProperties>
+			<UISSSProperties>1</UISSSProperties>
+		</Material>
+		<Material>
+			<Name>Fat</Name>
+			<Domain>0</Domain>
+			<AlbedoFile>./Textures/Fat/fat_visceral1_diffuse.dds</AlbedoFile>
+			<NormalFile>./Textures/Fat/fat_visceral1_normal_with_height.dds</NormalFile>
+			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
+			<RoughnessFile>./Textures/white4x4.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
+			<AOFile>./Textures/white4x4.dds</AOFile>
+			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<AlbedoFilter>Linear</AlbedoFilter>
+			<NormalFilter>Linear</NormalFilter>
+			<DetailNormalFilter>Linear</DetailNormalFilter>
+			<RoughnessFilter>Linear</RoughnessFilter>
+			<MetallicnessFilter>Linear</MetallicnessFilter>
+			<AOFilter>Linear</AOFilter>
+			<SSSFilter>Linear</SSSFilter>
+			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
+			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
+			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
+			<NormalAddressModelU>Wrap</NormalAddressModelU>
+			<NormalAddressModelV>Wrap</NormalAddressModelV>
+			<NormalAddressModelW>Wrap</NormalAddressModelW>
+			<DetailNormalAddressModelU>Wrap</DetailNormalAddressModelU>
+			<DetailNormalAddressModelV>Wrap</DetailNormalAddressModelV>
+			<DetailNormalAddressModelW>Wrap</DetailNormalAddressModelW>
+			<RoughnessAddressModelU>Wrap</RoughnessAddressModelU>
+			<RoughnessAddressModelV>Wrap</RoughnessAddressModelV>
+			<RoughnessAddressModelW>Wrap</RoughnessAddressModelW>
+			<MetallicnessAddressModelU>Wrap</MetallicnessAddressModelU>
+			<MetallicnessAddressModelV>Wrap</MetallicnessAddressModelV>
+			<MetallicnessAddressModelW>Wrap</MetallicnessAddressModelW>
+			<AOAddressModelU>Wrap</AOAddressModelU>
+			<AOAddressModelV>Wrap</AOAddressModelV>
+			<AOAddressModelW>Wrap</AOAddressModelW>
+			<SSSAddressModelU>Wrap</SSSAddressModelU>
+			<SSSAddressModelV>Wrap</SSSAddressModelV>
+			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
+			<SubsurfaceScattering>1</SubsurfaceScattering>
+			<TwoSided>0</TwoSided>
+			<TwoSidedLighting>0</TwoSidedLighting>
+			<Roughness>0.200000</Roughness>
+			<Metallicness>0.000000</Metallicness>
+			<Bumpiness>1.000000</Bumpiness>
+			<DetailBumpiness>1.000000</DetailBumpiness>
+			<AO>1.000000</AO>
+			<AlphaRef>0.000000</AlphaRef>
+			<GIStrength>1.000000</GIStrength>
+			<Refraction>0.000000</Refraction>
+			<RefractionIndex>1.000000</RefractionIndex>
+			<DiffuseColor>1,1,1,1</DiffuseColor>
+			<SpecularColor>1,1,1,1</SpecularColor>
+			<SubsurfaceColor>1,0.288643,0.070688,1</SubsurfaceColor>
+			<Tiling>1,1,1,1</Tiling>
+			<AOChannel>0</AOChannel>
+			<RoughnessChannel>0</RoughnessChannel>
+			<MetallicnessChannel>0</MetallicnessChannel>
+			<NormalMapCompression>2</NormalMapCompression>
 			<DetailNormalMapCompression>0</DetailNormalMapCompression>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
@@ -565,7 +641,7 @@
 			<Type>Light</Type>
 			<Name>General_Light</Name>
 			<Parent></Parent>
-			<Visible>1</Visible>
+			<Visible>0</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,39.895</Position>
@@ -604,17 +680,17 @@
 						<Param>
 							<Name>CaseDataFilePath</Name>
 							<Type>std_string</Type>
-							<Value>C:\Users\YaronPeleg\AppData\Local\Temp\CaseData.tmp</Value>
+							<Value></Value>
 						</Param>
 						<Param>
 							<Name>CaseFile</Name>
 							<Type>std_string</Type>
-							<Value>D:\SimProjects\DirectX12-Demos\FatVisceralTest\Data\Sim-Engine\Scripts\Cases\FatVisceral.xml</Value>
+							<Value></Value>
 						</Param>
 						<Param>
 							<Name>DataPath</Name>
 							<Type>std_string</Type>
-							<Value>D:\SimProjects\DirectX12-Demos\FatVisceralTest\Data\Sim-Engine</Value>
+							<Value></Value>
 						</Param>
 						<Param>
 							<Name>Enabled</Name>
@@ -624,17 +700,17 @@
 						<Param>
 							<Name>Init</Name>
 							<Type>bool</Type>
-							<Value>1</Value>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>ModuleID</Name>
 							<Type>int</Type>
-							<Value>1337</Value>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>ModuleName</Name>
 							<Type>std_string</Type>
-							<Value>FatVisceral</Value>
+							<Value></Value>
 						</Param>
 						<Param>
 							<Name>Parent</Name>
@@ -644,12 +720,12 @@
 						<Param>
 							<Name>SimTypeID</Name>
 							<Type>int</Type>
-							<Value>8</Value>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>Version</Name>
 							<Type>std_string</Type>
-							<Value>1.0.0.2</Value>
+							<Value></Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -989,7 +1065,7 @@
 						<Param>
 							<Name>VolumeName</Name>
 							<Type>std_string</Type>
-							<Value>Fat</Value>
+							<Value></Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -1004,17 +1080,43 @@
 			<ShowPaintingRMH>0</ShowPaintingRMH>
 			<PaintingHeight>1024.000000</PaintingHeight>
 			<PaintingWidth>1024.000000</PaintingWidth>
-			<UIRenderingGroup>0</UIRenderingGroup>
+			<UIRenderingGroup>1</UIRenderingGroup>
 			<UIPaintingGroup>0</UIPaintingGroup>
 			<Mesh>
 				<Name>piece0</Name>
-				<Material>default</Material>
+				<Material>Fat</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
-				<UIMeshGroup>0</UIMeshGroup>
+				<UIMeshGroup>1</UIMeshGroup>
 			</Mesh>
+		</Entity>
+		<Entity>
+			<Type>Light</Type>
+			<Name>Light-spot</Name>
+			<Parent></Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>-2.41234,0.74672,15.9875</Position>
+			<Scale>10,10,10</Scale>
+			<Rotation>0.997363,0,0,0.0725663</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<LightType>Spot</LightType>
+			<InnerCone>30.000000</InnerCone>
+			<OuterCone>40.000000</OuterCone>
+			<CastShadows>1</CastShadows>
+			<Intensity>1.000000</Intensity>
+			<AreaSize>0.250000</AreaSize>
+			<Near>0.100000</Near>
+			<Far>100.000000</Far>
+			<DiffuseColor>1,1,1,1</DiffuseColor>
+			<SpecularColor>1,1,1,1</SpecularColor>
+			<UILightGroup>1</UILightGroup>
 		</Entity>
 	</Entities>
 </Scene>
