@@ -431,3 +431,6 @@ FodyWeavers.xsd
 #temporary files
 /Data/SerializeData/
 **/LastLoadedSceneCache.txt
+# sim-engine running data
+**/[Dd]ata/[Mm]atrices/
+**/[Dd]ata/[Ss]erialData/

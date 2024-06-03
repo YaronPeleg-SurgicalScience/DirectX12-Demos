@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root keep="1">
+  <BaseTrocar>
+    <CLSID>{ACA99F78-D13A-458B-8DAB-345FAF3EE603}</CLSID>
+    <ExpScaleSupported>0</ExpScaleSupported>
+    <ExpScale>0</ExpScale>
+    <ExpLimitLen>0</ExpLimitLen>
+    <TrocarLenScale>1</TrocarLenScale>
+    <TrocarLenAdd>0</TrocarLenAdd>
+    <!--Motion scale and offset-->
+    <ModelHWWorldMatrixX>0.28333, 0, 0</ModelHWWorldMatrixX>
+    <ModelHWWorldMatrixY>0, 0.28333, 0</ModelHWWorldMatrixY>
+    <ModelHWWorldMatrixZ>0, 0, 0.28333</ModelHWWorldMatrixZ>
+    <ModelHWWorldMatrixW>-10, 115, 80</ModelHWWorldMatrixW>
+    <ProductKey>Ultrasound</ProductKey>
+    <!--Igors pincher offset-->
+    <SensorPositionFix>0, 0, -51</SensorPositionFix>
+    <MovementThreshold>0.4</MovementThreshold>
+  </BaseTrocar>
+  <LeftTrocar>
+    <?simbionix base( /*/BaseTrocar ) ?>
+    <AscensionSensorPort>1</AscensionSensorPort>
+  </LeftTrocar>
+  <RightTrocar>
+    <?simbionix base( /*/BaseTrocar ) ?>
+    <AscensionSensorPort>2</AscensionSensorPort>
+  </RightTrocar>
+  <AssistingTrocar>
+    <?simbionix base( /*/BaseTrocar ) ?>
+    <AscensionSensorPort>2</AscensionSensorPort>
+  </AssistingTrocar>
+  <AscensionParameters>
+    <!--Ascension Configurable Params-->
+    <MaximumRange>72</MaximumRange>
+    <!--The port of sensor used for calibration-->
+    <CalibratingPort>1</CalibratingPort>
+    <!--Hemisphere typed mapped by HEMISPHERE_TYPE ENUM-->
+    <HemisphereType>0</HemisphereType>
+    <!--Enable AcWideFilter if you have ascension shakes that can't be resolved by moving the system to a magnetic interruption free area.-->
+    <AcWideFilter>0</AcWideFilter>
+    <!--USA PowerLineFrequency is 60 (Israel is 50)-->
+    <PowerLineFrequency>60</PowerLineFrequency>
+  </AscensionParameters>
+</Root>

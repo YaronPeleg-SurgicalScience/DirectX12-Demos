@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <LeftTrocar>
+    <Profile>%SIM_PLATFORM%\Input\Profiles\AscensionDavinci.xml</Profile>
+    <Name>LeftTrocar</Name>
+    <_TrocarPos>-122, 195, -150</_TrocarPos>
+    <_InitialTipPose>-0.609,0.158,0.777,0.0, -0.162,-0.984,0.073,0.0, 0.776,-0.081,0.625,0.0, -29.6, 86.8, -7.6,1.0</_InitialTipPose>
+  </LeftTrocar>
+  <RightTrocar>
+    <Profile>%SIM_PLATFORM%\Input\Profiles\AscensionDavinci.xml</Profile>
+    <Name>RightTrocar</Name>
+    <_TrocarPos>115, 195, -150</_TrocarPos>
+    <_InitialTipPose>-0.527,-0.077,-0.846,0.0, 0.235,-0.970,-0.058,0.0, -0.816,-0.229,0.530,0.0,  26.2, 86.6, -7.9,1.0</_InitialTipPose>
+  </RightTrocar>
+  <AssistingTrocar>
+    <Profile>%SIM_PLATFORM%\Input\Profiles\AscensionDavinci.xml</Profile>
+    <Name>AssistingTrocar</Name>
+  </AssistingTrocar>
+  <CameraTrocar>
+    <Profile>%SIM_PLATFORM%\Input\Profiles\AscensionDavniciCamera.xml</Profile>
+    <Name>CameraTrocar</Name>
+    <_TrocarPos>-2, 195, -143</_TrocarPos>
+    <BoundBoxMin>-1600, 50, -1000</BoundBoxMin>
+    <BoundBoxMax>1600, 1900, 2100</BoundBoxMax>
+    <_LookAt>-2, 145, -93</_LookAt>
+    <!--stereoscopic camera lens-->
+    <Stereo>1</Stereo>
+    <StereoDistance>1.5</StereoDistance>
+    <Angulated>0</Angulated>
+    <ScopeAngle>0</ScopeAngle>
+  </CameraTrocar>
+  <SwitchBoardNew>
+    <Profile>%SIM_PLATFORM%\Input\Profiles\SwitchBoardNew.xml</Profile>
+  </SwitchBoardNew>
+</Root_Element>

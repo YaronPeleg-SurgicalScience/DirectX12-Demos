@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <?simbionix base( ..\AbstractBase.xml::/* ) ?>
+  <GenericSim>
+    <ToolManager>
+      <AutoLoading>
+        <LeftTrocar>
+          <DefaultTool>SMB Permanent Cautery Hook</DefaultTool>
+          <AutoLoad>1</AutoLoad>
+        </LeftTrocar>
+        <RightTrocar>
+          <DefaultTool>ISI Tip-up Fenestrated Grasper</DefaultTool>
+          <AutoLoad>1</AutoLoad>
+        </RightTrocar>
+      </AutoLoading>
+    </ToolManager>
+    <SyncManager>
+      <Scene>
+        <Materials>
+          <Vein>
+            <ParamBlock>
+              <BaseTexture type="string">tex1.jpg</BaseTexture>
+            </ParamBlock>
+          </Vein>
+        </Materials>
+      </Scene>
+    </SyncManager>
+  </GenericSim>
+</Root_Element>

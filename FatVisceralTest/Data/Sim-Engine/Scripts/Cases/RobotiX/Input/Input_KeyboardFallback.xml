@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <LeftTrocar>
+    <Profile>Keyboard.xml</Profile>
+    <Name>LeftTrocar</Name>
+    <TrocarPos>-50, 20, -150</TrocarPos>
+  </LeftTrocar>
+  <RightTrocar>
+    <Profile>Keyboard.xml</Profile>
+    <Name>RightTrocar</Name>
+    <TrocarPos>50, 20, -150</TrocarPos>
+  </RightTrocar>
+  <AssistingTrocar>
+    <Profile>Keyboard.xml</Profile>
+    <Name>AssistingTrocar</Name>
+  </AssistingTrocar>
+  <CameraTrocar>
+    <Profile>Keyboard.xml</Profile>
+    <Name>CameraTrocar</Name>
+    <TrocarPos>-2, 195, -143</TrocarPos>
+    <BoundBoxMin>-160, 5, -100</BoundBoxMin>
+    <BoundBoxMax>160, 190, 210</BoundBoxMax>
+    <LookAt>-2, 145, -93</LookAt>
+    <!--stereoscopic camera lens-->
+    <Stereo>1</Stereo>
+    <StereoDistance>1.5</StereoDistance>
+    <Angulated>0</Angulated>
+    <ScopeAngle>0</ScopeAngle>
+  </CameraTrocar>
+</Root_Element>

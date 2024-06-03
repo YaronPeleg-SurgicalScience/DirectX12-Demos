@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <?simbionix base( ..\Materials.xml::/* ) ?>
+  <BlackoutStereoScreenBorders>1</BlackoutStereoScreenBorders>
+  <SplitScreenMonitor>secondary</SplitScreenMonitor>
+  <KeepUiAlpha>1</KeepUiAlpha>
+  <GUIManager>
+    <SeparatedSwapChains>
+      <Primary>0</Primary>
+      <Secondary>1</Secondary>
+    </SeparatedSwapChains>
+  </GUIManager>
+  <ScreenStereoOffset>62</ScreenStereoOffset>
+  <Materials>
+    <PBR_NEW>
+      <ParamBlock>
+        <baseTexture type="string">tex1.jpg</baseTexture>
+      </ParamBlock>
+    </PBR_NEW>
+  </Materials>
+</Root>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <?simbionix asset( RobotiX\scripts\EmptyScene_%SIM_PLATFORM%.xml::/* )?>
+  <General>
+    <Materials>%SIM_PLATFORM%\PlatformMaterials.xml</Materials>
+  </General>
+  <GenericSim>
+    <make_chunk></make_chunk>
+  </GenericSim>
+</Root_Element>

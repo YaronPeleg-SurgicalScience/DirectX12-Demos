@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <CameraTrocar>
+    <CLSID>{D77B82AA-DFE0-4C47-8A25-3AC7E6E93D36}</CLSID>
+  </CameraTrocar>
+  <CameraTrocar>
+    <?simbionix base( /*/CameraTrocar ) ?>
+    <AlternativePos>
+      <Pos>-0.167000, 140.447006, -97.329002</Pos>
+      <YPR>-2.000000, -8.599998, -23.000000</YPR>
+      <Up>0.000000, 1.000000, 0.000000</Up>
+    </AlternativePos>
+    <AlternativePos>
+      <Pos>-0.167000, 140.447006, -97.329002</Pos>
+      <YPR>-2.000000, -8.599998, -23.000000</YPR>
+      <Up>0.000000, 1.000000, 0.000000</Up>
+    </AlternativePos>
+    <AlternativePos>
+      <Pos>-0.167000, 140.447006, -97.329002</Pos>
+      <YPR>-2.000000, -8.599998, -23.000000</YPR>
+      <Up>0.000000, 1.000000, 0.000000</Up>
+    </AlternativePos>
+    <AlternativePos>
+      <Pos>-0.167000, 140.447006, -97.329002</Pos>
+      <YPR>-2.000000, -8.599998, -23.000000</YPR>
+      <Up>0.000000, 1.000000, 0.000000</Up>
+    </AlternativePos>
+  </CameraTrocar>
+</Root>
