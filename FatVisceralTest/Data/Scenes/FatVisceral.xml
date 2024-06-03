@@ -680,17 +680,17 @@
 						<Param>
 							<Name>CaseDataFilePath</Name>
 							<Type>std_string</Type>
-							<Value></Value>
+							<Value>C:\Users\YaronPeleg\AppData\Local\Temp\CaseData.tmp</Value>
 						</Param>
 						<Param>
 							<Name>CaseFile</Name>
 							<Type>std_string</Type>
-							<Value></Value>
+							<Value>D:\SimProjects\DirectX12-Demos\FatVisceralTest\Data\Sim-Engine\Scripts\Cases\FatVisceral.xml</Value>
 						</Param>
 						<Param>
 							<Name>DataPath</Name>
 							<Type>std_string</Type>
-							<Value></Value>
+							<Value>D:\SimProjects\DirectX12-Demos\FatVisceralTest\Data\Sim-Engine</Value>
 						</Param>
 						<Param>
 							<Name>Enabled</Name>
@@ -700,17 +700,17 @@
 						<Param>
 							<Name>Init</Name>
 							<Type>bool</Type>
-							<Value>0</Value>
+							<Value>1</Value>
 						</Param>
 						<Param>
 							<Name>ModuleID</Name>
 							<Type>int</Type>
-							<Value>0</Value>
+							<Value>1337</Value>
 						</Param>
 						<Param>
 							<Name>ModuleName</Name>
 							<Type>std_string</Type>
-							<Value></Value>
+							<Value>FatVisceral</Value>
 						</Param>
 						<Param>
 							<Name>Parent</Name>
@@ -720,12 +720,12 @@
 						<Param>
 							<Name>SimTypeID</Name>
 							<Type>int</Type>
-							<Value>0</Value>
+							<Value>8</Value>
 						</Param>
 						<Param>
 							<Name>Version</Name>
 							<Type>std_string</Type>
-							<Value></Value>
+							<Value>1.0.0.2</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -1065,7 +1065,7 @@
 						<Param>
 							<Name>VolumeName</Name>
 							<Type>std_string</Type>
-							<Value></Value>
+							<Value>Fat</Value>
 						</Param>
 					</Parameters>
 				</Component>
