@@ -25,8 +25,8 @@
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowSettingsPanel>0</ShowSettingsPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>-3.97836,7.19631,22.9609</DefaultCameraPosition>
-		<DefaultCameraRotation>0.0028675,-0.991894,0.124986,0.0227374</DefaultCameraRotation>
+		<DefaultCameraPosition>1.4879,10.3421,19.1607</DefaultCameraPosition>
+		<DefaultCameraRotation>0.0109384,-0.982377,0.176369,0.0609155</DefaultCameraRotation>
 		<ApplySceneGraphPosition >0</ApplySceneGraphPosition >
 	</Editor>
 	<Materials>
@@ -381,7 +381,7 @@
 			<Type>Model</Type>
 			<Name>Body</Name>
 			<Parent></Parent>
-			<Visible>1</Visible>
+			<Visible>0</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
@@ -729,10 +729,10 @@
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
-			<Name>Kobi</Name>
-			<Parent>Body</Parent>
+			<Name>test2</Name>
+			<Parent></Parent>
 			<Visible>1</Visible>
-			<Dynamic>0</Dynamic>
+			<Dynamic>1</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
 			<Scale>1,1,1</Scale>
@@ -756,10 +756,10 @@
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
-			<Name>Active_Top</Name>
-			<Parent>Kobi</Parent>
+			<Name>Floor</Name>
+			<Parent>test2</Parent>
 			<Visible>1</Visible>
-			<Dynamic>0</Dynamic>
+			<Dynamic>1</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
 			<Scale>1,1,1</Scale>
@@ -767,7 +767,285 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>AnimationTrack</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkeleton</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkin</Name>
+					<Parameters>
+						<Param>
+							<Name>CPU Skin</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Floor:AnimationSkeleton</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>Animator</Name>
+					<Parameters>
+						<Param>
+							<Name>Advance Time</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Play</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Floor:AnimationSkeleton</Value>
+						</Param>
+						<Param>
+							<Name>Skin</Name>
+							<Type>IComponent</Type>
+							<Value>Floor:AnimationSkin</Value>
+						</Param>
+						<Param>
+							<Name>Track</Name>
+							<Type>IComponent</Type>
+							<Value>Floor:AnimationTrack</Value>
+						</Param>
+						<Param>
+							<Name>Track Duration Sec</Name>
+							<Type>float</Type>
+							<Value>5.800000</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
+			<ModelFilename>./Models/Organs/Floor.fbx</ModelFilename>
+			<UseCache>1</UseCache>
+			<Painting>0</Painting>
+			<PaintingFixSeams>0</PaintingFixSeams>
+			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
+			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
+			<ShowPaintingColor>0</ShowPaintingColor>
+			<ShowPaintingRMH>0</ShowPaintingRMH>
+			<PaintingHeight>1024.000000</PaintingHeight>
+			<PaintingWidth>1024.000000</PaintingWidth>
+			<UIRenderingGroup>1</UIRenderingGroup>
+			<UIPaintingGroup>0</UIPaintingGroup>
+			<Mesh>
+				<Name>Floor</Name>
+				<Material>default</Material>
+				<Visible>1</Visible>
+				<Position>0,0,0</Position>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0,0,-0,1</Rotation>
+				<UIMeshGroup>0</UIMeshGroup>
+			</Mesh>
+		</Entity>
+		<Entity>
+			<Type>Model</Type>
+			<Name>Active_Top</Name>
+			<Parent>test2</Parent>
+			<Visible>1</Visible>
+			<Dynamic>1</Dynamic>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components>
+				<Component>
+					<Name>AnimationTrack</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkeleton</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkin</Name>
+					<Parameters>
+						<Param>
+							<Name>CPU Skin</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Active_Top:AnimationSkeleton</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>Animator</Name>
+					<Parameters>
+						<Param>
+							<Name>Advance Time</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Play</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Active_Top:AnimationSkeleton</Value>
+						</Param>
+						<Param>
+							<Name>Skin</Name>
+							<Type>IComponent</Type>
+							<Value>Active_Top:AnimationSkin</Value>
+						</Param>
+						<Param>
+							<Name>Track</Name>
+							<Type>IComponent</Type>
+							<Value>Active_Top:AnimationTrack</Value>
+						</Param>
+						<Param>
+							<Name>Track Duration Sec</Name>
+							<Type>float</Type>
+							<Value>5.800000</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>./Models/Organs/Active_Top.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -785,17 +1063,17 @@
 				<Material>default</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
-				<Scale>10,10,10</Scale>
-				<Rotation>2.18557e-08,0,-0,1</Rotation>
-				<UIMeshGroup>1</UIMeshGroup>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0,0,-0,1</Rotation>
+				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
 			<Name>Arteries</Name>
-			<Parent>Kobi</Parent>
+			<Parent>Scale_Down</Parent>
 			<Visible>1</Visible>
-			<Dynamic>0</Dynamic>
+			<Dynamic>1</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
 			<Scale>1,1,1</Scale>
@@ -829,7 +1107,7 @@
 		<Entity>
 			<Type>Model</Type>
 			<Name>Arteries_Thin</Name>
-			<Parent>Kobi</Parent>
+			<Parent>Scale_Down</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -864,8 +1142,35 @@
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
-			<Name>Cystic_duct</Name>
-			<Parent>Kobi</Parent>
+			<Name>Scale_Down</Name>
+			<Parent>test2</Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>0.1,0.1,0.1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<ModelFilename>./Models/</ModelFilename>
+			<UseCache>1</UseCache>
+			<Painting>0</Painting>
+			<PaintingFixSeams>0</PaintingFixSeams>
+			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
+			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
+			<ShowPaintingColor>0</ShowPaintingColor>
+			<ShowPaintingRMH>0</ShowPaintingRMH>
+			<PaintingHeight>1024.000000</PaintingHeight>
+			<PaintingWidth>1024.000000</PaintingWidth>
+			<UIRenderingGroup>1</UIRenderingGroup>
+			<UIPaintingGroup>0</UIPaintingGroup>
+		</Entity>
+		<Entity>
+			<Type>Model</Type>
+			<Name>Cyctic_duct</Name>
+			<Parent>Scale_Down</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -901,9 +1206,9 @@
 		<Entity>
 			<Type>Model</Type>
 			<Name>Fat_case2</Name>
-			<Parent>Kobi</Parent>
+			<Parent>test2</Parent>
 			<Visible>1</Visible>
-			<Dynamic>0</Dynamic>
+			<Dynamic>1</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
 			<Scale>1,1,1</Scale>
@@ -911,7 +1216,128 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>AnimationTrack</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkeleton</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkin</Name>
+					<Parameters>
+						<Param>
+							<Name>CPU Skin</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Fat_case2:AnimationSkeleton</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>Animator</Name>
+					<Parameters>
+						<Param>
+							<Name>Advance Time</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Play</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Fat_case2:AnimationSkeleton</Value>
+						</Param>
+						<Param>
+							<Name>Skin</Name>
+							<Type>IComponent</Type>
+							<Value>Fat_case2:AnimationSkin</Value>
+						</Param>
+						<Param>
+							<Name>Track</Name>
+							<Type>IComponent</Type>
+							<Value>Fat_case2:AnimationTrack</Value>
+						</Param>
+						<Param>
+							<Name>Track Duration Sec</Name>
+							<Type>float</Type>
+							<Value>5.800000</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>./Models/Organs/Fat_case2.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -929,17 +1355,17 @@
 				<Material>default</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
-				<Scale>10,10,10</Scale>
-				<Rotation>2.18557e-08,0,-0,1</Rotation>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0,0,-0,1</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
-			<Name>flap</Name>
-			<Parent>Kobi</Parent>
+			<Name>Flap</Name>
+			<Parent>test2</Parent>
 			<Visible>1</Visible>
-			<Dynamic>0</Dynamic>
+			<Dynamic>1</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
 			<Scale>1,1,1</Scale>
@@ -947,7 +1373,128 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>AnimationTrack</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkeleton</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkin</Name>
+					<Parameters>
+						<Param>
+							<Name>CPU Skin</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Flap:AnimationSkeleton</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>Animator</Name>
+					<Parameters>
+						<Param>
+							<Name>Advance Time</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Play</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Flap:AnimationSkeleton</Value>
+						</Param>
+						<Param>
+							<Name>Skin</Name>
+							<Type>IComponent</Type>
+							<Value>Flap:AnimationSkin</Value>
+						</Param>
+						<Param>
+							<Name>Track</Name>
+							<Type>IComponent</Type>
+							<Value>Flap:AnimationTrack</Value>
+						</Param>
+						<Param>
+							<Name>Track Duration Sec</Name>
+							<Type>float</Type>
+							<Value>5.800000</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>./Models/Organs/flap.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -965,51 +1512,15 @@
 				<Material>default</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
-				<Scale>10,10,10</Scale>
-				<Rotation>2.18557e-08,0,-0,1</Rotation>
-				<UIMeshGroup>0</UIMeshGroup>
-			</Mesh>
-		</Entity>
-		<Entity>
-			<Type>Model</Type>
-			<Name>Floor</Name>
-			<Parent>Kobi</Parent>
-			<Visible>1</Visible>
-			<Dynamic>0</Dynamic>
-			<Group>0</Group>
-			<Position>0,0,0</Position>
-			<Scale>1,1,1</Scale>
-			<Rotation>0,0,0,1</Rotation>
-			<Pivot>0,0,0</Pivot>
-			<UIGeneralGroup>1</UIGeneralGroup>
-			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
-			<ModelFilename>./Models/Organs/Floor.fbx</ModelFilename>
-			<UseCache>1</UseCache>
-			<Painting>0</Painting>
-			<PaintingFixSeams>0</PaintingFixSeams>
-			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
-			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
-			<ShowPaintingColor>0</ShowPaintingColor>
-			<ShowPaintingRMH>0</ShowPaintingRMH>
-			<PaintingHeight>1024.000000</PaintingHeight>
-			<PaintingWidth>1024.000000</PaintingWidth>
-			<UIRenderingGroup>1</UIRenderingGroup>
-			<UIPaintingGroup>0</UIPaintingGroup>
-			<Mesh>
-				<Name>Floor</Name>
-				<Material>default</Material>
-				<Visible>1</Visible>
-				<Position>0,0,0</Position>
-				<Scale>10,10,10</Scale>
-				<Rotation>2.18557e-08,0,-0,1</Rotation>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0,0,-0,1</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
 			<Name>Gall_seperation1</Name>
-			<Parent>Kobi</Parent>
+			<Parent>Scale_Down</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1045,9 +1556,9 @@
 		<Entity>
 			<Type>Model</Type>
 			<Name>Gall_seperation2</Name>
-			<Parent>Kobi</Parent>
+			<Parent>test2</Parent>
 			<Visible>1</Visible>
-			<Dynamic>0</Dynamic>
+			<Dynamic>1</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
 			<Scale>1,1,1</Scale>
@@ -1055,7 +1566,128 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>AnimationTrack</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkeleton</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkin</Name>
+					<Parameters>
+						<Param>
+							<Name>CPU Skin</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Gall_seperation2:AnimationSkeleton</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>Animator</Name>
+					<Parameters>
+						<Param>
+							<Name>Advance Time</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Play</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Gall_seperation2:AnimationSkeleton</Value>
+						</Param>
+						<Param>
+							<Name>Skin</Name>
+							<Type>IComponent</Type>
+							<Value>Gall_seperation2:AnimationSkin</Value>
+						</Param>
+						<Param>
+							<Name>Track</Name>
+							<Type>IComponent</Type>
+							<Value>Gall_seperation2:AnimationTrack</Value>
+						</Param>
+						<Param>
+							<Name>Track Duration Sec</Name>
+							<Type>float</Type>
+							<Value>5.800000</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>./Models/Organs/Gall_seperation2.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -1073,15 +1705,15 @@
 				<Material>default</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
-				<Scale>10,10,10</Scale>
-				<Rotation>2.18557e-08,0,-0,1</Rotation>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0,0,-0,1</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
 			<Name>Gallbladder</Name>
-			<Parent>Kobi</Parent>
+			<Parent>Scale_Down</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1117,9 +1749,9 @@
 		<Entity>
 			<Type>Model</Type>
 			<Name>GallBladdersBackFat_To_Liver</Name>
-			<Parent>Kobi</Parent>
+			<Parent>test2</Parent>
 			<Visible>1</Visible>
-			<Dynamic>0</Dynamic>
+			<Dynamic>1</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
 			<Scale>1,1,1</Scale>
@@ -1127,7 +1759,128 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>AnimationTrack</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkeleton</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkin</Name>
+					<Parameters>
+						<Param>
+							<Name>CPU Skin</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>GallBladdersBackFat_To_Liver:AnimationSkeleton</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>Animator</Name>
+					<Parameters>
+						<Param>
+							<Name>Advance Time</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Play</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>GallBladdersBackFat_To_Liver:AnimationSkeleton</Value>
+						</Param>
+						<Param>
+							<Name>Skin</Name>
+							<Type>IComponent</Type>
+							<Value>GallBladdersBackFat_To_Liver:AnimationSkin</Value>
+						</Param>
+						<Param>
+							<Name>Track</Name>
+							<Type>IComponent</Type>
+							<Value>GallBladdersBackFat_To_Liver:AnimationTrack</Value>
+						</Param>
+						<Param>
+							<Name>Track Duration Sec</Name>
+							<Type>float</Type>
+							<Value>5.800000</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>./Models/Organs/GallBladdersBackFat_To_Liver.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -1145,17 +1898,17 @@
 				<Material>default</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
-				<Scale>10,10,10</Scale>
-				<Rotation>2.18557e-08,0,-0,1</Rotation>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0,0,-0,1</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
-			<Name>Inactive_Top</Name>
-			<Parent>Kobi</Parent>
+			<Name>Inactive_top</Name>
+			<Parent>test2</Parent>
 			<Visible>1</Visible>
-			<Dynamic>0</Dynamic>
+			<Dynamic>1</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
 			<Scale>1,1,1</Scale>
@@ -1163,7 +1916,128 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>AnimationTrack</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkeleton</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkin</Name>
+					<Parameters>
+						<Param>
+							<Name>CPU Skin</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Inactive_top:AnimationSkeleton</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>Animator</Name>
+					<Parameters>
+						<Param>
+							<Name>Advance Time</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Play</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Inactive_top:AnimationSkeleton</Value>
+						</Param>
+						<Param>
+							<Name>Skin</Name>
+							<Type>IComponent</Type>
+							<Value>Inactive_top:AnimationSkin</Value>
+						</Param>
+						<Param>
+							<Name>Track</Name>
+							<Type>IComponent</Type>
+							<Value>Inactive_top:AnimationTrack</Value>
+						</Param>
+						<Param>
+							<Name>Track Duration Sec</Name>
+							<Type>float</Type>
+							<Value>5.800000</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 			<ModelFilename>./Models/Organs/Inactive_Top.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
@@ -1181,6 +2055,42 @@
 				<Material>default</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0,0,-0,1</Rotation>
+				<UIMeshGroup>0</UIMeshGroup>
+			</Mesh>
+		</Entity>
+		<Entity>
+			<Type>Model</Type>
+			<Name>Liver_bottom</Name>
+			<Parent>Scale_Down</Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<ModelFilename>./Models/Organs/Liver_Bottom.fbx</ModelFilename>
+			<UseCache>1</UseCache>
+			<Painting>0</Painting>
+			<PaintingFixSeams>0</PaintingFixSeams>
+			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
+			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
+			<ShowPaintingColor>0</ShowPaintingColor>
+			<ShowPaintingRMH>0</ShowPaintingRMH>
+			<PaintingHeight>1024.000000</PaintingHeight>
+			<PaintingWidth>1024.000000</PaintingWidth>
+			<UIRenderingGroup>1</UIRenderingGroup>
+			<UIPaintingGroup>0</UIPaintingGroup>
+			<Mesh>
+				<Name>Liver_Bottom</Name>
+				<Material>default</Material>
+				<Visible>1</Visible>
+				<Position>0,0,0</Position>
 				<Scale>10,10,10</Scale>
 				<Rotation>2.18557e-08,0,-0,1</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
@@ -1189,9 +2099,9 @@
 		<Entity>
 			<Type>Model</Type>
 			<Name>Liver</Name>
-			<Parent>Kobi</Parent>
+			<Parent>test2</Parent>
 			<Visible>1</Visible>
-			<Dynamic>0</Dynamic>
+			<Dynamic>1</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
 			<Scale>1,1,1</Scale>
@@ -1340,42 +2250,6 @@
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
-				<UIMeshGroup>0</UIMeshGroup>
-			</Mesh>
-		</Entity>
-		<Entity>
-			<Type>Model</Type>
-			<Name>Liver_Bottom</Name>
-			<Parent>Kobi</Parent>
-			<Visible>1</Visible>
-			<Dynamic>0</Dynamic>
-			<Group>0</Group>
-			<Position>0,0,0</Position>
-			<Scale>1,1,1</Scale>
-			<Rotation>0,0,0,1</Rotation>
-			<Pivot>0,0,0</Pivot>
-			<UIGeneralGroup>1</UIGeneralGroup>
-			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
-			<ModelFilename>./Models/Organs/Liver_Bottom.fbx</ModelFilename>
-			<UseCache>1</UseCache>
-			<Painting>0</Painting>
-			<PaintingFixSeams>0</PaintingFixSeams>
-			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
-			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
-			<ShowPaintingColor>0</ShowPaintingColor>
-			<ShowPaintingRMH>0</ShowPaintingRMH>
-			<PaintingHeight>1024.000000</PaintingHeight>
-			<PaintingWidth>1024.000000</PaintingWidth>
-			<UIRenderingGroup>1</UIRenderingGroup>
-			<UIPaintingGroup>0</UIPaintingGroup>
-			<Mesh>
-				<Name>Liver_Bottom</Name>
-				<Material>default</Material>
-				<Visible>1</Visible>
-				<Position>0,0,0</Position>
-				<Scale>10,10,10</Scale>
-				<Rotation>2.18557e-08,0,-0,1</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 		</Entity>
