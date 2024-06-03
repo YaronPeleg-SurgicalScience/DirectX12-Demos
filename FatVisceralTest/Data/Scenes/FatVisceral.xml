@@ -25,8 +25,8 @@
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowSettingsPanel>0</ShowSettingsPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>-34.0041,88.6196,199.471</DefaultCameraPosition>
-		<DefaultCameraRotation>0.0254845,0.966726,-0.23115,0.106589</DefaultCameraRotation>
+		<DefaultCameraPosition>-45.6107,90.9741,27.4497</DefaultCameraPosition>
+		<DefaultCameraRotation>0.156909,0.509009,-0.0949703,0.840993</DefaultCameraRotation>
 		<ApplySceneGraphPosition >1</ApplySceneGraphPosition >
 	</Editor>
 	<Materials>
@@ -3374,6 +3374,82 @@
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
 		</Material>
+		<Material>
+			<Name>material0</Name>
+			<Domain>0</Domain>
+			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
+			<NormalFile>./Textures/flat_normal.dds</NormalFile>
+			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
+			<RoughnessFile>./Textures/white4x4.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
+			<AOFile>./Textures/white4x4.dds</AOFile>
+			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<AlbedoFilter>Linear</AlbedoFilter>
+			<NormalFilter>Linear</NormalFilter>
+			<DetailNormalFilter>Linear</DetailNormalFilter>
+			<RoughnessFilter>Linear</RoughnessFilter>
+			<MetallicnessFilter>Linear</MetallicnessFilter>
+			<AOFilter>Linear</AOFilter>
+			<SSSFilter>Linear</SSSFilter>
+			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
+			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
+			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
+			<NormalAddressModelU>Wrap</NormalAddressModelU>
+			<NormalAddressModelV>Wrap</NormalAddressModelV>
+			<NormalAddressModelW>Wrap</NormalAddressModelW>
+			<DetailNormalAddressModelU>Wrap</DetailNormalAddressModelU>
+			<DetailNormalAddressModelV>Wrap</DetailNormalAddressModelV>
+			<DetailNormalAddressModelW>Wrap</DetailNormalAddressModelW>
+			<RoughnessAddressModelU>Wrap</RoughnessAddressModelU>
+			<RoughnessAddressModelV>Wrap</RoughnessAddressModelV>
+			<RoughnessAddressModelW>Wrap</RoughnessAddressModelW>
+			<MetallicnessAddressModelU>Wrap</MetallicnessAddressModelU>
+			<MetallicnessAddressModelV>Wrap</MetallicnessAddressModelV>
+			<MetallicnessAddressModelW>Wrap</MetallicnessAddressModelW>
+			<AOAddressModelU>Wrap</AOAddressModelU>
+			<AOAddressModelV>Wrap</AOAddressModelV>
+			<AOAddressModelW>Wrap</AOAddressModelW>
+			<SSSAddressModelU>Wrap</SSSAddressModelU>
+			<SSSAddressModelV>Wrap</SSSAddressModelV>
+			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
+			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<TwoSided>0</TwoSided>
+			<TwoSidedLighting>0</TwoSidedLighting>
+			<Roughness>0.200000</Roughness>
+			<Metallicness>0.000000</Metallicness>
+			<Bumpiness>1.000000</Bumpiness>
+			<DetailBumpiness>1.000000</DetailBumpiness>
+			<AO>1.000000</AO>
+			<AlphaRef>0.000000</AlphaRef>
+			<GIStrength>1.000000</GIStrength>
+			<Refraction>0.000000</Refraction>
+			<RefractionIndex>1.000000</RefractionIndex>
+			<DiffuseColor>1,1,1,1</DiffuseColor>
+			<SpecularColor>1,1,1,1</SpecularColor>
+			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
+			<Tiling>1,1,1,1</Tiling>
+			<AOChannel>0</AOChannel>
+			<RoughnessChannel>0</RoughnessChannel>
+			<MetallicnessChannel>0</MetallicnessChannel>
+			<NormalMapCompression>0</NormalMapCompression>
+			<DetailNormalMapCompression>0</DetailNormalMapCompression>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UIProperties>1</UIProperties>
+			<UITilingProperties>0</UITilingProperties>
+			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
+			<UIAlbedoProperties>1</UIAlbedoProperties>
+			<UINormalProperties>1</UINormalProperties>
+			<UIDetailNormalProperties>1</UIDetailNormalProperties>
+			<UIRoughnessProperties>1</UIRoughnessProperties>
+			<UIMetallicnessProperties>1</UIMetallicnessProperties>
+			<UIAOProperties>1</UIAOProperties>
+			<UISSSProperties>1</UISSSProperties>
+		</Material>
 	</Materials>
 	<Entities>
 		<Entity>
@@ -3411,7 +3487,7 @@
 						<Param>
 							<Name>Actions</Name>
 							<Type>std_vector_std_string_fixed</Type>
-							<Value>CEntityEnabler::Enable</Value>
+							<Value>CEntityEnabler::Enable,ISI Tip-up Fenestrated Grasper_MT_Root,ISI Tip-up Fenestrated Grasper_MT_Link0,ISI Tip-up Fenestrated Grasper_MT_Left,ISI Tip-up Fenestrated Grasper_MT_Right,SMB Permanent Cautery Hook_MT_Root,SMB Permanent Cautery Hook_MT_Link,SMB Permanent Cautery Hook_MT_Left,SMB Permanent Cautery Hook_MT_Right,Camera_MT_Root</Value>
 						</Param>
 						<Param>
 							<Name>Enabled</Name>
@@ -3426,7 +3502,7 @@
 						<Param>
 							<Name>SimEngine_Tools</Name>
 							<Type>std_unordered_map_std_string_std_string_fixed_Select</Type>
-							<Value>SMB Permanent Cautery Hook_Left;SMB Permanent Cautery Hook_MT_Left;,ToolInserted;CEntityEnabler::Enable;,SMB Permanent Cautery Hook_0;SMB Permanent Cautery Hook_MT_Root;,ISI Tip-up Fenestrated Grasper_Left;ISI Tip-up Fenestrated Grasper_MT_Left;,SMB Permanent Cautery Hook_Link;SMB Permanent Cautery Hook_MT_Link;,SMB Permanent Cautery Hook_Right;SMB Permanent Cautery Hook_MT_Right;,ISI Tip-up Fenestrated Grasper_0;ISI Tip-up Fenestrated Grasper_MT_Root;,ISI Tip-up Fenestrated Grasper_Link0;ISI Tip-up Fenestrated Grasper_MT_Link0;,ISI Tip-up Fenestrated Grasper_Right;ISI Tip-up Fenestrated Grasper_MT_Right;</Value>
+							<Value>SMB Permanent Cautery Hook_Left;SMB Permanent Cautery Hook_MT_Left;,ToolInserted;CEntityEnabler::Enable;,SMB Permanent Cautery Hook_0;SMB Permanent Cautery Hook_MT_Root;,ISI Tip-up Fenestrated Grasper_Left;ISI Tip-up Fenestrated Grasper_MT_Left;,SMB Permanent Cautery Hook_Link;SMB Permanent Cautery Hook_MT_Link;,SMB Permanent Cautery Hook_Right;SMB Permanent Cautery Hook_MT_Right;,Camera_0;Camera_MT_Root;,ISI Tip-up Fenestrated Grasper_0;ISI Tip-up Fenestrated Grasper_MT_Root;,ISI Tip-up Fenestrated Grasper_Link0;ISI Tip-up Fenestrated Grasper_MT_Link0;,ISI Tip-up Fenestrated Grasper_Right;ISI Tip-up Fenestrated Grasper_MT_Right;</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -3913,7 +3989,7 @@
 						<Param>
 							<Name>Init</Name>
 							<Type>bool</Type>
-							<Value>1</Value>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>ModuleID</Name>
@@ -4309,7 +4385,7 @@
 			<Type>Light</Type>
 			<Name>Light-spot</Name>
 			<Parent></Parent>
-			<Visible>1</Visible>
+			<Visible>0</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
 			<Position>-2.41234,0.74672,15.9875</Position>
@@ -4391,9 +4467,9 @@
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
-			<Position>-54.7347,-3.71643,34.769</Position>
+			<Position>-46.0332,14.1824,19.0402</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.481201,0.019521,0.742964,0.464832</Rotation>
+			<Rotation>-0.448613,-0.106846,0.64552,0.608798</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>0</UITransformationGroup>
@@ -4474,7 +4550,7 @@
 				<Visible>1</Visible>
 				<Position>6.04584e-05,8.65059,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0,0,-0.434794,0.90053</Rotation>
+				<Rotation>0,0,-0.155003,0.987914</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4510,7 +4586,7 @@
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.261598,0,0,0.965177</Rotation>
+				<Rotation>-0.113981,0,0,0.993483</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4591,7 +4667,7 @@
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0.256038,0,-0,0.966667</Rotation>
+				<Rotation>0.398031,0,-0,0.917372</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4724,9 +4800,9 @@
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
-			<Position>36.3706,-37.5431,66.1189</Position>
+			<Position>64.1399,62.0682,-7.71667</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.231946,0.276683,0.792156,0.492073</Rotation>
+			<Rotation>-0.158119,0.055388,0.791012,0.588414</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -4798,7 +4874,7 @@
 				<Visible>1</Visible>
 				<Position>1.6911e-06,12.9814,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0,0,-0.0996606,0.995021</Rotation>
+				<Rotation>0,0,-0.0681402,0.997676</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4816,7 +4892,7 @@
 				<Visible>1</Visible>
 				<Position>1.92998,9.57603,-1.6911e-06</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.0112807,0,0,0.999936</Rotation>
+				<Rotation>-0.185857,0,0,0.982577</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4834,7 +4910,7 @@
 				<Visible>1</Visible>
 				<Position>-1.6911e-06,9.2636,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.0112807,0,0,0.999936</Rotation>
+				<Rotation>-0.185857,0,0,0.982577</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -5025,7 +5101,7 @@
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
-			<Position>0,0,0</Position>
+			<Position>0,0,-0.454842</Position>
 			<Scale>1,1,1</Scale>
 			<Rotation>0,0,0,1</Rotation>
 			<Pivot>0,0,0</Pivot>
@@ -5034,7 +5110,7 @@
 			<Components />
 			<CameraType>Perspective</CameraType>
 			<Current>0</Current>
-			<Active>0</Active>
+			<Active>1</Active>
 			<Preview>0</Preview>
 			<ViewportRect>0,0,1,1</ViewportRect>
 			<Near>1.000000</Near>
@@ -5048,11 +5124,11 @@
 		<Entity>
 			<Type>Model</Type>
 			<Name>CameraPose</Name>
-			<Parent></Parent>
+			<Parent>Camera</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
-			<Position>0,0,0</Position>
+			<Position>-6.28813e-07,0,-7.19278</Position>
 			<Scale>1,1,1</Scale>
 			<Rotation>0,1,0,-4.37114e-08</Rotation>
 			<Pivot>0,0,0</Pivot>
@@ -5071,6 +5147,82 @@
 			<PaintingWidth>1024.000000</PaintingWidth>
 			<UIRenderingGroup>1</UIRenderingGroup>
 			<UIPaintingGroup>0</UIPaintingGroup>
+		</Entity>
+		<Entity>
+			<Type>Model</Type>
+			<Name>Camera</Name>
+			<Parent>Tools</Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>-68.2423,69.4757,79.4691</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>-0.40226,-0.117627,0.170546,0.891776</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components>
+				<Component>
+					<Name>ModelTransform</Name>
+					<Parameters>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Matrix Request Trigger</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Tools_RequestMatrix</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Sub Meshes</Name>
+							<Type>std_vector_std_string</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Transform Root</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
+			<ModelFilename>./Models/Tools/Camera.fbx</ModelFilename>
+			<UseCache>1</UseCache>
+			<Painting>0</Painting>
+			<PaintingFixSeams>0</PaintingFixSeams>
+			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
+			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
+			<ShowPaintingColor>0</ShowPaintingColor>
+			<ShowPaintingRMH>0</ShowPaintingRMH>
+			<PaintingHeight>1024.000000</PaintingHeight>
+			<PaintingWidth>1024.000000</PaintingWidth>
+			<UIRenderingGroup>1</UIRenderingGroup>
+			<UIPaintingGroup>0</UIPaintingGroup>
+			<Mesh>
+				<Name>moti</Name>
+				<Material>material0</Material>
+				<Visible>1</Visible>
+				<Position>0,0,0</Position>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0.707107,0,-0,0.707107</Rotation>
+				<UIMeshGroup>0</UIMeshGroup>
+			</Mesh>
+			<Mesh>
+				<Name>Capsule_moti</Name>
+				<Material>material0</Material>
+				<Visible>1</Visible>
+				<Position>0,0,0</Position>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0,0,-0,1</Rotation>
+				<UIMeshGroup>0</UIMeshGroup>
+			</Mesh>
 		</Entity>
 	</Entities>
 </Scene>
