@@ -25,8 +25,8 @@
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowSettingsPanel>0</ShowSettingsPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>-45.6107,90.9741,27.4497</DefaultCameraPosition>
-		<DefaultCameraRotation>0.156909,0.509009,-0.0949703,0.840993</DefaultCameraRotation>
+		<DefaultCameraPosition>26.9589,51.2946,89.5638</DefaultCameraPosition>
+		<DefaultCameraRotation>0.0349153,-0.944102,0.310088,0.106292</DefaultCameraRotation>
 		<ApplySceneGraphPosition >1</ApplySceneGraphPosition >
 	</Editor>
 	<Materials>
@@ -4142,7 +4142,7 @@
 						<Param>
 							<Name>Enabled</Name>
 							<Type>bool</Type>
-							<Value>1</Value>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>Loop</Name>
@@ -4196,12 +4196,12 @@
 			<UIPaintingGroup>0</UIPaintingGroup>
 			<Mesh>
 				<Name>piece0</Name>
-				<Material>default</Material>
+				<Material>Fat</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
-				<UIMeshGroup>0</UIMeshGroup>
+				<UIMeshGroup>1</UIMeshGroup>
 			</Mesh>
 		</Entity>
 		<Entity>
@@ -4893,7 +4893,7 @@
 				<Position>1.92998,9.57603,-1.6911e-06</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0.185857,0,0,0.982577</Rotation>
-				<UIMeshGroup>0</UIMeshGroup>
+				<UIMeshGroup>1</UIMeshGroup>
 			</Mesh>
 			<Mesh>
 				<Name>Capsule_Left</Name>
@@ -5110,8 +5110,8 @@
 			<Components />
 			<CameraType>Perspective</CameraType>
 			<Current>0</Current>
-			<Active>1</Active>
-			<Preview>0</Preview>
+			<Active>0</Active>
+			<Preview>1</Preview>
 			<ViewportRect>0,0,1,1</ViewportRect>
 			<Near>1.000000</Near>
 			<Far>1000.000000</Far>
