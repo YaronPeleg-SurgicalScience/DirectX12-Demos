@@ -25,8 +25,8 @@
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowSettingsPanel>0</ShowSettingsPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>-5.7919,1.78991,6.61743</DefaultCameraPosition>
-		<DefaultCameraRotation>0.00573371,0.967687,-0.0221048,0.251119</DefaultCameraRotation>
+		<DefaultCameraPosition>-3.97836,7.19631,22.9609</DefaultCameraPosition>
+		<DefaultCameraRotation>0.0028675,-0.991894,0.124986,0.0227374</DefaultCameraRotation>
 		<ApplySceneGraphPosition >0</ApplySceneGraphPosition >
 	</Editor>
 	<Materials>
@@ -735,7 +735,7 @@
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
-			<Scale>0.1,0.1,0.1</Scale>
+			<Scale>1,1,1</Scale>
 			<Rotation>0,0,0,1</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
@@ -1199,8 +1199,129 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
-			<ModelFilename>./Models/Organs/Liver.fbx</ModelFilename>
+			<Components>
+				<Component>
+					<Name>AnimationTrack</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkeleton</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AnimationSkin</Name>
+					<Parameters>
+						<Param>
+							<Name>CPU Skin</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Liver:AnimationSkeleton</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>Animator</Name>
+					<Parameters>
+						<Param>
+							<Name>Advance Time</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Play</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Liver:AnimationSkeleton</Value>
+						</Param>
+						<Param>
+							<Name>Skin</Name>
+							<Type>IComponent</Type>
+							<Value>Liver:AnimationSkin</Value>
+						</Param>
+						<Param>
+							<Name>Track</Name>
+							<Type>IComponent</Type>
+							<Value>Liver:AnimationTrack</Value>
+						</Param>
+						<Param>
+							<Name>Track Duration Sec</Name>
+							<Type>float</Type>
+							<Value>5.800000</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
+			<ModelFilename>./Models/Organs/liver.fbx</ModelFilename>
 			<UseCache>1</UseCache>
 			<Painting>0</Painting>
 			<PaintingFixSeams>0</PaintingFixSeams>
@@ -1217,8 +1338,8 @@
 				<Material>default</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
-				<Scale>10,10,10</Scale>
-				<Rotation>2.18557e-08,0,-0,1</Rotation>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0,0,-0,1</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 		</Entity>
