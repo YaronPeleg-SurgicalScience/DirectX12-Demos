@@ -25,8 +25,8 @@
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowSettingsPanel>0</ShowSettingsPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>26.9589,51.2946,89.5638</DefaultCameraPosition>
-		<DefaultCameraRotation>0.0349153,-0.944102,0.310088,0.106292</DefaultCameraRotation>
+		<DefaultCameraPosition>9.55964,56.4036,-8.51132</DefaultCameraPosition>
+		<DefaultCameraRotation>0.0304312,0.961615,-0.2452,0.119361</DefaultCameraRotation>
 		<ApplySceneGraphPosition >1</ApplySceneGraphPosition >
 	</Editor>
 	<Materials>
@@ -4519,7 +4519,7 @@
 			<UIPaintingGroup>0</UIPaintingGroup>
 			<Mesh>
 				<Name>Moti</Name>
-				<Material>01 - Default</Material>
+				<Material>ISI_Common_Moti</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4537,7 +4537,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>MotiTip</Name>
-				<Material>01 - Default</Material>
+				<Material>ISI_Common_MotiTip</Material>
 				<Visible>1</Visible>
 				<Position>-3.21919e-08,0,3.21925e-08</Position>
 				<Scale>1,1,1</Scale>
@@ -4546,7 +4546,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Link0</Name>
-				<Material>01 - Default</Material>
+				<Material>ISI_Grasper_Link</Material>
 				<Visible>1</Visible>
 				<Position>6.04584e-05,8.65059,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4564,7 +4564,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_Link1</Name>
-				<Material>01 - Default</Material>
+				<Material>ISI_Grasper_Link</Material>
 				<Visible>1</Visible>
 				<Position>-1.56898,3.75551,1.98794</Position>
 				<Scale>1,1,1</Scale>
@@ -4573,7 +4573,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_Link2</Name>
-				<Material>01 - Default</Material>
+				<Material>ISI_Grasper_Link</Material>
 				<Visible>1</Visible>
 				<Position>1.56874,3.7555,-1.9881</Position>
 				<Scale>1,1,1</Scale>
@@ -4582,7 +4582,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Left</Name>
-				<Material>Tip1:blinn6</Material>
+				<Material>ISI_Graspper_Jaws</Material>
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
@@ -4591,12 +4591,12 @@
 			</Mesh>
 			<Mesh>
 				<Name>Left_1</Name>
-				<Material>01 - Default</Material>
+				<Material>ISI_Graspper_Jaws</Material>
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
-				<UIMeshGroup>0</UIMeshGroup>
+				<UIMeshGroup>1</UIMeshGroup>
 			</Mesh>
 			<Mesh>
 				<Name>Capsule_Left</Name>
@@ -4663,7 +4663,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Right</Name>
-				<Material>Tip1:blinn6</Material>
+				<Material>ISI_Graspper_Jaws</Material>
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
@@ -4672,7 +4672,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Right_1</Name>
-				<Material>01 - Default</Material>
+				<Material>ISI_Graspper_Jaws</Material>
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
@@ -4753,21 +4753,21 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_moti1</Name>
-				<Material>01 - Default</Material>
+				<Material>ISI_Grasper_Link</Material>
 				<Visible>1</Visible>
 				<Position>6.04584e-05,8.64535,2.06334</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
-				<UIMeshGroup>0</UIMeshGroup>
+				<UIMeshGroup>1</UIMeshGroup>
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_moti2</Name>
-				<Material>01 - Default</Material>
+				<Material>ISI_Grasper_Link</Material>
 				<Visible>1</Visible>
 				<Position>6.16505e-05,8.64535,-2.06335</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
-				<UIMeshGroup>0</UIMeshGroup>
+				<UIMeshGroup>1</UIMeshGroup>
 			</Mesh>
 		</Entity>
 		<Entity>
@@ -4852,7 +4852,7 @@
 			<UIPaintingGroup>0</UIPaintingGroup>
 			<Mesh>
 				<Name>Moti</Name>
-				<Material>Moti</Material>
+				<Material>ISI_Common_Moti</Material>
 				<Visible>1</Visible>
 				<Position>-1.69128e-06,1.6911e-06,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4870,7 +4870,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Link</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>1.6911e-06,12.9814,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4888,12 +4888,12 @@
 			</Mesh>
 			<Mesh>
 				<Name>Left</Name>
-				<Material>Metal</Material>
+				<Material>SMB_Hook_Metal</Material>
 				<Visible>1</Visible>
 				<Position>1.92998,9.57603,-1.6911e-06</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0.185857,0,0,0.982577</Rotation>
-				<UIMeshGroup>1</UIMeshGroup>
+				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
 				<Name>Capsule_Left</Name>
@@ -4906,7 +4906,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Right</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>-1.6911e-06,9.2636,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4987,7 +4987,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Right1</Name>
-				<Material>Metal</Material>
+				<Material>SMB_Hook_Metal</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4996,7 +4996,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Right2</Name>
-				<Material>Metal</Material>
+				<Material>SMB_Hook_Metal</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -5005,7 +5005,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Right3</Name>
-				<Material>Metal</Material>
+				<Material>SMB_Hook_Metal</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -5014,7 +5014,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_Link04</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>0,0,9.32988e-17</Position>
 				<Scale>1,1,1</Scale>
@@ -5023,7 +5023,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_axle_link01</Name>
-				<Material>Metal</Material>
+				<Material>SMB_Hook_Metal</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -5032,7 +5032,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_Link03</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>0,0,9.32988e-17</Position>
 				<Scale>1,1,1</Scale>
@@ -5041,7 +5041,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Bolt</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -5059,7 +5059,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Moti_Tip</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>1.6911e-06,1.17549e-38,-1.6911e-06</Position>
 				<Scale>1,1,1</Scale>
@@ -5068,7 +5068,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_moti1</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>-1.69128e-06,-1.35763e-24,1.66893e-06</Position>
 				<Scale>1,1,1</Scale>
@@ -5077,7 +5077,7 @@
 			</Mesh>
 			<Mesh>
 				<Name>Moti_Tip_Pin</Name>
-				<Material>Metal</Material>
+				<Material>SMB_Hook_Metal</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -5086,12 +5086,12 @@
 			</Mesh>
 			<Mesh>
 				<Name>Wheel_moti2</Name>
-				<Material>Plastic</Material>
+				<Material>SMB_Hook_Plastic</Material>
 				<Visible>1</Visible>
 				<Position>-1.69128e-06,-1.35763e-24,1.66893e-06</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
-				<UIMeshGroup>0</UIMeshGroup>
+				<UIMeshGroup>1</UIMeshGroup>
 			</Mesh>
 		</Entity>
 		<Entity>
