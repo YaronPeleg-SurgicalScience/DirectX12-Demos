@@ -25,8 +25,8 @@
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowSettingsPanel>0</ShowSettingsPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>9.55964,56.4036,-8.51132</DefaultCameraPosition>
-		<DefaultCameraRotation>0.0304312,0.961615,-0.2452,0.119361</DefaultCameraRotation>
+		<DefaultCameraPosition>-53.3714,71.4008,38.2784</DefaultCameraPosition>
+		<DefaultCameraRotation>0.119282,0.876759,-0.370866,0.282001</DefaultCameraRotation>
 		<ApplySceneGraphPosition >1</ApplySceneGraphPosition >
 	</Editor>
 	<Materials>
@@ -3487,7 +3487,7 @@
 						<Param>
 							<Name>Actions</Name>
 							<Type>std_vector_std_string_fixed</Type>
-							<Value>CEntityEnabler::Enable,ISI Tip-up Fenestrated Grasper_MT_Root,ISI Tip-up Fenestrated Grasper_MT_Link0,ISI Tip-up Fenestrated Grasper_MT_Left,ISI Tip-up Fenestrated Grasper_MT_Right,SMB Permanent Cautery Hook_MT_Root,SMB Permanent Cautery Hook_MT_Link,SMB Permanent Cautery Hook_MT_Left,SMB Permanent Cautery Hook_MT_Right,Camera_MT_Root</Value>
+							<Value>CEntityEnabler::Enable</Value>
 						</Param>
 						<Param>
 							<Name>Enabled</Name>
@@ -3502,7 +3502,7 @@
 						<Param>
 							<Name>SimEngine_Tools</Name>
 							<Type>std_unordered_map_std_string_std_string_fixed_Select</Type>
-							<Value>SMB Permanent Cautery Hook_Left;SMB Permanent Cautery Hook_MT_Left;,ToolInserted;CEntityEnabler::Enable;,SMB Permanent Cautery Hook_0;SMB Permanent Cautery Hook_MT_Root;,ISI Tip-up Fenestrated Grasper_Left;ISI Tip-up Fenestrated Grasper_MT_Left;,SMB Permanent Cautery Hook_Link;SMB Permanent Cautery Hook_MT_Link;,SMB Permanent Cautery Hook_Right;SMB Permanent Cautery Hook_MT_Right;,Camera_0;Camera_MT_Root;,ISI Tip-up Fenestrated Grasper_0;ISI Tip-up Fenestrated Grasper_MT_Root;,ISI Tip-up Fenestrated Grasper_Link0;ISI Tip-up Fenestrated Grasper_MT_Link0;,ISI Tip-up Fenestrated Grasper_Right;ISI Tip-up Fenestrated Grasper_MT_Right;</Value>
+							<Value>ToolInserted;CEntityEnabler::Enable;,SMB Permanent Cautery Hook_Left;SMB Permanent Cautery Hook_MT_Left;,SMB Permanent Cautery Hook_0;SMB Permanent Cautery Hook_MT_Root;,SMB Permanent Cautery Hook_Link;SMB Permanent Cautery Hook_MT_Link;,ISI Tip-up Fenestrated Grasper_Left;ISI Tip-up Fenestrated Grasper_MT_Left;,SMB Permanent Cautery Hook_Right;SMB Permanent Cautery Hook_MT_Right;,Camera_0;Camera_MT_Root;,ISI Tip-up Fenestrated Grasper_0;ISI Tip-up Fenestrated Grasper_MT_Root;,ISI Tip-up Fenestrated Grasper_Link0;ISI Tip-up Fenestrated Grasper_MT_Link0;,ISI Tip-up Fenestrated Grasper_Right;ISI Tip-up Fenestrated Grasper_MT_Right;</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -3989,7 +3989,7 @@
 						<Param>
 							<Name>Init</Name>
 							<Type>bool</Type>
-							<Value>0</Value>
+							<Value>1</Value>
 						</Param>
 						<Param>
 							<Name>ModuleID</Name>
@@ -4206,7 +4206,7 @@
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
-			<Name>Fat_Floor</Name>
+			<Name>Fat</Name>
 			<Parent>Body</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
@@ -4284,7 +4284,7 @@
 						<Param>
 							<Name>Skeleton</Name>
 							<Type>IComponent</Type>
-							<Value>Fat_Floor:AnimationSkeleton</Value>
+							<Value>Fat:AnimationSkeleton</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -4304,7 +4304,7 @@
 						<Param>
 							<Name>Loop</Name>
 							<Type>bool</Type>
-							<Value>0</Value>
+							<Value>1</Value>
 						</Param>
 						<Param>
 							<Name>Parent</Name>
@@ -4314,22 +4314,22 @@
 						<Param>
 							<Name>Play</Name>
 							<Type>bool</Type>
-							<Value>0</Value>
+							<Value>1</Value>
 						</Param>
 						<Param>
 							<Name>Skeleton</Name>
 							<Type>IComponent</Type>
-							<Value>Fat_Floor:AnimationSkeleton</Value>
+							<Value>Fat:AnimationSkeleton</Value>
 						</Param>
 						<Param>
 							<Name>Skin</Name>
 							<Type>IComponent</Type>
-							<Value>Fat_Floor:AnimationSkin</Value>
+							<Value>Fat:AnimationSkin</Value>
 						</Param>
 						<Param>
 							<Name>Track</Name>
 							<Type>IComponent</Type>
-							<Value>Fat_Floor:AnimationTrack</Value>
+							<Value>Fat:AnimationTrack</Value>
 						</Param>
 						<Param>
 							<Name>Track Duration Sec</Name>
@@ -4355,6 +4355,46 @@
 							<Name>VolumeName</Name>
 							<Type>std_string</Type>
 							<Value>Fat</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>SimEngine_Positions</Name>
+					<Parameters>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>MeshSkinnerComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>MeshIndex</Name>
+							<Type>int</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Parent</Name>
+							<Type>IEntity</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>SourcePositionComponent</Name>
+							<Type>std_string</Type>
+							<Value>SimEngine_Positions</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -4467,9 +4507,9 @@
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
-			<Position>-46.0332,14.1824,19.0402</Position>
+			<Position>-15.9815,-8.72989,-1.6469</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.448613,-0.106846,0.64552,0.608798</Rotation>
+			<Rotation>-0.270415,-0.380681,0.0695084,0.881548</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>0</UITransformationGroup>
@@ -4550,7 +4590,7 @@
 				<Visible>1</Visible>
 				<Position>6.04584e-05,8.65059,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0,0,-0.155003,0.987914</Rotation>
+				<Rotation>-0,0,0.205336,0.978691</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4586,7 +4626,7 @@
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.113981,0,0,0.993483</Rotation>
+				<Rotation>0.114595,0,-0,0.993412</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4667,7 +4707,7 @@
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0.398031,0,-0,0.917372</Rotation>
+				<Rotation>0.595949,0,-0,0.803023</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4800,9 +4840,9 @@
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
-			<Position>64.1399,62.0682,-7.71667</Position>
+			<Position>-43.5295,81.5006,-2.07495</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.158119,0.055388,0.791012,0.588414</Rotation>
+			<Rotation>0.0688646,0.129235,0.957829,0.247222</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -4874,7 +4914,7 @@
 				<Visible>1</Visible>
 				<Position>1.6911e-06,12.9814,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>0,0,-0.0681402,0.997676</Rotation>
+				<Rotation>-0,0,0.295716,0.955276</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4892,7 +4932,7 @@
 				<Visible>1</Visible>
 				<Position>1.92998,9.57603,-1.6911e-06</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.185857,0,0,0.982577</Rotation>
+				<Rotation>-0.488716,0,0,0.872443</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4910,7 +4950,7 @@
 				<Visible>1</Visible>
 				<Position>-1.6911e-06,9.2636,0</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.185857,0,0,0.982577</Rotation>
+				<Rotation>-0.488716,0,0,0.872443</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -5110,8 +5150,8 @@
 			<Components />
 			<CameraType>Perspective</CameraType>
 			<Current>0</Current>
-			<Active>0</Active>
-			<Preview>1</Preview>
+			<Active>1</Active>
+			<Preview>0</Preview>
 			<ViewportRect>0,0,1,1</ViewportRect>
 			<Near>1.000000</Near>
 			<Far>1000.000000</Far>
@@ -5155,9 +5195,9 @@
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
-			<Position>-68.2423,69.4757,79.4691</Position>
+			<Position>-56.3,64.9,46.5</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.40226,-0.117627,0.170546,0.891776</Rotation>
+			<Rotation>-0.314815,-0.200066,-0.0246569,0.9275</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
