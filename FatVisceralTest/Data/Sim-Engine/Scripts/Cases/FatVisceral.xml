@@ -29,8 +29,8 @@
             <MeshKs>10000</MeshKs>
             <MeshKw>15000</MeshKw>
             <MeshKd>100</MeshKd>
-            <CoreKs>0</CoreKs>
-            <UseCorePositions>0</UseCorePositions>
+            <CoreKs>400</CoreKs>
+            <UseCorePositions>1</UseCorePositions>
             <UseCoreMesh>0</UseCoreMesh>
             <ExplicitDamping>10</ExplicitDamping>
             <SpringElementThresh>0</SpringElementThresh>
