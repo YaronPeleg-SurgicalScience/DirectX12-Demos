@@ -4636,7 +4636,7 @@
 			<Group>0</Group>
 			<Position>-70.5544,42.2654,24.2632</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.381058,-0.211818,0.505318,0.744703</Rotation>
+			<Rotation>-0.381058,-0.211819,0.505318,0.744703</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>0</UITransformationGroup>
@@ -4753,7 +4753,7 @@
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.0656465,0,0,0.997843</Rotation>
+				<Rotation>-0.0656466,0,0,0.997843</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4834,7 +4834,7 @@
 				<Visible>1</Visible>
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
-				<Rotation>-0.0656465,0,0,0.997843</Rotation>
+				<Rotation>-0.0656466,0,0,0.997843</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
 			<Mesh>
@@ -4969,7 +4969,7 @@
 			<Group>0</Group>
 			<Position>-25.128,34.6287,32.7444</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.0238196,0.222647,0.884425,0.409455</Rotation>
+			<Rotation>-0.0238197,0.222647,0.884425,0.409455</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -5277,7 +5277,7 @@
 			<Components />
 			<CameraType>Perspective</CameraType>
 			<Current>0</Current>
-			<Active>0</Active>
+			<Active>1</Active>
 			<Preview>0</Preview>
 			<ViewportRect>0,0,1,1</ViewportRect>
 			<Near>1.000000</Near>
@@ -5322,9 +5322,9 @@
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
-			<Position>-56.9055,74.2274,33.7619</Position>
+			<Position>-56.3,64.9,46.5</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>-0.12065,-0.314483,-0.554448,0.761007</Rotation>
+			<Rotation>-0.314815,-0.200066,-0.024657,0.9275</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>

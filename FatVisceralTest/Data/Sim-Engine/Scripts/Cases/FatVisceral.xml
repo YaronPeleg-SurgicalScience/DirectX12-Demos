@@ -29,7 +29,7 @@
             <MeshKs>10000</MeshKs>
             <MeshKw>15000</MeshKw>
             <MeshKd>100</MeshKd>
-            <CoreKs>400</CoreKs>
+            <CoreKs>1000</CoreKs>
             <UseCorePositions>1</UseCorePositions>
             <UseCoreMesh>0</UseCoreMesh>
             <ExplicitDamping>10</ExplicitDamping>
