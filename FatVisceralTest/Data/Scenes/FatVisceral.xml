@@ -4,31 +4,31 @@
 		<VXGI>
 			<CameraCenter>0,0,0</CameraCenter>
 			<Power>1.000000</Power>
-			<VoxelSize>1.000000</VoxelSize>
-			<TraceDistance>100.000000</TraceDistance>
-			<AOFalloff>30.000000</AOFalloff>
+			<VoxelSize>2.500000</VoxelSize>
+			<TraceDistance>101.076889</TraceDistance>
+			<AOFalloff>0.100000</AOFalloff>
 			<DiffuseOffset>1.000000</DiffuseOffset>
 			<DiffuseStrength>1.000000</DiffuseStrength>
 			<SpecularOffset>6.000000</SpecularOffset>
 			<SpecularStrength>1.000000</SpecularStrength>
-			<SmoothingTimeMS>1000.000000</SmoothingTimeMS>
+			<SmoothingTimeMS>0.000000</SmoothingTimeMS>
 			<SamplingFactor>0.500000</SamplingFactor>
 		</VXGI>
 		<SSSSS>
-			<Technique>ScreenSpace JJ</Technique>
+			<Technique>ScreenSpace Burley</Technique>
 			<SamplesCount>32.000000</SamplesCount>
-			<Width>0.000050</Width>
-			<MaxDepthDiffScale>10000000.000000</MaxDepthDiffScale>
+			<Width>1.500000</Width>
+			<MaxDepthDiffScale>0.000000</MaxDepthDiffScale>
 		</SSSSS>
 	</Settings>
 	<Editor>
 		<ShowGrid>0</ShowGrid>
-		<ShowEntitiesIcon>1</ShowEntitiesIcon>
+		<ShowEntitiesIcon>0</ShowEntitiesIcon>
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowSettingsPanel>0</ShowSettingsPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>-62.3529,47.9359,38.9874</DefaultCameraPosition>
-		<DefaultCameraRotation>0.0987297,0.895771,-0.249613,0.354318</DefaultCameraRotation>
+		<DefaultCameraPosition>56.7731,-7.39435,84.7184</DefaultCameraPosition>
+		<DefaultCameraRotation>-0.00262247,-0.994946,-0.0270786,0.0966573</DefaultCameraRotation>
 		<ApplySceneGraphPosition >1</ApplySceneGraphPosition >
 	</Editor>
 	<Materials>
@@ -3542,6 +3542,196 @@
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
 		</Material>
+		<Material>
+			<Name>Material</Name>
+			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/Functions/VertexHeightDisplacement.hlsl</CustomShaderFile>
+			<AlbedoFile>./Textures/SimbDemo/sRGB/fat_visceral1_diffuse.dds</AlbedoFile>
+			<NormalFile>./Textures/SimbDemo/sRGB/fat_visceral1_height_normal_HDR.dds</NormalFile>
+			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
+			<RoughnessFile>./Textures/SimbDemo/sRGB/fat_visceral1_roughness.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
+			<AOFile>./Textures/white4x4.dds</AOFile>
+			<SSSFile>./Textures/SimbDemo/sRGB/fat_visceral1_diffuse.dds</SSSFile>
+			<AlbedoFilter>Anisotropic</AlbedoFilter>
+			<NormalFilter>Anisotropic</NormalFilter>
+			<DetailNormalFilter>Anisotropic</DetailNormalFilter>
+			<RoughnessFilter>Linear</RoughnessFilter>
+			<MetallicnessFilter>Linear</MetallicnessFilter>
+			<AOFilter>Linear</AOFilter>
+			<SSSFilter>Linear</SSSFilter>
+			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
+			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
+			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
+			<NormalAddressModelU>Wrap</NormalAddressModelU>
+			<NormalAddressModelV>Wrap</NormalAddressModelV>
+			<NormalAddressModelW>Wrap</NormalAddressModelW>
+			<DetailNormalAddressModelU>Wrap</DetailNormalAddressModelU>
+			<DetailNormalAddressModelV>Wrap</DetailNormalAddressModelV>
+			<DetailNormalAddressModelW>Wrap</DetailNormalAddressModelW>
+			<RoughnessAddressModelU>Wrap</RoughnessAddressModelU>
+			<RoughnessAddressModelV>Wrap</RoughnessAddressModelV>
+			<RoughnessAddressModelW>Wrap</RoughnessAddressModelW>
+			<MetallicnessAddressModelU>Wrap</MetallicnessAddressModelU>
+			<MetallicnessAddressModelV>Wrap</MetallicnessAddressModelV>
+			<MetallicnessAddressModelW>Wrap</MetallicnessAddressModelW>
+			<AOAddressModelU>Wrap</AOAddressModelU>
+			<AOAddressModelV>Wrap</AOAddressModelV>
+			<AOAddressModelW>Wrap</AOAddressModelW>
+			<SSSAddressModelU>Wrap</SSSAddressModelU>
+			<SSSAddressModelV>Wrap</SSSAddressModelV>
+			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>1</CustomShader>
+			<SubsurfaceScattering>1</SubsurfaceScattering>
+			<TwoSided>0</TwoSided>
+			<TwoSidedLighting>0</TwoSidedLighting>
+			<Roughness>1.500000</Roughness>
+			<Metallicness>0.000000</Metallicness>
+			<Bumpiness>0.600000</Bumpiness>
+			<DetailBumpiness>0.000000</DetailBumpiness>
+			<AO>1.000000</AO>
+			<AlphaRef>0.000000</AlphaRef>
+			<GIStrength>1.000000</GIStrength>
+			<Refraction>0.000000</Refraction>
+			<RefractionIndex>1.000000</RefractionIndex>
+			<DiffuseColor>1,1,1,1</DiffuseColor>
+			<SpecularColor>1,1,1,1</SpecularColor>
+			<SubsurfaceColor>1,1,1,20</SubsurfaceColor>
+			<Tiling>1.3333,1.3333,0.2,0.2</Tiling>
+			<Offsetting>-0.16666,-0.16666,0,0</Offsetting>
+			<AOChannel>0</AOChannel>
+			<RoughnessChannel>0</RoughnessChannel>
+			<MetallicnessChannel>0</MetallicnessChannel>
+			<NormalMapCompression>0</NormalMapCompression>
+			<DetailNormalMapCompression>0</DetailNormalMapCompression>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UIProperties>1</UIProperties>
+			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
+			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
+			<UIAlbedoProperties>0</UIAlbedoProperties>
+			<UINormalProperties>1</UINormalProperties>
+			<UIDetailNormalProperties>0</UIDetailNormalProperties>
+			<UIRoughnessProperties>0</UIRoughnessProperties>
+			<UIMetallicnessProperties>0</UIMetallicnessProperties>
+			<UIAOProperties>0</UIAOProperties>
+			<UISSSProperties>0</UISSSProperties>
+			<CustomShaderParams>
+				<Param>
+					<Name>vEditorHeightMapRes</Name>
+					<Type>vector</Type>
+					<Value>4096,4096,0,0</Value>
+				</Param>
+				<Param>
+					<Name>fEditorHeightOffset</Name>
+					<Type>float</Type>
+					<Value>0.5,0,0,0</Value>
+				</Param>
+				<Param>
+					<Name>fEditorHeightScale</Name>
+					<Type>float</Type>
+					<Value>1,0,0,0</Value>
+				</Param>
+				<Param>
+					<Name>EditorHeightMap</Name>
+					<Type>texture</Type>
+					<SRGB>1</SRGB>
+					<File>./Textures/white4x4.dds</File>
+				</Param>
+				<Param>
+					<Name>fEditorSaturation</Name>
+					<Type>float</Type>
+					<Value>1,0,0,0</Value>
+				</Param>
+				<Param>
+					<Name>fEditorHue</Name>
+					<Type>float</Type>
+					<Value>0,0,0,0</Value>
+				</Param>
+			</CustomShaderParams>
+		</Material>
+		<Material>
+			<Name>Material_dummy</Name>
+			<Domain>0</Domain>
+			<AlbedoFile>./Textures/SimbDemo/sRGB/fat_visceral1_diffuse.dds</AlbedoFile>
+			<NormalFile>./Textures/SimbDemo/sRGB/fat_visceral1_height_normal_HDR.dds</NormalFile>
+			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
+			<RoughnessFile>./Textures/SimbDemo/sRGB/fat_visceral1_roughness.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
+			<AOFile>./Textures/white4x4.dds</AOFile>
+			<SSSFile>./Textures/SimbDemo/sRGB/fat_visceral1_diffuse.dds</SSSFile>
+			<AlbedoFilter>Anisotropic</AlbedoFilter>
+			<NormalFilter>Anisotropic</NormalFilter>
+			<DetailNormalFilter>Linear</DetailNormalFilter>
+			<RoughnessFilter>Anisotropic</RoughnessFilter>
+			<MetallicnessFilter>Linear</MetallicnessFilter>
+			<AOFilter>Linear</AOFilter>
+			<SSSFilter>Linear</SSSFilter>
+			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
+			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
+			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
+			<NormalAddressModelU>Wrap</NormalAddressModelU>
+			<NormalAddressModelV>Wrap</NormalAddressModelV>
+			<NormalAddressModelW>Wrap</NormalAddressModelW>
+			<DetailNormalAddressModelU>Wrap</DetailNormalAddressModelU>
+			<DetailNormalAddressModelV>Wrap</DetailNormalAddressModelV>
+			<DetailNormalAddressModelW>Wrap</DetailNormalAddressModelW>
+			<RoughnessAddressModelU>Wrap</RoughnessAddressModelU>
+			<RoughnessAddressModelV>Wrap</RoughnessAddressModelV>
+			<RoughnessAddressModelW>Wrap</RoughnessAddressModelW>
+			<MetallicnessAddressModelU>Wrap</MetallicnessAddressModelU>
+			<MetallicnessAddressModelV>Wrap</MetallicnessAddressModelV>
+			<MetallicnessAddressModelW>Wrap</MetallicnessAddressModelW>
+			<AOAddressModelU>Wrap</AOAddressModelU>
+			<AOAddressModelV>Wrap</AOAddressModelV>
+			<AOAddressModelW>Wrap</AOAddressModelW>
+			<SSSAddressModelU>Wrap</SSSAddressModelU>
+			<SSSAddressModelV>Wrap</SSSAddressModelV>
+			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
+			<SubsurfaceScattering>1</SubsurfaceScattering>
+			<TwoSided>0</TwoSided>
+			<TwoSidedLighting>0</TwoSidedLighting>
+			<Roughness>1.000000</Roughness>
+			<Metallicness>0.000000</Metallicness>
+			<Bumpiness>1.000000</Bumpiness>
+			<DetailBumpiness>0.000000</DetailBumpiness>
+			<AO>1.000000</AO>
+			<AlphaRef>0.000000</AlphaRef>
+			<GIStrength>0.200000</GIStrength>
+			<Refraction>0.000000</Refraction>
+			<RefractionIndex>1.000000</RefractionIndex>
+			<DiffuseColor>1,0.929312,0.681904,1</DiffuseColor>
+			<SpecularColor>1,1,1,1</SpecularColor>
+			<SubsurfaceColor>1,1,1,1</SubsurfaceColor>
+			<Tiling>1.3333,1.3333,1,1</Tiling>
+			<Offsetting>-0.16666,-0.16666,0,0</Offsetting>
+			<AOChannel>0</AOChannel>
+			<RoughnessChannel>0</RoughnessChannel>
+			<MetallicnessChannel>0</MetallicnessChannel>
+			<NormalMapCompression>0</NormalMapCompression>
+			<DetailNormalMapCompression>0</DetailNormalMapCompression>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UIProperties>1</UIProperties>
+			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
+			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
+			<UIAlbedoProperties>0</UIAlbedoProperties>
+			<UINormalProperties>0</UINormalProperties>
+			<UIDetailNormalProperties>0</UIDetailNormalProperties>
+			<UIRoughnessProperties>0</UIRoughnessProperties>
+			<UIMetallicnessProperties>0</UIMetallicnessProperties>
+			<UIAOProperties>0</UIAOProperties>
+			<UISSSProperties>0</UISSSProperties>
+		</Material>
 	</Materials>
 	<Entities>
 		<Entity>
@@ -4234,7 +4424,7 @@
 						<Param>
 							<Name>Enabled</Name>
 							<Type>bool</Type>
-							<Value>0</Value>
+							<Value>1</Value>
 						</Param>
 						<Param>
 							<Name>Loop</Name>
@@ -4288,7 +4478,7 @@
 			<UIPaintingGroup>0</UIPaintingGroup>
 			<Mesh>
 				<Name>piece0</Name>
-				<Material>Fat</Material>
+				<Material>Material_dummy</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4301,7 +4491,7 @@
 			<Name>Fat</Name>
 			<Parent>Body</Parent>
 			<Visible>1</Visible>
-			<Dynamic>0</Dynamic>
+			<Dynamic>1</Dynamic>
 			<Group>0</Group>
 			<Position>0,0,0</Position>
 			<Scale>1,1,1</Scale>
@@ -4540,7 +4730,7 @@
 			<UIPaintingGroup>0</UIPaintingGroup>
 			<Mesh>
 				<Name>piece0</Name>
-				<Material>Fat</Material>
+				<Material>Material_dummy</Material>
 				<Visible>1</Visible>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
@@ -4835,7 +5025,7 @@
 				<Position>-7.30469e-05,10.7044,-7.9412e-05</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0.0656466,0,0,0.997843</Rotation>
-				<UIMeshGroup>0</UIMeshGroup>
+				<UIMeshGroup>1</UIMeshGroup>
 			</Mesh>
 			<Mesh>
 				<Name>Right_1</Name>
@@ -4940,24 +5130,27 @@
 		<Entity>
 			<Type>Light</Type>
 			<Name>Tool-Light</Name>
-			<Parent>Tools</Parent>
+			<Parent>CameraPose</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
-			<Position>0,11.1194,0</Position>
+			<Position>0,0,0</Position>
 			<Scale>100,100,100</Scale>
 			<Rotation>0,0,0,1</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
 			<Components />
-			<LightType>Point</LightType>
-			<InnerCone>30.000000</InnerCone>
-			<OuterCone>45.000000</OuterCone>
+			<LightType>Spot</LightType>
+			<InnerCone>15.000000</InnerCone>
+			<OuterCone>60.000000</OuterCone>
 			<CastShadows>1</CastShadows>
-			<Intensity>1.000000</Intensity>
+			<Intensity>100.000000</Intensity>
+			<AreaSize>0.250000</AreaSize>
+			<Near>0.050000</Near>
+			<Far>200.000000</Far>
 			<DiffuseColor>1,1,1,1</DiffuseColor>
-			<SpecularColor>1,1,1,1</SpecularColor>
+			<SpecularColor>10,10,10,10</SpecularColor>
 			<UILightGroup>1</UILightGroup>
 		</Entity>
 		<Entity>
@@ -5268,7 +5461,7 @@
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
-			<Position>0,0,-0.454842</Position>
+			<Position>-3.33617,0,1.17415</Position>
 			<Scale>1,1,1</Scale>
 			<Rotation>0,0,0,1</Rotation>
 			<Pivot>0,0,0</Pivot>
@@ -5390,6 +5583,281 @@
 				<Rotation>-0,0,-0,1</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
+		</Entity>
+		<Entity>
+			<Type>PostEffect</Type>
+			<Name>PostEffect_Tonemap</Name>
+			<Parent></Parent>
+			<Visible>0</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>1.06279,1.86221,6.22876</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<Show>0</Show>
+			<Location>PostEffect_Gamma</Location>
+			<RenderFormat>RGBA16F</RenderFormat>
+			<RenderWidth>1920</RenderWidth>
+			<RenderHeight>1030</RenderHeight>
+			<ShaderFilename>../Data/Shaders/PostEffects/ToneMap.hlsl</ShaderFilename>
+			<UIPostEffectGroup>1</UIPostEffectGroup>
+			<UIRenderParamsGroup>1</UIRenderParamsGroup>
+			<UIShaderParamsGroup>1</UIShaderParamsGroup>
+			<ShaderParameter>
+				<Name>editor_texture</Name>
+				<Type>PreviousPostEffectTexture</Type>
+				<Value></Value>
+			</ShaderParameter>
+			<ShaderParameter>
+				<Name>editor_technique</Name>
+				<Type>Float</Type>
+				<Value>1.000000</Value>
+			</ShaderParameter>
+		</Entity>
+		<Entity>
+			<Type>PostEffect</Type>
+			<Name>PostEffect_FXAA</Name>
+			<Parent></Parent>
+			<Visible>0</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0.549908,0.993274,4.03977</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<Show>0</Show>
+			<Location>PostEffect_bokeh</Location>
+			<RenderFormat>RGBA16F</RenderFormat>
+			<RenderWidth>1920</RenderWidth>
+			<RenderHeight>1030</RenderHeight>
+			<ShaderFilename>../Data/Shaders/PostEffects/FXAA.hlsl</ShaderFilename>
+			<UIPostEffectGroup>1</UIPostEffectGroup>
+			<UIRenderParamsGroup>1</UIRenderParamsGroup>
+			<UIShaderParamsGroup>1</UIShaderParamsGroup>
+			<ShaderParameter>
+				<Name>editor_texture</Name>
+				<Type>PreviousPostEffectTexture</Type>
+				<Value></Value>
+			</ShaderParameter>
+		</Entity>
+		<Entity>
+			<Type>PostEffect</Type>
+			<Name>PostEffect_bokeh_mask</Name>
+			<Parent></Parent>
+			<Visible>0</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>-2.08431,0.160012,1.90707</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<Show>0</Show>
+			<Location>[FIRST]</Location>
+			<RenderFormat>RGBA16F</RenderFormat>
+			<RenderWidth>1920</RenderWidth>
+			<RenderHeight>1030</RenderHeight>
+			<ShaderFilename>../Data/Shaders/PostEffects/BokehMask.hlsl</ShaderFilename>
+			<UIPostEffectGroup>1</UIPostEffectGroup>
+			<UIRenderParamsGroup>1</UIRenderParamsGroup>
+			<UIShaderParamsGroup>1</UIShaderParamsGroup>
+			<ShaderParameter>
+				<Name>editor_depth</Name>
+				<Type>DepthBuffer</Type>
+			</ShaderParameter>
+			<ShaderParameter>
+				<Name>editor_scale</Name>
+				<Type>Float</Type>
+				<Value>0.075000</Value>
+			</ShaderParameter>
+			<ShaderParameter>
+				<Name>editor_pow</Name>
+				<Type>Float</Type>
+				<Value>16.000000</Value>
+			</ShaderParameter>
+		</Entity>
+		<Entity>
+			<Type>PostEffect</Type>
+			<Name>PostEffect_bokeh</Name>
+			<Parent></Parent>
+			<Visible>0</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>-2.08431,0.160012,1.90707</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<Show>0</Show>
+			<Location>PostEffect_bokeh_mask</Location>
+			<RenderFormat>RGBA16F</RenderFormat>
+			<RenderWidth>1920</RenderWidth>
+			<RenderHeight>1030</RenderHeight>
+			<ShaderFilename>../Data/Shaders/PostEffects/Bokeh.hlsl</ShaderFilename>
+			<UIPostEffectGroup>1</UIPostEffectGroup>
+			<UIRenderParamsGroup>1</UIRenderParamsGroup>
+			<UIShaderParamsGroup>1</UIShaderParamsGroup>
+			<ShaderParameter>
+				<Name>editor_texture</Name>
+				<Type>BackBuffer</Type>
+			</ShaderParameter>
+			<ShaderParameter>
+				<Name>editor_texture_mask</Name>
+				<Type>PostEffectTexture</Type>
+				<Value>PostEffect_bokeh_mask</Value>
+			</ShaderParameter>
+			<ShaderParameter>
+				<Name>editor_scale_filter</Name>
+				<Type>Float</Type>
+				<Value>0.175306</Value>
+			</ShaderParameter>
+		</Entity>
+		<Entity>
+			<Type>PostEffect</Type>
+			<Name>PostEffect_Vignette</Name>
+			<Parent></Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>2.45696,-2.68517,3.09233</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<Show>1</Show>
+			<Location>PostEffect_Noise</Location>
+			<RenderFormat>RGBA16F</RenderFormat>
+			<RenderWidth>1920</RenderWidth>
+			<RenderHeight>1030</RenderHeight>
+			<ShaderFilename>../Data/Shaders/PostEffects/Vignette.hlsl</ShaderFilename>
+			<UIPostEffectGroup>1</UIPostEffectGroup>
+			<UIRenderParamsGroup>1</UIRenderParamsGroup>
+			<UIShaderParamsGroup>1</UIShaderParamsGroup>
+			<ShaderParameter>
+				<Name>editor_texture</Name>
+				<Type>PreviousPostEffectTexture</Type>
+				<Value></Value>
+			</ShaderParameter>
+			<ShaderParameter>
+				<Name>editor_params</Name>
+				<Type>Vector</Type>
+				<Value>0.495,0.5,1,1</Value>
+			</ShaderParameter>
+		</Entity>
+		<Entity>
+			<Type>PostEffect</Type>
+			<Name>PostEffect_Exposure</Name>
+			<Parent></Parent>
+			<Visible>0</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>1.08016,-1.48002,4.45001</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<Show>0</Show>
+			<Location>PostEffect_FXAA</Location>
+			<RenderFormat>RGBA16F</RenderFormat>
+			<RenderWidth>1920</RenderWidth>
+			<RenderHeight>1030</RenderHeight>
+			<ShaderFilename>../Data/Shaders/PostEffects/Exposure.hlsl</ShaderFilename>
+			<UIPostEffectGroup>1</UIPostEffectGroup>
+			<UIRenderParamsGroup>1</UIRenderParamsGroup>
+			<UIShaderParamsGroup>1</UIShaderParamsGroup>
+			<ShaderParameter>
+				<Name>editor_texture</Name>
+				<Type>PreviousPostEffectTexture</Type>
+				<Value></Value>
+			</ShaderParameter>
+			<ShaderParameter>
+				<Name>editor_exposure</Name>
+				<Type>Float</Type>
+				<Value>0.000000</Value>
+			</ShaderParameter>
+		</Entity>
+		<Entity>
+			<Type>PostEffect</Type>
+			<Name>PostEffect_Noise</Name>
+			<Parent></Parent>
+			<Visible>0</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0.791434,1.56712,1.97103</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<Show>0</Show>
+			<Location>PostEffect_Tonemap</Location>
+			<RenderFormat>RGBA16F</RenderFormat>
+			<RenderWidth>1920</RenderWidth>
+			<RenderHeight>1030</RenderHeight>
+			<ShaderFilename>../Data/Shaders/PostEffects/Noise.hlsl</ShaderFilename>
+			<UIPostEffectGroup>1</UIPostEffectGroup>
+			<UIRenderParamsGroup>1</UIRenderParamsGroup>
+			<UIShaderParamsGroup>1</UIShaderParamsGroup>
+			<ShaderParameter>
+				<Name>editor_texture</Name>
+				<Type>PreviousPostEffectTexture</Type>
+				<Value></Value>
+			</ShaderParameter>
+			<ShaderParameter>
+				<Name>editor_scale</Name>
+				<Type>Float</Type>
+				<Value>0.010000</Value>
+			</ShaderParameter>
+		</Entity>
+		<Entity>
+			<Type>PostEffect</Type>
+			<Name>PostEffect_Gamma</Name>
+			<Parent></Parent>
+			<Visible>0</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0.702188,1.60245,4.13418</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<Show>0</Show>
+			<Location>PostEffect_Exposure</Location>
+			<RenderFormat>RGBA16F</RenderFormat>
+			<RenderWidth>1920</RenderWidth>
+			<RenderHeight>1030</RenderHeight>
+			<ShaderFilename>../Data/Shaders/PostEffects/GammaCorrection.hlsl</ShaderFilename>
+			<UIPostEffectGroup>1</UIPostEffectGroup>
+			<UIRenderParamsGroup>1</UIRenderParamsGroup>
+			<UIShaderParamsGroup>1</UIShaderParamsGroup>
+			<ShaderParameter>
+				<Name>editor_texture</Name>
+				<Type>PreviousPostEffectTexture</Type>
+				<Value></Value>
+			</ShaderParameter>
+			<ShaderParameter>
+				<Name>editor_gamma</Name>
+				<Type>Float</Type>
+				<Value>1.000000</Value>
+			</ShaderParameter>
 		</Entity>
 	</Entities>
 </Scene>
