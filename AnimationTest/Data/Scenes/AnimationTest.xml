@@ -1,35 +1,57 @@
 <?xml version="1.0"?>
 <Scene>
-	<VXGI>
-		<CameraCenter>0,0,0</CameraCenter>
-		<Power>1.000000</Power>
-		<VoxelSize>0.100000</VoxelSize>
-		<TraceDistance>100.000000</TraceDistance>
-		<AOFalloff>30.000000</AOFalloff>
-		<DiffuseStrength>1.000000</DiffuseStrength>
-		<SpecularStrength>1.000000</SpecularStrength>
-	</VXGI>
+	<Settings>
+		<VXGI>
+			<Enable>1</Enable>
+			<SceneVolumeSize>256</SceneVolumeSize>
+			<CameraCenter>0,0,0</CameraCenter>
+			<Power>1.000000</Power>
+			<VoxelSize>1.000000</VoxelSize>
+			<TraceDistance>100.000000</TraceDistance>
+			<AOFalloff>30.000000</AOFalloff>
+			<DiffuseOffset>3.000000</DiffuseOffset>
+			<DiffuseStrength>1.000000</DiffuseStrength>
+			<SpecularOffset>6.000000</SpecularOffset>
+			<SpecularStrength>1.000000</SpecularStrength>
+			<SmoothingTimeMS>1000.000000</SmoothingTimeMS>
+			<SamplingFactor>0.500000</SamplingFactor>
+		</VXGI>
+		<SSSSS>
+			<Enable>1</Enable>
+			<Technique>ScreenSpace Burley</Technique>
+			<SamplesCount>32.000000</SamplesCount>
+			<Width>0.100000</Width>
+			<MaxDepthDiffScale>5000.000000</MaxDepthDiffScale>
+		</SSSSS>
+		<DOF>
+			<Enable>1</Enable>
+			<MaxCoC>0.010000</MaxCoC>
+			<FocusDistance>30.000000</FocusDistance>
+			<FilmHeight>1.000000</FilmHeight>
+		</DOF>
+	</Settings>
 	<Editor>
 		<ShowGrid>0</ShowGrid>
 		<ShowEntitiesIcon>0</ShowEntitiesIcon>
 		<ShowPaintingPanel>0</ShowPaintingPanel>
-		<ShowVXGIPanel>0</ShowVXGIPanel>
+		<ShowSettingsPanel>0</ShowSettingsPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<DefaultCameraPosition>17.6622,23.6172,38.1299</DefaultCameraPosition>
-		<DefaultCameraRotation>0.00254264,-0.993231,0.114008,0.0220691</DefaultCameraRotation>
 		<ApplySceneGraphPosition >1</ApplySceneGraphPosition >
 	</Editor>
 	<Materials>
 		<Material>
 			<Name>default</Name>
+			<Type>Material</Type>
 			<Domain>0</Domain>
-			<AlbedoFile>../Data/Textures/white4x4.dds</AlbedoFile>
-			<NormalFile>../Data/Textures/flat_normal.dds</NormalFile>
-			<DetailNormalFile>../Data/Textures/flat_normal.dds</DetailNormalFile>
-			<RoughnessFile>../Data/Textures/white4x4.dds</RoughnessFile>
-			<MetallicnessFile>../Data/Textures/white4x4.dds</MetallicnessFile>
-			<AOFile>../Data/Textures/white4x4.dds</AOFile>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
+			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
+			<NormalFile>./Textures/flat_normal.dds</NormalFile>
+			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
+			<RoughnessFile>./Textures/white4x4.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
+			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -40,40 +62,45 @@
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
-			<NormalAddressModelU>Clamp</NormalAddressModelU>
-			<NormalAddressModelV>Clamp</NormalAddressModelV>
-			<NormalAddressModelW>Clamp</NormalAddressModelW>
-			<DetailNormalAddressModelU>Clamp</DetailNormalAddressModelU>
-			<DetailNormalAddressModelV>Clamp</DetailNormalAddressModelV>
-			<DetailNormalAddressModelW>Clamp</DetailNormalAddressModelW>
-			<RoughnessAddressModelU>Clamp</RoughnessAddressModelU>
-			<RoughnessAddressModelV>Clamp</RoughnessAddressModelV>
-			<RoughnessAddressModelW>Clamp</RoughnessAddressModelW>
-			<MetallicnessAddressModelU>Clamp</MetallicnessAddressModelU>
-			<MetallicnessAddressModelV>Clamp</MetallicnessAddressModelV>
-			<MetallicnessAddressModelW>Clamp</MetallicnessAddressModelW>
-			<AOAddressModelU>Clamp</AOAddressModelU>
-			<AOAddressModelV>Clamp</AOAddressModelV>
-			<AOAddressModelW>Clamp</AOAddressModelW>
-			<SSSAddressModelU>Clamp</SSSAddressModelU>
-			<SSSAddressModelV>Clamp</SSSAddressModelV>
-			<SSSAddressModelW>Clamp</SSSAddressModelW>
+			<NormalAddressModelU>Wrap</NormalAddressModelU>
+			<NormalAddressModelV>Wrap</NormalAddressModelV>
+			<NormalAddressModelW>Wrap</NormalAddressModelW>
+			<DetailNormalAddressModelU>Wrap</DetailNormalAddressModelU>
+			<DetailNormalAddressModelV>Wrap</DetailNormalAddressModelV>
+			<DetailNormalAddressModelW>Wrap</DetailNormalAddressModelW>
+			<RoughnessAddressModelU>Wrap</RoughnessAddressModelU>
+			<RoughnessAddressModelV>Wrap</RoughnessAddressModelV>
+			<RoughnessAddressModelW>Wrap</RoughnessAddressModelW>
+			<MetallicnessAddressModelU>Wrap</MetallicnessAddressModelU>
+			<MetallicnessAddressModelV>Wrap</MetallicnessAddressModelV>
+			<MetallicnessAddressModelW>Wrap</MetallicnessAddressModelW>
+			<AOAddressModelU>Wrap</AOAddressModelU>
+			<AOAddressModelV>Wrap</AOAddressModelV>
+			<AOAddressModelW>Wrap</AOAddressModelW>
+			<SSSAddressModelU>Wrap</SSSAddressModelU>
+			<SSSAddressModelV>Wrap</SSSAddressModelV>
+			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
-			<Roughness>0.250000</Roughness>
-			<Metallicness>0.500000</Metallicness>
+			<Roughness>0.200000</Roughness>
+			<Metallicness>0.000000</Metallicness>
 			<Bumpiness>1.000000</Bumpiness>
 			<DetailBumpiness>1.000000</DetailBumpiness>
 			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
-			<Refraction>0.025000</Refraction>
+			<Refraction>0.000000</Refraction>
 			<RefractionIndex>1.000000</RefractionIndex>
 			<DiffuseColor>1,1,1,1</DiffuseColor>
 			<SpecularColor>1,1,1,1</SpecularColor>
-			<SubsurfaceColor>0,0,0,0.182611</SubsurfaceColor>
+			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
 			<AOChannel>0</AOChannel>
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
@@ -82,7 +109,12 @@
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
 			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
 			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
 			<UIAlbedoProperties>1</UIAlbedoProperties>
 			<UINormalProperties>1</UINormalProperties>
 			<UIDetailNormalProperties>1</UIDetailNormalProperties>
@@ -90,10 +122,13 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
 			<Name>matBox</Name>
+			<Type>Material</Type>
 			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
 			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
 			<NormalFile>./Textures/flat_normal.dds</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
@@ -101,6 +136,7 @@
 			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -129,7 +165,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
 			<Roughness>0.200000</Roughness>
@@ -137,6 +175,8 @@
 			<Bumpiness>1.000000</Bumpiness>
 			<DetailBumpiness>1.000000</DetailBumpiness>
 			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
 			<Refraction>0.000000</Refraction>
@@ -145,6 +185,7 @@
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
 			<AOChannel>0</AOChannel>
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
@@ -153,7 +194,12 @@
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
 			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
 			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
 			<UIAlbedoProperties>1</UIAlbedoProperties>
 			<UINormalProperties>1</UINormalProperties>
 			<UIDetailNormalProperties>1</UIDetailNormalProperties>
@@ -161,10 +207,13 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
 			<Name>Hair_mtl</Name>
+			<Type>Material</Type>
 			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
 			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
 			<NormalFile>./Textures/flat_normal.dds</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
@@ -172,6 +221,7 @@
 			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -200,7 +250,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
 			<Roughness>0.200000</Roughness>
@@ -208,6 +260,8 @@
 			<Bumpiness>1.000000</Bumpiness>
 			<DetailBumpiness>1.000000</DetailBumpiness>
 			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
 			<Refraction>0.000000</Refraction>
@@ -216,6 +270,7 @@
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
 			<AOChannel>0</AOChannel>
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
@@ -224,7 +279,12 @@
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
 			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
 			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
 			<UIAlbedoProperties>1</UIAlbedoProperties>
 			<UINormalProperties>1</UINormalProperties>
 			<UIDetailNormalProperties>1</UIDetailNormalProperties>
@@ -232,10 +292,13 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
 			<Name>Cloth_mtl</Name>
+			<Type>Material</Type>
 			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
 			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
 			<NormalFile>./Textures/flat_normal.dds</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
@@ -243,6 +306,7 @@
 			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -271,7 +335,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
 			<Roughness>0.200000</Roughness>
@@ -279,6 +345,8 @@
 			<Bumpiness>1.000000</Bumpiness>
 			<DetailBumpiness>1.000000</DetailBumpiness>
 			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
 			<Refraction>0.000000</Refraction>
@@ -287,6 +355,7 @@
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
 			<AOChannel>0</AOChannel>
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
@@ -295,7 +364,12 @@
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
 			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
 			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
 			<UIAlbedoProperties>1</UIAlbedoProperties>
 			<UINormalProperties>1</UINormalProperties>
 			<UIDetailNormalProperties>1</UIDetailNormalProperties>
@@ -303,10 +377,13 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
 			<Name>Armour_mtl</Name>
+			<Type>Material</Type>
 			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
 			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
 			<NormalFile>./Textures/flat_normal.dds</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
@@ -314,6 +391,7 @@
 			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -342,7 +420,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
 			<Roughness>0.200000</Roughness>
@@ -350,6 +430,8 @@
 			<Bumpiness>1.000000</Bumpiness>
 			<DetailBumpiness>1.000000</DetailBumpiness>
 			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
 			<Refraction>0.000000</Refraction>
@@ -358,6 +440,7 @@
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
 			<AOChannel>0</AOChannel>
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
@@ -366,7 +449,12 @@
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
 			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
 			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
 			<UIAlbedoProperties>1</UIAlbedoProperties>
 			<UINormalProperties>1</UINormalProperties>
 			<UIDetailNormalProperties>1</UIDetailNormalProperties>
@@ -374,10 +462,13 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
 			<Name>Head_mtl</Name>
+			<Type>Material</Type>
 			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
 			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
 			<NormalFile>./Textures/flat_normal.dds</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
@@ -385,6 +476,7 @@
 			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -413,7 +505,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
 			<Roughness>0.200000</Roughness>
@@ -421,6 +515,8 @@
 			<Bumpiness>1.000000</Bumpiness>
 			<DetailBumpiness>1.000000</DetailBumpiness>
 			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
 			<Refraction>0.000000</Refraction>
@@ -429,6 +525,7 @@
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
 			<AOChannel>0</AOChannel>
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
@@ -437,7 +534,12 @@
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
 			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
 			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
 			<UIAlbedoProperties>1</UIAlbedoProperties>
 			<UINormalProperties>1</UINormalProperties>
 			<UIDetailNormalProperties>1</UIDetailNormalProperties>
@@ -445,10 +547,13 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
 			<Name>Sword_mtl</Name>
+			<Type>Material</Type>
 			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
 			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
 			<NormalFile>./Textures/flat_normal.dds</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
@@ -456,6 +561,7 @@
 			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -484,7 +590,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
 			<Roughness>0.200000</Roughness>
@@ -492,6 +600,8 @@
 			<Bumpiness>1.000000</Bumpiness>
 			<DetailBumpiness>1.000000</DetailBumpiness>
 			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
 			<Refraction>0.000000</Refraction>
@@ -500,6 +610,7 @@
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
 			<AOChannel>0</AOChannel>
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
@@ -508,7 +619,12 @@
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
 			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
 			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
 			<UIAlbedoProperties>1</UIAlbedoProperties>
 			<UINormalProperties>1</UINormalProperties>
 			<UIDetailNormalProperties>1</UIDetailNormalProperties>
@@ -516,10 +632,13 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
 			<Name>Ch16_body1</Name>
+			<Type>Material</Type>
 			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
 			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
 			<NormalFile>./Textures/flat_normal.dds</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
@@ -527,6 +646,7 @@
 			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -555,7 +675,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
 			<Roughness>0.200000</Roughness>
@@ -563,6 +685,8 @@
 			<Bumpiness>1.000000</Bumpiness>
 			<DetailBumpiness>1.000000</DetailBumpiness>
 			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
 			<Refraction>0.000000</Refraction>
@@ -571,6 +695,7 @@
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
 			<AOChannel>0</AOChannel>
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
@@ -579,7 +704,12 @@
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
 			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
 			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
 			<UIAlbedoProperties>1</UIAlbedoProperties>
 			<UINormalProperties>1</UINormalProperties>
 			<UIDetailNormalProperties>1</UIDetailNormalProperties>
@@ -587,10 +717,13 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
 			<Name>Ch16_Body</Name>
+			<Type>Material</Type>
 			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
 			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
 			<NormalFile>./Textures/flat_normal.dds</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
@@ -598,6 +731,7 @@
 			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -626,7 +760,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
 			<Roughness>0.200000</Roughness>
@@ -634,6 +770,8 @@
 			<Bumpiness>1.000000</Bumpiness>
 			<DetailBumpiness>1.000000</DetailBumpiness>
 			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
 			<Refraction>0.000000</Refraction>
@@ -642,6 +780,7 @@
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
 			<AOChannel>0</AOChannel>
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
@@ -650,7 +789,12 @@
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
 			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
 			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
 			<UIAlbedoProperties>1</UIAlbedoProperties>
 			<UINormalProperties>1</UINormalProperties>
 			<UIDetailNormalProperties>1</UIDetailNormalProperties>
@@ -658,10 +802,13 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
 			<Name>Ch16_eyelashes</Name>
+			<Type>Material</Type>
 			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
 			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
 			<NormalFile>./Textures/flat_normal.dds</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
@@ -669,6 +816,7 @@
 			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -697,7 +845,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
 			<Roughness>0.200000</Roughness>
@@ -705,6 +855,8 @@
 			<Bumpiness>1.000000</Bumpiness>
 			<DetailBumpiness>1.000000</DetailBumpiness>
 			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
 			<Refraction>0.000000</Refraction>
@@ -713,6 +865,7 @@
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
 			<AOChannel>0</AOChannel>
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
@@ -721,7 +874,12 @@
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
 			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
 			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
 			<UIAlbedoProperties>1</UIAlbedoProperties>
 			<UINormalProperties>1</UINormalProperties>
 			<UIDetailNormalProperties>1</UIDetailNormalProperties>
@@ -729,10 +887,13 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
 			<Name>floor</Name>
+			<Type>Material</Type>
 			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
 			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
 			<NormalFile>./Textures/flat_normal.dds</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
@@ -740,6 +901,7 @@
 			<MetallicnessFile>./Textures/checkerboard.DDS</MetallicnessFile>
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -768,7 +930,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
 			<Roughness>0.100141</Roughness>
@@ -776,6 +940,8 @@
 			<Bumpiness>1.000000</Bumpiness>
 			<DetailBumpiness>1.000000</DetailBumpiness>
 			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
 			<Refraction>0.000000</Refraction>
@@ -784,6 +950,7 @@
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
 			<AOChannel>0</AOChannel>
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
@@ -792,7 +959,12 @@
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
 			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
 			<UIColorProperties>1</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
 			<UIAlbedoProperties>1</UIAlbedoProperties>
 			<UINormalProperties>1</UINormalProperties>
 			<UIDetailNormalProperties>1</UIDetailNormalProperties>
@@ -800,10 +972,13 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
 			<Name>Wall</Name>
+			<Type>Material</Type>
 			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
 			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
 			<NormalFile>./Textures/flat_normal.dds</NormalFile>
 			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
@@ -811,6 +986,7 @@
 			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -839,7 +1015,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
 			<TwoSided>0</TwoSided>
 			<TwoSidedLighting>0</TwoSidedLighting>
 			<Roughness>0.771394</Roughness>
@@ -847,6 +1025,8 @@
 			<Bumpiness>1.000000</Bumpiness>
 			<DetailBumpiness>1.000000</DetailBumpiness>
 			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
 			<AlphaRef>0.000000</AlphaRef>
 			<GIStrength>1.000000</GIStrength>
 			<Refraction>0.000000</Refraction>
@@ -855,6 +1035,7 @@
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
 			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
 			<AOChannel>0</AOChannel>
 			<RoughnessChannel>0</RoughnessChannel>
 			<MetallicnessChannel>0</MetallicnessChannel>
@@ -863,7 +1044,12 @@
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UIProperties>1</UIProperties>
 			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
 			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
 			<UIAlbedoProperties>1</UIAlbedoProperties>
 			<UINormalProperties>1</UINormalProperties>
 			<UIDetailNormalProperties>1</UIDetailNormalProperties>
@@ -871,6 +1057,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 	</Materials>
 	<Entities>
@@ -892,6 +1079,7 @@
 			<InnerCone>20.000000</InnerCone>
 			<OuterCone>45.000000</OuterCone>
 			<CastShadows>1</CastShadows>
+			<Intensity>1.000000</Intensity>
 			<AreaSize>0.250000</AreaSize>
 			<Near>0.100000</Near>
 			<Far>80.000000</Far>
@@ -937,9 +1125,9 @@
 							<Value></Value>
 						</Param>
 						<Param>
-							<Name>Parent</Name>
-							<Type>class Components::IEntity * __ptr64</Type>
-							<Value></Value>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -982,25 +1170,20 @@
 							<Type>bool</Type>
 							<Value>1</Value>
 						</Param>
-						<Param>
-							<Name>Parent</Name>
-							<Type>class Components::IEntity * __ptr64</Type>
-							<Value></Value>
-						</Param>
 					</Parameters>
 				</Component>
 				<Component>
 					<Name>CVarComponent</Name>
 					<Parameters>
 						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
 							<Name>NumCVars</Name>
 							<Type>int</Type>
 							<Value>-1</Value>
-						</Param>
-						<Param>
-							<Name>Parent</Name>
-							<Type>class Components::IEntity * __ptr64</Type>
-							<Value></Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -1089,11 +1272,6 @@
 							<Value>5000</Value>
 						</Param>
 						<Param>
-							<Name>Parent</Name>
-							<Type>class Components::IEntity * __ptr64</Type>
-							<Value></Value>
-						</Param>
-						<Param>
 							<Name>SendMessage_CheckForRemovedAttachments</Name>
 							<Type>bool</Type>
 							<Value>0</Value>
@@ -1145,9 +1323,9 @@
 					<Name>RigidScene</Name>
 					<Parameters>
 						<Param>
-							<Name>Parent</Name>
-							<Type>class Components::IEntity * __ptr64</Type>
-							<Value></Value>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -1216,11 +1394,6 @@
 							<Type>bool</Type>
 							<Value>1</Value>
 						</Param>
-						<Param>
-							<Name>Parent</Name>
-							<Type>IEntity</Type>
-							<Value></Value>
-						</Param>
 					</Parameters>
 				</Component>
 				<Component>
@@ -1235,11 +1408,6 @@
 							<Name>Enabled</Name>
 							<Type>bool</Type>
 							<Value>1</Value>
-						</Param>
-						<Param>
-							<Name>Parent</Name>
-							<Type>IEntity</Type>
-							<Value></Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -1257,9 +1425,9 @@
 							<Value>1</Value>
 						</Param>
 						<Param>
-							<Name>Parent</Name>
-							<Type>IEntity</Type>
-							<Value></Value>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>Play</Name>
@@ -1302,9 +1470,9 @@
 							<Value>0</Value>
 						</Param>
 						<Param>
-							<Name>Parent</Name>
-							<Type>IEntity</Type>
-							<Value></Value>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
 						</Param>
 						<Param>
 							<Name>Skeleton</Name>
@@ -1408,6 +1576,7 @@
 			<InnerCone>30.000000</InnerCone>
 			<OuterCone>45.000000</OuterCone>
 			<CastShadows>1</CastShadows>
+			<Intensity>1.000000</Intensity>
 			<DiffuseColor>1,1,1,1</DiffuseColor>
 			<SpecularColor>1,1,1,1</SpecularColor>
 			<UILightGroup>1</UILightGroup>
@@ -1538,6 +1707,7 @@
 			<InnerCone>20.000000</InnerCone>
 			<OuterCone>30.000000</OuterCone>
 			<CastShadows>1</CastShadows>
+			<Intensity>1.000000</Intensity>
 			<AreaSize>0.295948</AreaSize>
 			<Near>0.100000</Near>
 			<Far>100.000000</Far>
@@ -1563,6 +1733,7 @@
 			<InnerCone>20.000000</InnerCone>
 			<OuterCone>30.000000</OuterCone>
 			<CastShadows>1</CastShadows>
+			<Intensity>1.000000</Intensity>
 			<AreaSize>0.250000</AreaSize>
 			<Near>0.100000</Near>
 			<Far>100.000000</Far>
@@ -1588,6 +1759,7 @@
 			<InnerCone>20.000000</InnerCone>
 			<OuterCone>30.000000</OuterCone>
 			<CastShadows>1</CastShadows>
+			<Intensity>1.000000</Intensity>
 			<AreaSize>0.250000</AreaSize>
 			<Near>0.100000</Near>
 			<Far>100.000000</Far>
@@ -1622,11 +1794,6 @@
 							<Type>bool</Type>
 							<Value>1</Value>
 						</Param>
-						<Param>
-							<Name>Parent</Name>
-							<Type>IEntity</Type>
-							<Value></Value>
-						</Param>
 					</Parameters>
 				</Component>
 				<Component>
@@ -1641,11 +1808,6 @@
 							<Name>Enabled</Name>
 							<Type>bool</Type>
 							<Value>1</Value>
-						</Param>
-						<Param>
-							<Name>Parent</Name>
-							<Type>IEntity</Type>
-							<Value></Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -1663,9 +1825,9 @@
 							<Value>0</Value>
 						</Param>
 						<Param>
-							<Name>Parent</Name>
-							<Type>IEntity</Type>
-							<Value></Value>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
 						</Param>
 						<Param>
 							<Name>Skeleton</Name>
@@ -1688,9 +1850,9 @@
 							<Value>1</Value>
 						</Param>
 						<Param>
-							<Name>Parent</Name>
-							<Type>IEntity</Type>
-							<Value></Value>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>Play</Name>
@@ -1795,6 +1957,70 @@
 				<Rotation>-0,0,-0,1</Rotation>
 				<UIMeshGroup>1</UIMeshGroup>
 			</Mesh>
+		</Entity>
+		<Entity>
+			<Type>SystemExtension</Type>
+			<Name>System_Data</Name>
+			<Parent>System</Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components>
+				<Component>
+					<Name>AssetLocatorComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>ReferencedDataUIComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
+		</Entity>
+		<Entity>
+			<Type>Camera</Type>
+			<Name>EditorCamera</Name>
+			<Parent></Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0,5,30</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,1,-0,-4.37114e-08</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+			<CameraType>Editor</CameraType>
+			<CameraOutput>SwapChain_0</CameraOutput>
+			<CameraGroupMask>0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31</CameraGroupMask>
+			<Active>1</Active>
+			<Preview>0</Preview>
+			<ViewportRect>0,0,1,1</ViewportRect>
+			<Near>0.100000</Near>
+			<Far>4000.000000</Far>
+			<Fov>60.000000</Fov>
+			<Aspect>1.860465</Aspect>
+			<MouseSensibility>0.250000</MouseSensibility>
+			<InvertMouse>0</InvertMouse>
+			<UICameraGroup>1</UICameraGroup>
 		</Entity>
 	</Entities>
 </Scene>
