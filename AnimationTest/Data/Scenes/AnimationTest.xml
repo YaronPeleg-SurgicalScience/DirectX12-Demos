@@ -24,12 +24,23 @@
 			<MaxDepthDiffScale>5000.000000</MaxDepthDiffScale>
 		</SSSSS>
 		<DOF>
-			<Enable>1</Enable>
+			<Enable>0</Enable>
 			<MaxCoC>0.010000</MaxCoC>
 			<FocusDistance>30.000000</FocusDistance>
 			<FilmHeight>1.000000</FilmHeight>
 		</DOF>
 	</Settings>
+	<EngineServices>
+		<PluginManager>
+			<Parameters>
+				<Param>
+					<Name>ActivePlugins</Name>
+					<Type>std_unordered_map_std_wstring_bool_fixed</Type>
+					<Value>UnitTests.dll;1;,Sound.dll;1;,Simulation.dll;0;,GUI.dll;1;,OrcaWrapper.dll;0;,Network.dll;1;,RigidPhysX5.dll;0;,Scripting.dll;1;</Value>
+				</Param>
+			</Parameters>
+		</PluginManager>
+	</EngineServices>
 	<Editor>
 		<ShowGrid>0</ShowGrid>
 		<ShowEntitiesIcon>0</ShowEntitiesIcon>
@@ -37,6 +48,7 @@
 		<ShowSettingsPanel>0</ShowSettingsPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
 		<ApplySceneGraphPosition >1</ApplySceneGraphPosition >
+		<ContentBrowserFilter >fbx;xml;dds;hlsl</ContentBrowserFilter >
 	</Editor>
 	<Materials>
 		<Material>
@@ -1059,12 +1071,182 @@
 			<UISSSProperties>1</UISSSProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
+		<Material>
+			<Name>dsa</Name>
+			<Type>Material</Type>
+			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
+			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
+			<NormalFile>./Textures/flat_normal.dds</NormalFile>
+			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
+			<RoughnessFile>./Textures/white4x4.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
+			<AOFile>./Textures/white4x4.dds</AOFile>
+			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<AlbedoFilter>Linear</AlbedoFilter>
+			<NormalFilter>Linear</NormalFilter>
+			<DetailNormalFilter>Linear</DetailNormalFilter>
+			<RoughnessFilter>Linear</RoughnessFilter>
+			<MetallicnessFilter>Linear</MetallicnessFilter>
+			<AOFilter>Linear</AOFilter>
+			<SSSFilter>Linear</SSSFilter>
+			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
+			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
+			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
+			<NormalAddressModelU>Wrap</NormalAddressModelU>
+			<NormalAddressModelV>Wrap</NormalAddressModelV>
+			<NormalAddressModelW>Wrap</NormalAddressModelW>
+			<DetailNormalAddressModelU>Wrap</DetailNormalAddressModelU>
+			<DetailNormalAddressModelV>Wrap</DetailNormalAddressModelV>
+			<DetailNormalAddressModelW>Wrap</DetailNormalAddressModelW>
+			<RoughnessAddressModelU>Wrap</RoughnessAddressModelU>
+			<RoughnessAddressModelV>Wrap</RoughnessAddressModelV>
+			<RoughnessAddressModelW>Wrap</RoughnessAddressModelW>
+			<MetallicnessAddressModelU>Wrap</MetallicnessAddressModelU>
+			<MetallicnessAddressModelV>Wrap</MetallicnessAddressModelV>
+			<MetallicnessAddressModelW>Wrap</MetallicnessAddressModelW>
+			<AOAddressModelU>Wrap</AOAddressModelU>
+			<AOAddressModelV>Wrap</AOAddressModelV>
+			<AOAddressModelW>Wrap</AOAddressModelW>
+			<SSSAddressModelU>Wrap</SSSAddressModelU>
+			<SSSAddressModelV>Wrap</SSSAddressModelV>
+			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
+			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
+			<TwoSided>0</TwoSided>
+			<TwoSidedLighting>0</TwoSidedLighting>
+			<Roughness>0.200000</Roughness>
+			<Metallicness>0.000000</Metallicness>
+			<Bumpiness>1.000000</Bumpiness>
+			<DetailBumpiness>1.000000</DetailBumpiness>
+			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
+			<AlphaRef>0.000000</AlphaRef>
+			<GIStrength>1.000000</GIStrength>
+			<Refraction>0.000000</Refraction>
+			<RefractionIndex>1.000000</RefractionIndex>
+			<DiffuseColor>1,1,1,1</DiffuseColor>
+			<SpecularColor>1,1,1,1</SpecularColor>
+			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
+			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
+			<AOChannel>0</AOChannel>
+			<RoughnessChannel>0</RoughnessChannel>
+			<MetallicnessChannel>0</MetallicnessChannel>
+			<NormalMapCompression>0</NormalMapCompression>
+			<DetailNormalMapCompression>0</DetailNormalMapCompression>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UIProperties>1</UIProperties>
+			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
+			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
+			<UIAlbedoProperties>1</UIAlbedoProperties>
+			<UINormalProperties>1</UINormalProperties>
+			<UIDetailNormalProperties>1</UIDetailNormalProperties>
+			<UIRoughnessProperties>1</UIRoughnessProperties>
+			<UIMetallicnessProperties>1</UIMetallicnessProperties>
+			<UIAOProperties>1</UIAOProperties>
+			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
+		</Material>
+		<Material>
+			<Name>Material #25</Name>
+			<Type>Material</Type>
+			<Domain>0</Domain>
+			<CustomShaderFile>../Data/Shaders/</CustomShaderFile>
+			<AlbedoFile>./Textures/white4x4.dds</AlbedoFile>
+			<NormalFile>./Textures/flat_normal.dds</NormalFile>
+			<DetailNormalFile>./Textures/flat_normal.dds</DetailNormalFile>
+			<RoughnessFile>./Textures/white4x4.dds</RoughnessFile>
+			<MetallicnessFile>./Textures/white4x4.dds</MetallicnessFile>
+			<AOFile>./Textures/white4x4.dds</AOFile>
+			<SSSFile>./Textures/white4x4.dds</SSSFile>
+			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<AlbedoFilter>Linear</AlbedoFilter>
+			<NormalFilter>Linear</NormalFilter>
+			<DetailNormalFilter>Linear</DetailNormalFilter>
+			<RoughnessFilter>Linear</RoughnessFilter>
+			<MetallicnessFilter>Linear</MetallicnessFilter>
+			<AOFilter>Linear</AOFilter>
+			<SSSFilter>Linear</SSSFilter>
+			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
+			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
+			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
+			<NormalAddressModelU>Wrap</NormalAddressModelU>
+			<NormalAddressModelV>Wrap</NormalAddressModelV>
+			<NormalAddressModelW>Wrap</NormalAddressModelW>
+			<DetailNormalAddressModelU>Wrap</DetailNormalAddressModelU>
+			<DetailNormalAddressModelV>Wrap</DetailNormalAddressModelV>
+			<DetailNormalAddressModelW>Wrap</DetailNormalAddressModelW>
+			<RoughnessAddressModelU>Wrap</RoughnessAddressModelU>
+			<RoughnessAddressModelV>Wrap</RoughnessAddressModelV>
+			<RoughnessAddressModelW>Wrap</RoughnessAddressModelW>
+			<MetallicnessAddressModelU>Wrap</MetallicnessAddressModelU>
+			<MetallicnessAddressModelV>Wrap</MetallicnessAddressModelV>
+			<MetallicnessAddressModelW>Wrap</MetallicnessAddressModelW>
+			<AOAddressModelU>Wrap</AOAddressModelU>
+			<AOAddressModelV>Wrap</AOAddressModelV>
+			<AOAddressModelW>Wrap</AOAddressModelW>
+			<SSSAddressModelU>Wrap</SSSAddressModelU>
+			<SSSAddressModelV>Wrap</SSSAddressModelV>
+			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<CustomShader>0</CustomShader>
+			<SubsurfaceScattering>0</SubsurfaceScattering>
+			<Tessellation>0</Tessellation>
+			<TwoSided>0</TwoSided>
+			<TwoSidedLighting>0</TwoSidedLighting>
+			<Roughness>0.200000</Roughness>
+			<Metallicness>0.000000</Metallicness>
+			<Bumpiness>1.000000</Bumpiness>
+			<DetailBumpiness>1.000000</DetailBumpiness>
+			<AO>1.000000</AO>
+			<HeightScale>0.000000</HeightScale>
+			<TessellationFactor>1.000000</TessellationFactor>
+			<AlphaRef>0.000000</AlphaRef>
+			<GIStrength>1.000000</GIStrength>
+			<Refraction>0.000000</Refraction>
+			<RefractionIndex>1.000000</RefractionIndex>
+			<DiffuseColor>1,1,1,1</DiffuseColor>
+			<SpecularColor>1,1,1,1</SpecularColor>
+			<SubsurfaceColor>1,0.25,0.04,0.75</SubsurfaceColor>
+			<Tiling>1,1,1,1</Tiling>
+			<Offsetting>0,0,0,0</Offsetting>
+			<AOChannel>0</AOChannel>
+			<RoughnessChannel>0</RoughnessChannel>
+			<MetallicnessChannel>0</MetallicnessChannel>
+			<NormalMapCompression>0</NormalMapCompression>
+			<DetailNormalMapCompression>0</DetailNormalMapCompression>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UIProperties>1</UIProperties>
+			<UITilingProperties>0</UITilingProperties>
+			<UIOffsetProperties>0</UIOffsetProperties>
+			<UIColorProperties>0</UIColorProperties>
+			<UICustomShaderProperties>0</UICustomShaderProperties>
+			<UICustomShaderConstants>0</UICustomShaderConstants>
+			<UICustomShaderTextures>0</UICustomShaderTextures>
+			<UICustomShaderSamplers>0</UICustomShaderSamplers>
+			<UIAlbedoProperties>1</UIAlbedoProperties>
+			<UINormalProperties>1</UINormalProperties>
+			<UIDetailNormalProperties>1</UIDetailNormalProperties>
+			<UIRoughnessProperties>1</UIRoughnessProperties>
+			<UIMetallicnessProperties>1</UIMetallicnessProperties>
+			<UIAOProperties>1</UIAOProperties>
+			<UISSSProperties>1</UISSSProperties>
+			<UITessellationProperties>1</UITessellationProperties>
+		</Material>
 	</Materials>
 	<Entities>
 		<Entity>
 			<Type>Light</Type>
 			<Name>Light</Name>
-			<Parent></Parent>
+			<Parent>Scene</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1122,12 +1304,22 @@
 						<Param>
 							<Name>Actions</Name>
 							<Type>std_vector_std_string_fixed</Type>
-							<Value></Value>
+							<Value>Animation_Play,Animation_Stop</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>Enabled</Name>
 							<Type>bool</Type>
 							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Keyboard</Name>
+							<Type>std_unordered_map_std_string_std_string_fixed_Select</Type>
+							<Value>A;;,B;;</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -1146,7 +1338,33 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>KeyboardsDevice</Name>
+					<Parameters>
+						<Param>
+							<Name>Add Key</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Keys</Name>
+							<Type>std_vector_std_string_fixed</Type>
+							<Value>A,B</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 		</Entity>
 		<Entity>
 			<Type>SystemExtension</Type>
@@ -1166,24 +1384,29 @@
 					<Name>VisualAid</Name>
 					<Parameters>
 						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
 							<Name>Enabled</Name>
 							<Type>bool</Type>
-							<Value>1</Value>
+							<Value>0</Value>
 						</Param>
 					</Parameters>
 				</Component>
 				<Component>
-					<Name>CVarComponent</Name>
+					<Name>DrawText</Name>
 					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
 						<Param>
 							<Name>Enabled</Name>
 							<Type>bool</Type>
 							<Value>1</Value>
-						</Param>
-						<Param>
-							<Name>NumCVars</Name>
-							<Type>int</Type>
-							<Value>-1</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -1202,108 +1425,7 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components>
-				<Component>
-					<Name>PhysicsScene</Name>
-					<Parameters>
-						<Param>
-							<Name>AllowParallelizationWhileUpdatingThread</Name>
-							<Type>bool</Type>
-							<Value>0</Value>
-						</Param>
-						<Param>
-							<Name>CheckForRemovedAttachments</Name>
-							<Type>bool</Type>
-							<Value>1</Value>
-						</Param>
-						<Param>
-							<Name>Enabled</Name>
-							<Type>bool</Type>
-							<Value>1</Value>
-						</Param>
-						<Param>
-							<Name>FilterThresh</Name>
-							<Type>float</Type>
-							<Value>0.000000</Value>
-						</Param>
-						<Param>
-							<Name>HighPrecisionMatrixUpdate</Name>
-							<Type>bool</Type>
-							<Value>1</Value>
-						</Param>
-						<Param>
-							<Name>IncludeCoreKsInMatrixBuild</Name>
-							<Type>bool</Type>
-							<Value>0</Value>
-						</Param>
-						<Param>
-							<Name>KeepDense</Name>
-							<Type>bool</Type>
-							<Value>0</Value>
-						</Param>
-						<Param>
-							<Name>LFEMComputeMethod</Name>
-							<Type>int</Type>
-							<Value>2</Value>
-						</Param>
-						<Param>
-							<Name>MaxForceLimit</Name>
-							<Type>float</Type>
-							<Value>10000.000000</Value>
-						</Param>
-						<Param>
-							<Name>MaxSpringsPerSingleUpdate</Name>
-							<Type>int</Type>
-							<Value>10</Value>
-						</Param>
-						<Param>
-							<Name>NeutralizeUnstableFEMs</Name>
-							<Type>bool</Type>
-							<Value>0</Value>
-						</Param>
-						<Param>
-							<Name>NumPreAllocatedConstraints</Name>
-							<Type>int</Type>
-							<Value>500</Value>
-						</Param>
-						<Param>
-							<Name>NumPreAllocatedParticles</Name>
-							<Type>int</Type>
-							<Value>5000</Value>
-						</Param>
-						<Param>
-							<Name>SendMessage_CheckForRemovedAttachments</Name>
-							<Type>bool</Type>
-							<Value>0</Value>
-						</Param>
-						<Param>
-							<Name>SendMessage_ComputeExternalForces</Name>
-							<Type>bool</Type>
-							<Value>0</Value>
-						</Param>
-						<Param>
-							<Name>SpringComputeMethod</Name>
-							<Type>int</Type>
-							<Value>1</Value>
-						</Param>
-						<Param>
-							<Name>UnstableFEMsFlatThresh</Name>
-							<Type>float</Type>
-							<Value>0.170000</Value>
-						</Param>
-						<Param>
-							<Name>UpdateSchemeMaxStep</Name>
-							<Type>int</Type>
-							<Value>-1</Value>
-						</Param>
-						<Param>
-							<Name>VelocityLimitWhileUpdating</Name>
-							<Type>float</Type>
-							<Value>1000.000000</Value>
-						</Param>
-					</Parameters>
-				</Component>
-			</Components>
+			<Components />
 		</Entity>
 		<Entity>
 			<Type>SystemExtension</Type>
@@ -1318,23 +1440,12 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components>
-				<Component>
-					<Name>RigidScene</Name>
-					<Parameters>
-						<Param>
-							<Name>Enabled</Name>
-							<Type>bool</Type>
-							<Value>1</Value>
-						</Param>
-					</Parameters>
-				</Component>
-			</Components>
+			<Components />
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
 			<Name>Box</Name>
-			<Parent></Parent>
+			<Parent>Room</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1370,7 +1481,7 @@
 		<Entity>
 			<Type>Model</Type>
 			<Name>Dancing_Queen</Name>
-			<Parent></Parent>
+			<Parent>Models</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1409,6 +1520,11 @@
 							<Type>bool</Type>
 							<Value>1</Value>
 						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Dancing_Queen:AnimationSkeleton</Value>
+						</Param>
 					</Parameters>
 				</Component>
 				<Component>
@@ -1420,6 +1536,11 @@
 							<Value>1</Value>
 						</Param>
 						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
 							<Name>Enabled</Name>
 							<Type>bool</Type>
 							<Value>1</Value>
@@ -1427,12 +1548,12 @@
 						<Param>
 							<Name>Loop</Name>
 							<Type>bool</Type>
-							<Value>0</Value>
+							<Value>1</Value>
 						</Param>
 						<Param>
 							<Name>Play</Name>
 							<Type>bool</Type>
-							<Value>1</Value>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>Skeleton</Name>
@@ -1561,7 +1682,7 @@
 		<Entity>
 			<Type>Light</Type>
 			<Name>Light_Global</Name>
-			<Parent></Parent>
+			<Parent>Scene</Parent>
 			<Visible>0</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1584,7 +1705,7 @@
 		<Entity>
 			<Type>Model</Type>
 			<Name>floor</Name>
-			<Parent></Parent>
+			<Parent>Room</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1620,7 +1741,7 @@
 		<Entity>
 			<Type>Model</Type>
 			<Name>BackWall</Name>
-			<Parent></Parent>
+			<Parent>Room</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1656,7 +1777,7 @@
 		<Entity>
 			<Type>Model</Type>
 			<Name>LeftWall</Name>
-			<Parent></Parent>
+			<Parent>Room</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1692,7 +1813,7 @@
 		<Entity>
 			<Type>Light</Type>
 			<Name>Light_red</Name>
-			<Parent></Parent>
+			<Parent>Scene</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1718,7 +1839,7 @@
 		<Entity>
 			<Type>Light</Type>
 			<Name>Light_green</Name>
-			<Parent></Parent>
+			<Parent>Scene</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1744,7 +1865,7 @@
 		<Entity>
 			<Type>Light</Type>
 			<Name>Light_blue</Name>
-			<Parent></Parent>
+			<Parent>Scene</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1770,7 +1891,7 @@
 		<Entity>
 			<Type>Model</Type>
 			<Name>Lady</Name>
-			<Parent></Parent>
+			<Parent>Models</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
@@ -1809,6 +1930,11 @@
 							<Type>bool</Type>
 							<Value>1</Value>
 						</Param>
+						<Param>
+							<Name>Skeleton</Name>
+							<Type>IComponent</Type>
+							<Value>Lady:AnimationSkeleton</Value>
+						</Param>
 					</Parameters>
 				</Component>
 				<Component>
@@ -1845,6 +1971,11 @@
 							<Value>1</Value>
 						</Param>
 						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
 							<Name>Enabled</Name>
 							<Type>bool</Type>
 							<Value>1</Value>
@@ -1852,12 +1983,12 @@
 						<Param>
 							<Name>Loop</Name>
 							<Type>bool</Type>
-							<Value>0</Value>
+							<Value>1</Value>
 						</Param>
 						<Param>
 							<Name>Play</Name>
 							<Type>bool</Type>
-							<Value>1</Value>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>Skeleton</Name>
@@ -1976,6 +2107,11 @@
 					<Name>AssetLocatorComponent</Name>
 					<Parameters>
 						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
 							<Name>Enabled</Name>
 							<Type>bool</Type>
 							<Value>1</Value>
@@ -1985,6 +2121,66 @@
 				<Component>
 					<Name>ReferencedDataUIComponent</Name>
 					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>CopyPasteComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Memory IComponent</Name>
+							<Type>std_wstring</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Memory IEntity</Name>
+							<Type>std_wstring</Type>
+							<Value></Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>AssetLocator_Raw_Component</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>EngineServicesUIComponent</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
 						<Param>
 							<Name>Enabled</Name>
 							<Type>bool</Type>
@@ -1997,13 +2193,13 @@
 		<Entity>
 			<Type>Camera</Type>
 			<Name>EditorCamera</Name>
-			<Parent></Parent>
+			<Parent>Scene</Parent>
 			<Visible>1</Visible>
 			<Dynamic>0</Dynamic>
 			<Group>0</Group>
-			<Position>0,5,30</Position>
+			<Position>-6.70201,41.0727,79.2198</Position>
 			<Scale>1,1,1</Scale>
-			<Rotation>0,1,-0,-4.37114e-08</Rotation>
+			<Rotation>0.00783354,0.991482,-0.108562,0.071533</Rotation>
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
@@ -2021,6 +2217,390 @@
 			<MouseSensibility>0.250000</MouseSensibility>
 			<InvertMouse>0</InvertMouse>
 			<UICameraGroup>1</UICameraGroup>
+		</Entity>
+		<Entity>
+			<Type>SystemExtension</Type>
+			<Name>System_Render</Name>
+			<Parent>System</Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+		</Entity>
+		<Entity>
+			<Type>Model</Type>
+			<Name>US_Heart</Name>
+			<Parent>Models</Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>-0.458515,24.9369,35.5696</Position>
+			<Scale>0.1,0.1,0.1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components>
+				<Component>
+					<Name>MorphAnimationTrack</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Recalculate Normals</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>Animator</Name>
+					<Parameters>
+						<Param>
+							<Name>Advance Time</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Play</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Skin</Name>
+							<Type>IComponent</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Track</Name>
+							<Type>IComponent</Type>
+							<Value>US_Heart:MorphAnimationTrack</Value>
+						</Param>
+						<Param>
+							<Name>Track Duration Sec</Name>
+							<Type>float</Type>
+							<Value>4.000000</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
+			<ModelFilename>./Models/Heart Outside.FBX</ModelFilename>
+			<UseCache>1</UseCache>
+			<Painting>0</Painting>
+			<PaintingFixSeams>0</PaintingFixSeams>
+			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
+			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
+			<ShowPaintingColor>0</ShowPaintingColor>
+			<ShowPaintingRMH>0</ShowPaintingRMH>
+			<PaintingHeight>1024.000000</PaintingHeight>
+			<PaintingWidth>1024.000000</PaintingWidth>
+			<UIRenderingGroup>1</UIRenderingGroup>
+			<UIPaintingGroup>0</UIPaintingGroup>
+			<Mesh>
+				<Name>Outer-Snapshot</Name>
+				<Material>dsa</Material>
+				<Visible>1</Visible>
+				<Position>-12.3711,164.533,-90.7665</Position>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0.707107,0,-0,0.707107</Rotation>
+				<UIMeshGroup>0</UIMeshGroup>
+			</Mesh>
+		</Entity>
+		<Entity>
+			<Type>Entity</Type>
+			<Name>Models</Name>
+			<Parent></Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+		</Entity>
+		<Entity>
+			<Type>Entity</Type>
+			<Name>Scene</Name>
+			<Parent></Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+		</Entity>
+		<Entity>
+			<Type>Entity</Type>
+			<Name>Room</Name>
+			<Parent></Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components />
+		</Entity>
+		<Entity>
+			<Type>Model</Type>
+			<Name>heart_combined</Name>
+			<Parent>Models</Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>0.1,0.1,0.1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components>
+				<Component>
+					<Name>MorphAnimationTrack</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Recalculate Normals</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>Animator</Name>
+					<Parameters>
+						<Param>
+							<Name>Advance Time</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Play</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Skin</Name>
+							<Type>IComponent</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Track</Name>
+							<Type>IComponent</Type>
+							<Value>heart_combined:MorphAnimationTrack</Value>
+						</Param>
+						<Param>
+							<Name>Track Duration Sec</Name>
+							<Type>float</Type>
+							<Value>0.800000</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
+			<ModelFilename>./Models/Heart_Combined.fbx</ModelFilename>
+			<UseCache>1</UseCache>
+			<Painting>0</Painting>
+			<PaintingFixSeams>0</PaintingFixSeams>
+			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
+			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
+			<ShowPaintingColor>0</ShowPaintingColor>
+			<ShowPaintingRMH>0</ShowPaintingRMH>
+			<PaintingHeight>1024.000000</PaintingHeight>
+			<PaintingWidth>1024.000000</PaintingWidth>
+			<UIRenderingGroup>1</UIRenderingGroup>
+			<UIPaintingGroup>0</UIPaintingGroup>
+			<Mesh>
+				<Name>Heart_Combined</Name>
+				<Material>dsa</Material>
+				<Visible>1</Visible>
+				<Position>0,0,0</Position>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0.707107,0,-0,0.707107</Rotation>
+				<UIMeshGroup>0</UIMeshGroup>
+			</Mesh>
+			<Mesh>
+				<Name>Heart_Combined_1</Name>
+				<Material>Material #25</Material>
+				<Visible>1</Visible>
+				<Position>0,0,0</Position>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0.707107,0,-0,0.707107</Rotation>
+				<UIMeshGroup>0</UIMeshGroup>
+			</Mesh>
+		</Entity>
+		<Entity>
+			<Type>Model</Type>
+			<Name>heart_submeshes</Name>
+			<Parent>Models</Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>-10.5535,0,29.7891</Position>
+			<Scale>0.1,0.1,0.1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components>
+				<Component>
+					<Name>MorphAnimationTrack</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Recalculate Normals</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>Animator</Name>
+					<Parameters>
+						<Param>
+							<Name>Advance Time</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Loop</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Play</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Skin</Name>
+							<Type>IComponent</Type>
+							<Value></Value>
+						</Param>
+						<Param>
+							<Name>Track</Name>
+							<Type>IComponent</Type>
+							<Value>heart_submeshes:MorphAnimationTrack</Value>
+						</Param>
+						<Param>
+							<Name>Track Duration Sec</Name>
+							<Type>float</Type>
+							<Value>0.800000</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
+			<ModelFilename>./Models/Heart.fbx</ModelFilename>
+			<UseCache>1</UseCache>
+			<Painting>0</Painting>
+			<PaintingFixSeams>0</PaintingFixSeams>
+			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
+			<PaintingFactorRMH>1,1,1,1</PaintingFactorRMH>
+			<ShowPaintingColor>0</ShowPaintingColor>
+			<ShowPaintingRMH>0</ShowPaintingRMH>
+			<PaintingHeight>1024.000000</PaintingHeight>
+			<PaintingWidth>1024.000000</PaintingWidth>
+			<UIRenderingGroup>1</UIRenderingGroup>
+			<UIPaintingGroup>0</UIPaintingGroup>
+			<Mesh>
+				<Name>Heart_Outer</Name>
+				<Material>dsa</Material>
+				<Visible>1</Visible>
+				<Position>0,0,0</Position>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0.707107,0,-0,0.707107</Rotation>
+				<UIMeshGroup>0</UIMeshGroup>
+			</Mesh>
+			<Mesh>
+				<Name>Heart_Inner</Name>
+				<Material>Material #25</Material>
+				<Visible>1</Visible>
+				<Position>0,0,0</Position>
+				<Scale>1,1,1</Scale>
+				<Rotation>-0.707107,0,-0,0.707107</Rotation>
+				<UIMeshGroup>0</UIMeshGroup>
+			</Mesh>
 		</Entity>
 	</Entities>
 </Scene>
