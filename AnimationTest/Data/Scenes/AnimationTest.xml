@@ -3,6 +3,7 @@
 	<Settings>
 		<VXGI>
 			<Enable>1</Enable>
+			<Quality>5</Quality>
 			<SceneVolumeSize>256</SceneVolumeSize>
 			<CameraCenter>0,0,0</CameraCenter>
 			<Power>1.000000</Power>
@@ -29,14 +30,36 @@
 			<FocusDistance>30.000000</FocusDistance>
 			<FilmHeight>1.000000</FilmHeight>
 		</DOF>
+		<Bloom>
+			<Enable>1</Enable>
+			<Strength>1.000000</Strength>
+			<Threshold>1.000000</Threshold>
+			<Clamp>3.000000</Clamp>
+			<MipCount>10</MipCount>
+			<FilterFireFlies>1</FilterFireFlies>
+		</Bloom>
+		<General>
+			<Scale>1.000000</Scale>
+			<MultiThreaded>1</MultiThreaded>
+			<ShowUpdateFPS>0</ShowUpdateFPS>
+		</General>
 	</Settings>
 	<EngineServices>
+		<AutoCreators>
+			<Parameters>
+				<Param>
+					<Name>ActiveCreators</Name>
+					<Type>std_map_std_string_bool_fixed</Type>
+					<Value></Value>
+				</Param>
+			</Parameters>
+		</AutoCreators>
 		<PluginManager>
 			<Parameters>
 				<Param>
 					<Name>ActivePlugins</Name>
-					<Type>std_unordered_map_std_wstring_bool_fixed</Type>
-					<Value>UnitTests.dll;1;,Sound.dll;1;,Simulation.dll;0;,GUI.dll;1;,OrcaWrapper.dll;0;,Network.dll;1;,RigidPhysX5.dll;0;,Scripting.dll;1;</Value>
+					<Type>std_map_std_wstring_bool_fixed</Type>
+					<Value>AVNACutter.dll;0;,Collision.dll;0;,GUI.dll;0;,GUIComponent.dll;0;,Geometry.dll;0;,IGEditor.dll;0;,LAP.dll;0;,Network.dll;0;,OrcaWrapper.dll;0;,RenderingEffects.dll;0;,RigidPhysX5.dll;0;,RiseGen2.dll;0;,Scripting.dll;0;,Simulation.dll;0;,Sound.dll;0;,TLV_DevDays.dll;0;,YoshiWrapper.dll;0;</Value>
 				</Param>
 			</Parameters>
 		</PluginManager>
@@ -47,8 +70,8 @@
 		<ShowPaintingPanel>0</ShowPaintingPanel>
 		<ShowSettingsPanel>0</ShowSettingsPanel>
 		<ShowDebugBuffer>0</ShowDebugBuffer>
-		<ApplySceneGraphPosition >1</ApplySceneGraphPosition >
-		<ContentBrowserFilter >fbx;xml;dds;hlsl</ContentBrowserFilter >
+		<ApplySceneGraphPosition>1</ApplySceneGraphPosition>
+		<ContentBrowserFilter>fbx;xml;dds;hlsl</ContentBrowserFilter>
 	</Editor>
 	<Materials>
 		<Material>
@@ -64,6 +87,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -71,6 +95,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -92,6 +117,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -134,6 +162,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -149,6 +178,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -156,6 +186,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -177,6 +208,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -219,6 +253,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -234,6 +269,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -241,6 +277,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -262,6 +299,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -304,6 +344,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -319,6 +360,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -326,6 +368,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -347,6 +390,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -389,6 +435,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -404,6 +451,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -411,6 +459,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -432,6 +481,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -474,6 +526,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -489,6 +542,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -496,6 +550,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -517,6 +572,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -559,6 +617,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -574,6 +633,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -581,6 +641,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -602,6 +663,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -644,6 +708,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -659,6 +724,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -666,6 +732,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -687,6 +754,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -729,6 +799,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -744,6 +815,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -751,6 +823,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -772,6 +845,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -814,6 +890,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -829,6 +906,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -836,6 +914,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -857,6 +936,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -899,6 +981,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -914,6 +997,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -921,6 +1005,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -942,6 +1027,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -984,6 +1072,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -999,6 +1088,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -1006,6 +1096,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -1027,6 +1118,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -1069,6 +1163,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -1084,6 +1179,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -1091,6 +1187,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -1112,6 +1209,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -1154,6 +1254,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 		<Material>
@@ -1169,6 +1270,7 @@
 			<AOFile>./Textures/white4x4.dds</AOFile>
 			<SSSFile>./Textures/white4x4.dds</SSSFile>
 			<HeightFile>./Textures/black4x4.dds</HeightFile>
+			<RefractionFile>./Textures/white4x4.dds</RefractionFile>
 			<AlbedoFilter>Linear</AlbedoFilter>
 			<NormalFilter>Linear</NormalFilter>
 			<DetailNormalFilter>Linear</DetailNormalFilter>
@@ -1176,6 +1278,7 @@
 			<MetallicnessFilter>Linear</MetallicnessFilter>
 			<AOFilter>Linear</AOFilter>
 			<SSSFilter>Linear</SSSFilter>
+			<RefractionFilter>Linear</RefractionFilter>
 			<AlbedoAddressModelU>Wrap</AlbedoAddressModelU>
 			<AlbedoAddressModelV>Wrap</AlbedoAddressModelV>
 			<AlbedoAddressModelW>Wrap</AlbedoAddressModelW>
@@ -1197,6 +1300,9 @@
 			<SSSAddressModelU>Wrap</SSSAddressModelU>
 			<SSSAddressModelV>Wrap</SSSAddressModelV>
 			<SSSAddressModelW>Wrap</SSSAddressModelW>
+			<RefractionAddressModelU>Clamp</RefractionAddressModelU>
+			<RefractionAddressModelV>Clamp</RefractionAddressModelV>
+			<RefractionAddressModelW>Clamp</RefractionAddressModelW>
 			<CustomShader>0</CustomShader>
 			<SubsurfaceScattering>0</SubsurfaceScattering>
 			<Tessellation>0</Tessellation>
@@ -1239,6 +1345,7 @@
 			<UIMetallicnessProperties>1</UIMetallicnessProperties>
 			<UIAOProperties>1</UIAOProperties>
 			<UISSSProperties>1</UISSSProperties>
+			<UIRefractionProperties>1</UIRefractionProperties>
 			<UITessellationProperties>1</UITessellationProperties>
 		</Material>
 	</Materials>
@@ -1262,7 +1369,10 @@
 			<OuterCone>45.000000</OuterCone>
 			<CastShadows>1</CastShadows>
 			<Intensity>1.000000</Intensity>
-			<AreaSize>0.250000</AreaSize>
+			<Radius>5.000000</Radius>
+			<ShadowMapSize>1024</ShadowMapSize>
+			<ShadowRadius>0.100000</ShadowRadius>
+			<ShadowBias>0.1,0.1</ShadowBias>
 			<Near>0.100000</Near>
 			<Far>80.000000</Far>
 			<DiffuseColor>1,1,1,1</DiffuseColor>
@@ -1302,11 +1412,6 @@
 					<Name>InputManager</Name>
 					<Parameters>
 						<Param>
-							<Name>Actions</Name>
-							<Type>std_vector_std_string_fixed</Type>
-							<Value>Animation_Play,Animation_Stop</Value>
-						</Param>
-						<Param>
 							<Name>Debug</Name>
 							<Type>bool</Type>
 							<Value>0</Value>
@@ -1315,11 +1420,6 @@
 							<Name>Enabled</Name>
 							<Type>bool</Type>
 							<Value>1</Value>
-						</Param>
-						<Param>
-							<Name>Keyboard</Name>
-							<Type>std_unordered_map_std_string_std_string_fixed_Select</Type>
-							<Value>A;;,B;;</Value>
 						</Param>
 					</Parameters>
 				</Component>
@@ -1360,7 +1460,8 @@
 						<Param>
 							<Name>Keys</Name>
 							<Type>std_vector_std_string_fixed</Type>
-							<Value>A,B</Value>
+							<Size>0</Size>
+							<Array />
 						</Param>
 					</Parameters>
 				</Component>
@@ -1397,6 +1498,21 @@
 				</Component>
 				<Component>
 					<Name>DrawText</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+					</Parameters>
+				</Component>
+				<Component>
+					<Name>PersistentVisualAid</Name>
 					<Parameters>
 						<Param>
 							<Name>Debug</Name>
@@ -1458,6 +1574,7 @@
 			<Components />
 			<ModelFilename>./Models/Shapes/Box.fbx</ModelFilename>
 			<UseCache>1</UseCache>
+			<DivideMeshByMaterials>1</DivideMeshByMaterials>
 			<Painting>0</Painting>
 			<PaintingFixSeams>0</PaintingFixSeams>
 			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
@@ -1472,6 +1589,7 @@
 				<Name>Box002</Name>
 				<Material>floor</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>2.54,2.54,2.54</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -1551,19 +1669,19 @@
 							<Value>1</Value>
 						</Param>
 						<Param>
-							<Name>Play</Name>
-							<Type>bool</Type>
-							<Value>0</Value>
-						</Param>
-						<Param>
-							<Name>Skeleton</Name>
-							<Type>IComponent</Type>
-							<Value>Dancing_Queen:AnimationSkeleton</Value>
+							<Name>SeekTime</Name>
+							<Type>float_slider</Type>
+							<Value>3.180961</Value>
 						</Param>
 						<Param>
 							<Name>Skin</Name>
 							<Type>IComponent</Type>
 							<Value>Dancing_Queen:AnimationSkin</Value>
+						</Param>
+						<Param>
+							<Name>State</Name>
+							<Type>int_with_options</Type>
+							<Value>2</Value>
 						</Param>
 						<Param>
 							<Name>Track</Name>
@@ -1605,6 +1723,7 @@
 			</Components>
 			<ModelFilename>./Models/DR_Salsa Dancing.fbx</ModelFilename>
 			<UseCache>1</UseCache>
+			<DivideMeshByMaterials>1</DivideMeshByMaterials>
 			<Painting>0</Painting>
 			<PaintingFixSeams>0</PaintingFixSeams>
 			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
@@ -1619,6 +1738,7 @@
 				<Name>Ch16_Mask</Name>
 				<Material>Ch16_body1</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -1628,6 +1748,7 @@
 				<Name>Ch16_Body1</Name>
 				<Material>Ch16_Body</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -1637,6 +1758,7 @@
 				<Name>Ch16_Cap</Name>
 				<Material>Ch16_body1</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -1646,6 +1768,7 @@
 				<Name>Ch16_Pants</Name>
 				<Material>Ch16_Body</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -1655,6 +1778,7 @@
 				<Name>Ch16_Shirt</Name>
 				<Material>Ch16_Body</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -1664,6 +1788,7 @@
 				<Name>Ch16_Shoes</Name>
 				<Material>Ch16_body1</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -1673,6 +1798,7 @@
 				<Name>Ch16_Eyelashes</Name>
 				<Material>Ch16_eyelashes</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -1718,6 +1844,7 @@
 			<Components />
 			<ModelFilename>./Models/Shapes/Box.fbx</ModelFilename>
 			<UseCache>1</UseCache>
+			<DivideMeshByMaterials>1</DivideMeshByMaterials>
 			<Painting>0</Painting>
 			<PaintingFixSeams>0</PaintingFixSeams>
 			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
@@ -1732,6 +1859,7 @@
 				<Name>Box002</Name>
 				<Material>floor</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>2.54,2.54,2.54</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -1754,6 +1882,7 @@
 			<Components />
 			<ModelFilename>./Models/Shapes/Box.fbx</ModelFilename>
 			<UseCache>1</UseCache>
+			<DivideMeshByMaterials>1</DivideMeshByMaterials>
 			<Painting>0</Painting>
 			<PaintingFixSeams>0</PaintingFixSeams>
 			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
@@ -1768,6 +1897,7 @@
 				<Name>Box002</Name>
 				<Material>Wall</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>2.54,2.54,2.54</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -1790,6 +1920,7 @@
 			<Components />
 			<ModelFilename>./Models/Shapes/Box.fbx</ModelFilename>
 			<UseCache>1</UseCache>
+			<DivideMeshByMaterials>1</DivideMeshByMaterials>
 			<Painting>0</Painting>
 			<PaintingFixSeams>0</PaintingFixSeams>
 			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
@@ -1804,6 +1935,7 @@
 				<Name>Box002</Name>
 				<Material>Wall</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>2.54,2.54,2.54</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -1829,7 +1961,10 @@
 			<OuterCone>30.000000</OuterCone>
 			<CastShadows>1</CastShadows>
 			<Intensity>1.000000</Intensity>
-			<AreaSize>0.295948</AreaSize>
+			<Radius>5.000000</Radius>
+			<ShadowMapSize>1024</ShadowMapSize>
+			<ShadowRadius>0.100000</ShadowRadius>
+			<ShadowBias>0.1,0.1</ShadowBias>
 			<Near>0.100000</Near>
 			<Far>100.000000</Far>
 			<DiffuseColor>1,0,0,1</DiffuseColor>
@@ -1855,7 +1990,10 @@
 			<OuterCone>30.000000</OuterCone>
 			<CastShadows>1</CastShadows>
 			<Intensity>1.000000</Intensity>
-			<AreaSize>0.250000</AreaSize>
+			<Radius>5.000000</Radius>
+			<ShadowMapSize>1024</ShadowMapSize>
+			<ShadowRadius>0.100000</ShadowRadius>
+			<ShadowBias>0.1,0.1</ShadowBias>
 			<Near>0.100000</Near>
 			<Far>100.000000</Far>
 			<DiffuseColor>0,1,0,1</DiffuseColor>
@@ -1881,7 +2019,10 @@
 			<OuterCone>30.000000</OuterCone>
 			<CastShadows>1</CastShadows>
 			<Intensity>1.000000</Intensity>
-			<AreaSize>0.250000</AreaSize>
+			<Radius>5.000000</Radius>
+			<ShadowMapSize>1024</ShadowMapSize>
+			<ShadowRadius>0.100000</ShadowRadius>
+			<ShadowBias>0.1,0.1</ShadowBias>
 			<Near>0.100000</Near>
 			<Far>100.000000</Far>
 			<DiffuseColor>0,0,1,1</DiffuseColor>
@@ -1986,19 +2127,19 @@
 							<Value>1</Value>
 						</Param>
 						<Param>
-							<Name>Play</Name>
-							<Type>bool</Type>
-							<Value>0</Value>
-						</Param>
-						<Param>
-							<Name>Skeleton</Name>
-							<Type>IComponent</Type>
-							<Value>Lady:AnimationSkeleton</Value>
+							<Name>SeekTime</Name>
+							<Type>float_slider</Type>
+							<Value>0.000000</Value>
 						</Param>
 						<Param>
 							<Name>Skin</Name>
 							<Type>IComponent</Type>
 							<Value>Lady:AnimationSkin</Value>
+						</Param>
+						<Param>
+							<Name>State</Name>
+							<Type>int_with_options</Type>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>Track</Name>
@@ -2015,6 +2156,7 @@
 			</Components>
 			<ModelFilename>./Models/Samba_Dancing.fbx</ModelFilename>
 			<UseCache>1</UseCache>
+			<DivideMeshByMaterials>1</DivideMeshByMaterials>
 			<Painting>0</Painting>
 			<PaintingFixSeams>0</PaintingFixSeams>
 			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
@@ -2029,6 +2171,7 @@
 				<Name>Hair</Name>
 				<Material>Hair_mtl</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -2038,6 +2181,7 @@
 				<Name>Cloth</Name>
 				<Material>Cloth_mtl</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -2047,6 +2191,7 @@
 				<Name>Scarf</Name>
 				<Material>Cloth_mtl</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -2056,6 +2201,7 @@
 				<Name>Armour</Name>
 				<Material>Armour_mtl</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -2065,6 +2211,7 @@
 				<Name>Head</Name>
 				<Material>Head_mtl</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -2074,6 +2221,7 @@
 				<Name>Sword</Name>
 				<Material>Sword_mtl</Material>
 				<Visible>0</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -2083,6 +2231,7 @@
 				<Name>Dagger</Name>
 				<Material>Sword_mtl</Material>
 				<Visible>0</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0,0,-0,1</Rotation>
@@ -2231,7 +2380,23 @@
 			<Pivot>0,0,0</Pivot>
 			<UIGeneralGroup>1</UIGeneralGroup>
 			<UITransformationGroup>1</UITransformationGroup>
-			<Components />
+			<Components>
+				<Component>
+					<Name>RenderServices</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 		</Entity>
 		<Entity>
 			<Type>Model</Type>
@@ -2291,14 +2456,19 @@
 							<Value>1</Value>
 						</Param>
 						<Param>
-							<Name>Play</Name>
-							<Type>bool</Type>
-							<Value>1</Value>
+							<Name>SeekTime</Name>
+							<Type>float_slider</Type>
+							<Value>0.000000</Value>
 						</Param>
 						<Param>
 							<Name>Skin</Name>
 							<Type>IComponent</Type>
 							<Value></Value>
+						</Param>
+						<Param>
+							<Name>State</Name>
+							<Type>int_with_options</Type>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>Track</Name>
@@ -2315,6 +2485,7 @@
 			</Components>
 			<ModelFilename>./Models/Heart Outside.FBX</ModelFilename>
 			<UseCache>1</UseCache>
+			<DivideMeshByMaterials>1</DivideMeshByMaterials>
 			<Painting>0</Painting>
 			<PaintingFixSeams>0</PaintingFixSeams>
 			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
@@ -2329,6 +2500,7 @@
 				<Name>Outer-Snapshot</Name>
 				<Material>dsa</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>-12.3711,164.533,-90.7665</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0.707107,0,-0,0.707107</Rotation>
@@ -2438,14 +2610,19 @@
 							<Value>1</Value>
 						</Param>
 						<Param>
-							<Name>Play</Name>
-							<Type>bool</Type>
-							<Value>1</Value>
+							<Name>SeekTime</Name>
+							<Type>float_slider</Type>
+							<Value>0.000000</Value>
 						</Param>
 						<Param>
 							<Name>Skin</Name>
 							<Type>IComponent</Type>
 							<Value></Value>
+						</Param>
+						<Param>
+							<Name>State</Name>
+							<Type>int_with_options</Type>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>Track</Name>
@@ -2462,6 +2639,7 @@
 			</Components>
 			<ModelFilename>./Models/Heart_Combined.fbx</ModelFilename>
 			<UseCache>1</UseCache>
+			<DivideMeshByMaterials>1</DivideMeshByMaterials>
 			<Painting>0</Painting>
 			<PaintingFixSeams>0</PaintingFixSeams>
 			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
@@ -2476,6 +2654,7 @@
 				<Name>Heart_Combined</Name>
 				<Material>dsa</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0.707107,0,-0,0.707107</Rotation>
@@ -2485,6 +2664,7 @@
 				<Name>Heart_Combined_1</Name>
 				<Material>Material #25</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0.707107,0,-0,0.707107</Rotation>
@@ -2549,14 +2729,19 @@
 							<Value>1</Value>
 						</Param>
 						<Param>
-							<Name>Play</Name>
-							<Type>bool</Type>
-							<Value>1</Value>
+							<Name>SeekTime</Name>
+							<Type>float_slider</Type>
+							<Value>0.000000</Value>
 						</Param>
 						<Param>
 							<Name>Skin</Name>
 							<Type>IComponent</Type>
 							<Value></Value>
+						</Param>
+						<Param>
+							<Name>State</Name>
+							<Type>int_with_options</Type>
+							<Value>0</Value>
 						</Param>
 						<Param>
 							<Name>Track</Name>
@@ -2573,6 +2758,7 @@
 			</Components>
 			<ModelFilename>./Models/Heart.fbx</ModelFilename>
 			<UseCache>1</UseCache>
+			<DivideMeshByMaterials>1</DivideMeshByMaterials>
 			<Painting>0</Painting>
 			<PaintingFixSeams>0</PaintingFixSeams>
 			<PaintingFactorColor>1,1,1,1</PaintingFactorColor>
@@ -2587,6 +2773,7 @@
 				<Name>Heart_Outer</Name>
 				<Material>dsa</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0.707107,0,-0,0.707107</Rotation>
@@ -2596,11 +2783,48 @@
 				<Name>Heart_Inner</Name>
 				<Material>Material #25</Material>
 				<Visible>1</Visible>
+				<BadUV>0</BadUV>
 				<Position>0,0,0</Position>
 				<Scale>1,1,1</Scale>
 				<Rotation>-0.707107,0,-0,0.707107</Rotation>
 				<UIMeshGroup>0</UIMeshGroup>
 			</Mesh>
+		</Entity>
+		<Entity>
+			<Type>SystemExtension</Type>
+			<Name>System_Optimization</Name>
+			<Parent>System</Parent>
+			<Visible>1</Visible>
+			<Dynamic>0</Dynamic>
+			<Group>0</Group>
+			<Position>0,0,0</Position>
+			<Scale>1,1,1</Scale>
+			<Rotation>0,0,0,1</Rotation>
+			<Pivot>0,0,0</Pivot>
+			<UIGeneralGroup>1</UIGeneralGroup>
+			<UITransformationGroup>1</UITransformationGroup>
+			<Components>
+				<Component>
+					<Name>OpenMPSettings</Name>
+					<Parameters>
+						<Param>
+							<Name>Debug</Name>
+							<Type>bool</Type>
+							<Value>0</Value>
+						</Param>
+						<Param>
+							<Name>Enabled</Name>
+							<Type>bool</Type>
+							<Value>1</Value>
+						</Param>
+						<Param>
+							<Name>Max number of threads Threads</Name>
+							<Type>unsigned_int</Type>
+							<Value>16</Value>
+						</Param>
+					</Parameters>
+				</Component>
+			</Components>
 		</Entity>
 	</Entities>
 </Scene>
