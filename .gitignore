@@ -434,3 +434,4 @@ FodyWeavers.xsd
 # sim-engine running data
 **/[Dd]ata/[Mm]atrices/
 **/[Dd]ata/[Ss]erialData/
+**/LogFolder/

@@ -118,7 +118,7 @@
       <Family>AssistingTool</Family>
       <Info>This is a camera</Info>
       <HW>470026</HW>
-      <Mesh>Tools/Camera.X</Mesh>
+      <Mesh>Tools/Camera.fbx</Mesh>
       <LineInTexture>18</LineInTexture>
       <Penetration>0.7</Penetration>
       <DeductedLen>50</DeductedLen>
@@ -244,7 +244,7 @@
       <Family>AssistingTool</Family>
       <Info>This is a camera</Info>
       <HW>470027</HW>
-      <Mesh>Tools/Camera.X</Mesh>
+      <Mesh>Tools/Camera.fbx</Mesh>
       <LineInTexture>18</LineInTexture>
       <Penetration>0.7</Penetration>
       <DeductedLen>50</DeductedLen>
